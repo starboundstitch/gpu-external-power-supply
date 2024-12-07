@@ -1,0 +1,56 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "8b5375bb-3cfc-45f9-b7d1-f28e49e7763a")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "vmm_vrm_stg_vrm_cntrllr_asig"
+		(shape input)
+		(at 209.55 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "35461b15-bdf2-41f8-9a1f-cc66c876714c")
+	)
+	(hierarchical_label "vmm_vrm_stg_otsd_dcpwr"
+		(shape input)
+		(at 209.55 72.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "51bb4e14-bbd8-48d1-a859-4ca706455a68")
+	)
+	(hierarchical_label "vrm_cntrllr_vmm_vrm_stg_dsig"
+		(shape input)
+		(at 66.04 69.85 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5bbe7360-8d4f-477d-936b-fedb91729d68")
+	)
+	(hierarchical_label "12v_spply_vmm_vrm_stg_dcpwr"
+		(shape input)
+		(at 67.31 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d1b98b24-01e7-4fe5-b081-e62430aa91d7")
+	)
+)

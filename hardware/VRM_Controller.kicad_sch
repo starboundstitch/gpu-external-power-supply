@@ -1,0 +1,92 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "e6254225-58b2-45fe-9655-4d99a0cad525")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "u_cntrllr_vrm_cntrllr_data"
+		(shape input)
+		(at 55.88 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0e59d42b-8c35-4e34-9333-68f36206092e")
+	)
+	(hierarchical_label "vmm_vrm_stg_vrm_cntrllr_asig"
+		(shape input)
+		(at 58.42 123.19 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "17250aa0-7d7c-48c2-ae57-ba6b38361062")
+	)
+	(hierarchical_label "u_cntrllr_vrm_cntrllr_dsig"
+		(shape input)
+		(at 58.42 67.31 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1e9112ae-bcc2-4184-a34a-cfa26c01f772")
+	)
+	(hierarchical_label "vrm_cntrllr_vcr_vrm_stg_dsig"
+		(shape input)
+		(at 199.39 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b1f8035b-ce16-4f70-a953-18777d56e5bb")
+	)
+	(hierarchical_label "vrm_cntrllr_vmm_vrm_stg_dsig"
+		(shape input)
+		(at 198.12 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b526f4a0-b188-486f-b58b-81bea29a5c0e")
+	)
+	(hierarchical_label "vcr_vrm_stg_vrm_cntrllr_asig"
+		(shape input)
+		(at 57.15 111.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e0aabf37-4fa8-4030-af55-7b3bad7942e8")
+	)
+	(hierarchical_label "lw_crrnt_spply_vrm_cntrllr_dcpwr"
+		(shape input)
+		(at 58.42 95.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f4a83b35-11fc-4b08-9495-a6475c0f32ad")
+	)
+)
