@@ -607,7 +607,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
+		(property "Sheetfile" "Double_Mos.kicad_sch"
 			(at 133.35 100.9146 0)
 			(effects
 				(font
@@ -685,7 +685,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
+		(property "Sheetfile" "Double_Mos.kicad_sch"
 			(at 133.35 117.4246 0)
 			(effects
 				(font
@@ -763,7 +763,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
+		(property "Sheetfile" "Double_Mos.kicad_sch"
 			(at 133.35 55.1946 0)
 			(effects
 				(font
@@ -841,7 +841,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
+		(property "Sheetfile" "Double_Mos.kicad_sch"
 			(at 133.35 39.9546 0)
 			(effects
 				(font
@@ -919,7 +919,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
+		(property "Sheetfile" "Double_Mos.kicad_sch"
 			(at 133.35 85.6746 0)
 			(effects
 				(font
@@ -997,7 +997,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
+		(property "Sheetfile" "Double_Mos.kicad_sch"
 			(at 133.35 70.4346 0)
 			(effects
 				(font
