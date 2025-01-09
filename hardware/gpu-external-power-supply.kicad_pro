@@ -416,8 +416,32 @@
       "Onboard Control"
     ],
     [
+      "2e3b2d45-9c69-461c-b7ac-0b2c0f0ca5b7",
+      "Vcore VRM Pair1"
+    ],
+    [
       "95740f03-887c-4f4a-acc0-1e5b6f74d30f",
       "Computer Control"
+    ],
+    [
+      "8887b803-f4fb-47b8-9df1-bed4c051689f",
+      "Vcore VRM Pair"
+    ],
+    [
+      "d3021501-6487-4996-9e4a-911a0a1d2c3e",
+      "Vcore VRM Pair2"
+    ],
+    [
+      "acfe9d58-fac7-4e46-8542-d68d2288f1ac",
+      "Vcore VRM Pair3"
+    ],
+    [
+      "1fadbf66-fea2-4a71-bdfe-3af1a47d12ba",
+      "Vcore VRM Pair4"
+    ],
+    [
+      "2495dd8a-db5c-4b27-83d4-bf76f30920df",
+      "Vcore VRM Pair5"
     ]
   ],
   "text_variables": {}
