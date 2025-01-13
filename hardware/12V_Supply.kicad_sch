@@ -2482,9 +2482,87 @@
 			(uuid "0cffd2e6-450c-4b68-8d31-d2a10e123ace")
 		)
 		(instances
+			(project "12V_Supply"
+				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
+					(reference "C1")
+					(unit 1)
+				)
+			)
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
-					(reference "C67")
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 200.66 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15737231-f25e-4888-8a5d-ecfddeeba10c")
+		(property "Reference" "#PWR04"
+			(at 200.66 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 200.66 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 200.66 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "950be79f-5c65-47d2-aa46-e3e486368798")
+		)
+		(instances
+			(project "12V_Supply"
+				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -2558,6 +2636,12 @@
 					(unit 1)
 				)
 			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "C11")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2628,6 +2712,12 @@
 					(unit 1)
 				)
 			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "C15")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2691,6 +2781,12 @@
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
 					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -2758,9 +2854,457 @@
 			(uuid "337be67a-b44d-4fd8-bded-d37e5050da85")
 		)
 		(instances
+			(project "12V_Supply"
+				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
+					(reference "C3")
+					(unit 1)
+				)
+			)
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
-					(reference "C71")
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 200.66 106.68 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "584d7eeb-291b-4a82-ad6b-1cf6909ebbad")
+		(property "Reference" "D2"
+			(at 203.2 105.4099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D"
+			(at 203.2 107.9499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 200.66 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 200.66 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 200.66 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 200.66 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b77d1079-986d-4c63-b70c-98c60dda1084")
+		)
+		(pin "1"
+			(uuid "06e973ee-727f-43e4-b16b-f6fcb970580f")
+		)
+		(instances
+			(project "12V_Supply"
+				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 120.65 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "75bc743e-62e6-4f0d-aa54-fdce086877e4")
+		(property "Reference" "#PWR02"
+			(at 120.65 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 120.65 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 120.65 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1302390a-8345-4240-bdf5-a91a9fab33fb")
+		)
+		(instances
+			(project "12V_Supply"
+				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x08_Pin")
+		(at 92.71 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "760a3e95-afe5-4661-b94a-ec00d937cb68")
+		(property "Reference" "J1"
+			(at 96.012 124.714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x08_Pin"
+			(at 101.854 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated"
+			(at 92.71 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "c5deb16a-7be4-405b-bf11-de38600d1e11")
+		)
+		(pin "5"
+			(uuid "ec208b7c-e0db-40e1-9db7-345058b6ec57")
+		)
+		(pin "2"
+			(uuid "124747d6-176b-49f9-8331-2dc5fed82fd8")
+		)
+		(pin "8"
+			(uuid "e71c02c9-8bee-440f-8064-e7a4fe775ba3")
+		)
+		(pin "6"
+			(uuid "43243572-3f1c-4ab0-9a64-94d3dc910078")
+		)
+		(pin "3"
+			(uuid "79739644-3b3f-4233-89fa-6265263509ac")
+		)
+		(pin "1"
+			(uuid "d2313868-f94a-46f7-b575-a936d7b7a8ee")
+		)
+		(pin "4"
+			(uuid "1d3b392b-c2a5-4149-bb2d-7f5666aa7d4c")
+		)
+		(instances
+			(project "12V_Supply"
+				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 200.66 85.09 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "880ac009-5ff7-4d37-9c07-7fae557f88da")
+		(property "Reference" "D1"
+			(at 203.2 83.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D"
+			(at 203.2 86.3599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 200.66 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 200.66 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 200.66 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 200.66 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a414c6fa-cfed-4cca-9eec-42fe38d1418d")
+		)
+		(pin "1"
+			(uuid "1db1e7c6-14bc-4113-a61a-eb26da082d38")
+		)
+		(instances
+			(project "12V_Supply"
+				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x08_Pin")
+		(at 93.98 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "91219547-6ce3-4ca6-baeb-5732d749727c")
+		(property "Reference" "J2"
+			(at 97.282 32.004 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x08_Pin"
+			(at 103.124 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated"
+			(at 93.98 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "54a21d1d-fe3a-40ac-b3f6-904dee0e9f08")
+		)
+		(pin "5"
+			(uuid "9baa67d0-4026-4bcd-92f6-69a1f9f1e94f")
+		)
+		(pin "2"
+			(uuid "52102c46-f524-40da-a229-69660490aa99")
+		)
+		(pin "8"
+			(uuid "c354f282-fa2a-4e3f-a618-af0e8aa77199")
+		)
+		(pin "6"
+			(uuid "d4a488f0-35b4-4900-be8b-3cc92395eec1")
+		)
+		(pin "3"
+			(uuid "824baf7b-aa56-4025-8f4d-47817bac153b")
+		)
+		(pin "1"
+			(uuid "5048a82b-e53d-4491-acce-505e250786ba")
+		)
+		(pin "4"
+			(uuid "47109aeb-5edf-4dad-917f-6f2d9299d72c")
+		)
+		(instances
+			(project "12V_Supply"
+				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -2831,6 +3375,12 @@
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
 					(reference "C69")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -3054,6 +3604,12 @@
 					(unit 1)
 				)
 			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "J3")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3114,9 +3670,87 @@
 			(uuid "b9376f4f-80a9-4e87-997f-752b8f624976")
 		)
 		(instances
+			(project "12V_Supply"
+				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
-					(reference "#PWR032")
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 120.65 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "edce462c-0af3-426a-8c96-8451d220822f")
+		(property "Reference" "#PWR03"
+			(at 120.65 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 120.65 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 120.65 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7b8d1b6-cfca-46d5-bb96-2ccb5250e75d")
+		)
+		(instances
+			(project "12V_Supply"
+				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -4415,6 +5049,12 @@
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "C14")
 					(unit 1)
 				)
 			)
