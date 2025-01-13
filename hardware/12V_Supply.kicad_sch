@@ -2113,6 +2113,12 @@
 					(unit 1)
 				)
 			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "C10")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2176,6 +2182,12 @@
 			(project "12V_Supply"
 				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -2249,6 +2261,12 @@
 					(unit 1)
 				)
 			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "C11")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2319,6 +2337,12 @@
 					(unit 1)
 				)
 			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "C15")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2382,6 +2406,12 @@
 			(project "12V_Supply"
 				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -2452,6 +2482,12 @@
 			(project "12V_Supply"
 				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -2543,6 +2579,12 @@
 					(unit 1)
 				)
 			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "D2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2606,6 +2648,12 @@
 			(project "12V_Supply"
 				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -2690,6 +2738,12 @@
 		(instances
 			(project "12V_Supply"
 				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
 					(reference "J1")
 					(unit 1)
 				)
@@ -2782,6 +2836,12 @@
 					(unit 1)
 				)
 			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "D1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2867,6 +2927,12 @@
 					(unit 1)
 				)
 			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "J2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2934,6 +3000,12 @@
 			(project "12V_Supply"
 				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -3022,6 +3094,12 @@
 					(unit 1)
 				)
 			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "J3")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3088,6 +3166,12 @@
 					(unit 1)
 				)
 			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3151,6 +3235,12 @@
 			(project "12V_Supply"
 				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -3221,6 +3311,12 @@
 			(project "12V_Supply"
 				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "C14")
 					(unit 1)
 				)
 			)
