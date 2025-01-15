@@ -14,3 +14,6 @@ fp-info-cache# Netlist files (exported from Eeschema)
 *.ses
 ~*
 *backups
+
+fp-lib-table
+fp-info-cache
