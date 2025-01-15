@@ -1161,7 +1161,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cccd2733-87f0-4d50-bbda-eb2f0b18ee8b")
-		(property "Reference" "U16"
+		(property "Reference" "U2001"
 			(at 152.4 33.02 0)
 			(effects
 				(font
@@ -1356,7 +1356,7 @@
 		(instances
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/e6dc7bfe-1f99-4466-9581-badeb70bd091"
-					(reference "U16")
+					(reference "U2001")
 					(unit 1)
 				)
 			)

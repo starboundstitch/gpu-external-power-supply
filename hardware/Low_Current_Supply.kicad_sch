@@ -604,7 +604,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "041e2120-4da6-4e6f-b507-c14e82429a31")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR05001"
 			(at 144.78 114.3 0)
 			(effects
 				(font
@@ -654,7 +654,7 @@
 		(instances
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "#PWR035")
+					(reference "#PWR05001")
 					(unit 1)
 				)
 			)
@@ -670,7 +670,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5eaeac8f-72b1-4012-ab88-b8ab37934e8c")
-		(property "Reference" "C73"
+		(property "Reference" "C5001"
 			(at 120.65 93.9799 0)
 			(effects
 				(font
@@ -724,7 +724,7 @@
 		(instances
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "C73")
+					(reference "C5001")
 					(unit 1)
 				)
 			)
@@ -740,7 +740,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b8ee2563-59ce-4da7-a14c-8ff4ff62c523")
-		(property "Reference" "U16"
+		(property "Reference" "U5001"
 			(at 144.78 83.82 0)
 			(effects
 				(font
@@ -795,7 +795,7 @@
 		(instances
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "U16")
+					(reference "U5001")
 					(unit 1)
 				)
 			)
@@ -811,7 +811,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0c1c351-401e-406f-9da2-8430f11d3dac")
-		(property "Reference" "C74"
+		(property "Reference" "C5002"
 			(at 172.72 93.9799 0)
 			(effects
 				(font
@@ -865,7 +865,7 @@
 		(instances
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "C74")
+					(reference "C5002")
 					(unit 1)
 				)
 			)
