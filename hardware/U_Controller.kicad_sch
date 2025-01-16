@@ -359,7 +359,7 @@
 				)
 			)
 		)
-		(symbol "Connector:USB_C_Receptacle_USB2.0_14P"
+		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
 			)
@@ -374,7 +374,7 @@
 					)
 				)
 			)
-			(property "Value" "USB_C_Receptacle_USB2.0_14P"
+			(property "Value" "USB_C_Receptacle_USB2.0_16P"
 				(at 0 19.685 0)
 				(effects
 					(font
@@ -400,7 +400,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
+			(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -427,10 +427,32 @@
 					(hide yes)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_0_0"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_0"
 				(rectangle
 					(start -0.254 -17.78)
 					(end 0.254 -16.764)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -14.986)
+					(end 9.144 -15.494)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -12.446)
+					(end 9.144 -12.954)
 					(stroke
 						(width 0)
 						(type default)
@@ -517,7 +539,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_0_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_1"
 				(rectangle
 					(start -10.16 17.78)
 					(end 10.16 -17.78)
@@ -718,7 +740,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_1_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_1_1"
 				(pin passive line
 					(at 0 -22.86 90)
 					(length 5.08)
@@ -820,6 +842,24 @@
 						)
 					)
 					(number "A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -12.7 180)
+					(length 5.08)
+					(name "SBU1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -946,6 +986,24 @@
 						)
 					)
 					(number "B7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -15.24 180)
+					(length 5.08)
+					(name "SBU2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3879,8 +3937,16 @@
 		(uuid "f5c56694-d68c-4cc4-920e-4a3461747271")
 	)
 	(no_connect
+		(at 45.72 72.39)
+		(uuid "01553503-2fea-4994-ae61-dc83aeb3e7f1")
+	)
+	(no_connect
 		(at 248.92 142.24)
 		(uuid "03cfe355-8e0c-44a4-b39b-2728744053a9")
+	)
+	(no_connect
+		(at 45.72 74.93)
+		(uuid "1184d32c-13dd-465f-b42a-4c7a2114f419")
 	)
 	(wire
 		(pts
@@ -6136,7 +6202,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_Abracon_ABM10-4Pin_2.5x2.0mm"
 			(at 27.94 105.41 0)
 			(effects
 				(font
@@ -6145,7 +6211,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/abracon-llc/ABM10W-48-0000MHZ-7-D1X-T3/7172572"
 			(at 27.94 105.41 0)
 			(effects
 				(font
@@ -6277,7 +6343,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 25.4 98.0948 0)
 			(effects
 				(font
@@ -6337,7 +6403,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ESDALC6V1-1U2"
+		(property "Value" "GG060303100N2P"
 			(at 238.76 29.21 90)
 			(effects
 				(font
@@ -6346,7 +6412,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
 			(at 245.11 25.4 0)
 			(effects
 				(font
@@ -6355,7 +6421,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/kyocera-avx/GG060303100N2P/22245452?s=N4IgjCBcpgbFoDGUBmBDANgZwKYBoQB7KAbRAGYBOAJgBZ4BdAgBwBcoQBlVgJwEsAdgHMQAXwIB2WBGghkkdNnxFS4CbTBgArCCYg2Hbv2FjRooA"
 			(at 245.11 25.4 0)
 			(effects
 				(font
@@ -6364,7 +6430,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Zener diode"
+		(property "Description" "TVS Zener diode"
 			(at 245.11 25.4 0)
 			(effects
 				(font
@@ -6415,7 +6481,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 49.2252 26.67 0)
 			(effects
 				(font
@@ -6547,7 +6613,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 25.4 112.0648 0)
 			(effects
 				(font
@@ -6752,7 +6818,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 235.458 25.4 90)
 			(effects
 				(font
@@ -6955,7 +7021,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 56.8452 26.67 0)
 			(effects
 				(font
@@ -7022,7 +7088,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 52.07 55.118 90)
 			(effects
 				(font
@@ -7059,113 +7125,6 @@
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/027ff087-ab1d-45e5-9d8f-c94102656fe5"
 					(reference "R7002")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:USB_C_Receptacle_USB2.0_14P")
-		(at 30.48 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b02d18b-3496-43c2-90ed-f402a9ae7e65")
-		(property "Reference" "J7001"
-			(at 30.48 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "USB_C_Receptacle_USB2.0_14P"
-			(at 30.48 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
-			(at 34.29 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
-			(at 30.48 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "B12"
-			(uuid "8a0b1f71-cc4f-4ed2-b830-b887293e3c1d")
-		)
-		(pin "B6"
-			(uuid "10b467cd-5aa5-428d-8ca8-f6d9393366fb")
-		)
-		(pin "B9"
-			(uuid "82b1f3ab-9486-417e-bec5-39d79e06b93a")
-		)
-		(pin "A1"
-			(uuid "ce7bbae3-e76c-4b40-849f-abc2a9b46297")
-		)
-		(pin "B7"
-			(uuid "aa117720-1bea-4c4f-993f-b889beacedae")
-		)
-		(pin "B4"
-			(uuid "dbee3671-d4f4-4ba3-9d6b-e1a9704dc3c2")
-		)
-		(pin "S1"
-			(uuid "e03a5e36-8667-4ed3-b556-dd9346b6aa1f")
-		)
-		(pin "B1"
-			(uuid "919b42a0-b924-4897-9fbb-c6a5a0bbaf40")
-		)
-		(pin "B5"
-			(uuid "077321ce-3553-4c53-91a3-54d902940bd3")
-		)
-		(pin "A12"
-			(uuid "329f598c-d2c0-49aa-ae0c-0c02caccc5d7")
-		)
-		(pin "A4"
-			(uuid "577848d7-0532-475d-b25c-b3532b40537d")
-		)
-		(pin "A5"
-			(uuid "db90771c-ecb3-4335-9c3b-962dc9ae9975")
-		)
-		(pin "A6"
-			(uuid "da436fc8-da8d-40bc-b947-88732be105ae")
-		)
-		(pin "A7"
-			(uuid "bed77a5d-f3e8-4fcd-8be8-f4e30cb28223")
-		)
-		(pin "A9"
-			(uuid "7ffcebe1-9c87-4af3-80b0-7d3436b343f4")
-		)
-		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/027ff087-ab1d-45e5-9d8f-c94102656fe5"
-					(reference "J7001")
 					(unit 1)
 				)
 			)
@@ -7394,7 +7353,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 52.07 50.038 90)
 			(effects
 				(font
@@ -7463,7 +7422,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 256.032 148.59 90)
 			(effects
 				(font
@@ -7657,6 +7616,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
+		(at 30.48 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa7540d0-4f5b-4b44-9325-8282bd5fe46b")
+		(property "Reference" "J7003"
+			(at 30.48 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USB_C_Receptacle_USB2.0_16P"
+			(at 30.48 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "work:12402012E212A_AMP"
+			(at 34.29 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/amphenol-cs-commercial-products/12402012E212A/13683192"
+			(at 34.29 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+			(at 30.48 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "A9"
+			(uuid "e0c2a10e-06fd-48e8-ae9b-25af67e0bdc6")
+		)
+		(pin "B8"
+			(uuid "5bfdbca3-55db-496e-80d2-88d2ede1bb9c")
+		)
+		(pin "B6"
+			(uuid "5d2d3f06-637b-4702-b7b0-e1bcb89c9827")
+		)
+		(pin "B7"
+			(uuid "60ff8708-a488-46f6-826d-ee7f560f9ec9")
+		)
+		(pin "A12"
+			(uuid "f40b68fa-7e50-4b83-96c7-9dea7c7625a1")
+		)
+		(pin "B5"
+			(uuid "e9d2c6fa-f4e6-4ca6-a20d-b8ed9f0559db")
+		)
+		(pin "B12"
+			(uuid "f47e6b57-712e-4bdb-b5cc-60a21ba7da76")
+		)
+		(pin "B1"
+			(uuid "68f49048-8eb9-40f8-9af2-1cbae274d98a")
+		)
+		(pin "S1"
+			(uuid "924c8098-2e70-43b3-9e0e-efe91f2f5b94")
+		)
+		(pin "A4"
+			(uuid "fd92c085-1a6b-4295-8d2b-4268c9f36b23")
+		)
+		(pin "A5"
+			(uuid "e7d39696-4f5b-4ca2-ab32-4f51aadb1995")
+		)
+		(pin "A6"
+			(uuid "3daeb846-54cf-450c-8672-d3f9d4dcf059")
+		)
+		(pin "A7"
+			(uuid "500ebd8a-155e-48c3-81cd-64271abccfa4")
+		)
+		(pin "A8"
+			(uuid "25a220ce-6ec9-4d5c-98fc-c421d7c9cffb")
+		)
+		(pin "B9"
+			(uuid "8d275401-51f2-4372-b5cf-c952e75ce98b")
+		)
+		(pin "A1"
+			(uuid "49cce00d-58cf-4a34-9057-21800ca2843f")
+		)
+		(pin "B4"
+			(uuid "fa4ce84a-1fc0-4498-a2d7-f500aaea2f66")
+		)
+		(instances
+			(project ""
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/027ff087-ab1d-45e5-9d8f-c94102656fe5"
+					(reference "J7003")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 57.15 67.31 0)
 		(unit 1)
@@ -7759,7 +7831,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "STM32C071RBT6"
+		(property "Datasheet" "https://www.st.com/en/microcontrollers-microprocessors/stm32c071rb.html#documentation"
 			(at 123.19 29.21 0)
 			(effects
 				(font
@@ -8071,7 +8143,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "work:CNC_3221-10-0100-00"
 			(at 236.22 137.16 0)
 			(effects
 				(font
@@ -8080,7 +8152,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/cnc-tech/3221-10-0100-00/4878932"
 			(at 227.33 168.91 90)
 			(effects
 				(font
@@ -8164,7 +8236,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 256.032 125.73 90)
 			(effects
 				(font
