@@ -3883,12 +3883,6 @@
 		(uuid "99b341ec-9296-49d3-b06f-f6338b91c19f")
 	)
 	(junction
-		(at 257.81 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9d00157f-b79b-4798-a785-b75943f46101")
-	)
-	(junction
 		(at 55.88 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4220,16 +4214,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 137.16) (xy 257.81 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b2fe772-44e6-4b23-88da-a3e074443752")
-	)
-	(wire
-		(pts
 			(xy 194.31 113.03) (xy 194.31 115.57)
 		)
 		(stroke
@@ -4370,16 +4354,6 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 137.16) (xy 257.81 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5eeec1fc-912e-4aa2-be5a-26c872b275a7")
-	)
-	(wire
-		(pts
 			(xy 119.38 100.33) (xy 123.19 100.33)
 		)
 		(stroke
@@ -4487,16 +4461,6 @@
 			(type default)
 		)
 		(uuid "7c2f76c1-a2bd-4ddd-967a-5e3e1b6c38fa")
-	)
-	(wire
-		(pts
-			(xy 236.22 152.4) (xy 257.81 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82e5caff-1492-4306-9689-e693e0276504")
 	)
 	(wire
 		(pts
@@ -4760,7 +4724,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 137.16) (xy 264.16 137.16)
+			(xy 248.92 137.16) (xy 264.16 137.16)
 		)
 		(stroke
 			(width 0)
@@ -5786,6 +5750,28 @@
 			)
 		)
 	)
+	(global_label "3.3V"
+		(shape input)
+		(at 45.72 19.05 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "78287081-e103-460b-a14e-aa7ee819978f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.6224 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "USB_DN"
 		(shape input)
 		(at 119.38 57.15 180)
@@ -6076,7 +6062,7 @@
 	)
 	(hierarchical_label "lw_crrnt_spply_u_cntrllr_dcpwr"
 		(shape input)
-		(at 45.72 19.05 180)
+		(at 45.72 29.21 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7390,75 +7376,6 @@
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/027ff087-ab1d-45e5-9d8f-c94102656fe5"
 					(reference "R7001")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 257.81 148.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a1c28fb2-4e04-4141-ac0f-0af252cc4b6a")
-		(property "Reference" "R7005"
-			(at 260.35 151.13 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 257.81 151.13 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 256.032 148.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 257.81 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 257.81 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eee8d2d7-95c5-44eb-be42-77f9cb884a6b")
-		)
-		(pin "2"
-			(uuid "621be824-d387-44c5-9425-0cd181304a19")
-		)
-		(instances
-			(project "gpu-external-power-supply"
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/027ff087-ab1d-45e5-9d8f-c94102656fe5"
-					(reference "R7005")
 					(unit 1)
 				)
 			)
