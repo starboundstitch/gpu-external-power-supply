@@ -1712,22 +1712,10 @@
 		(uuid "69ccafe6-185f-4a79-94c0-cea15c9c9504")
 	)
 	(junction
-		(at 102.87 151.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "72409438-e73f-478d-9101-7af5463fed21")
-	)
-	(junction
 		(at 77.47 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "75c05a6d-db1f-41e9-83a9-d6c3e9263371")
-	)
-	(junction
-		(at 176.53 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "783b821d-bf44-4519-a22d-53cdddcd29df")
 	)
 	(junction
 		(at 68.58 140.97)
@@ -3390,7 +3378,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 152.0952 57.15 0)
 			(effects
 				(font
@@ -3448,7 +3436,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "104399b5-19b2-4f2e-ae39-3ac3842bf6ed")
-		(property "Reference" "C66"
+		(property "Reference" "C4009"
 			(at 130.81 146.0499 0)
 			(effects
 				(font
@@ -3466,7 +3454,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 127.9652 151.13 0)
 			(effects
 				(font
@@ -3518,7 +3506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1899ac77-6e03-4ae4-a3fd-9abf9c2b6f80")
-		(property "Reference" "C58"
+		(property "Reference" "C4001"
 			(at 100.33 52.0699 0)
 			(effects
 				(font
@@ -3536,7 +3524,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 97.4852 57.15 0)
 			(effects
 				(font
@@ -3588,7 +3576,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "192c4f97-56b9-41b1-8387-de0a835198e5")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR04002"
 			(at 77.47 116.84 0)
 			(effects
 				(font
@@ -3646,89 +3634,13 @@
 	)
 	(symbol
 		(lib_id "Sensor_Current:ACS758xCB-150B-PSS")
-		(at 222.25 82.55 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1968a2ce-1492-4fe6-a397-020839ef2615")
-		(property "Reference" "U4001"
-			(at 234.696 70.866 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ACS758xCB-150B-PSS"
-			(at 234.696 73.406 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Sensor_Current:Allegro_CB_PSS"
-			(at 222.25 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/ACS758-Datasheet.ashx?la=en"
-			(at 222.25 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "±150A Bidirectional Hall-Effect Current Sensor, +5.0V supply, 13.3mV/A, CB-5 PSS"
-			(at 222.25 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "f1990d61-69fd-4439-bea0-d73cb317292c")
-		)
-		(pin "1"
-			(uuid "543de0c6-5675-402f-99fb-96f6e49083fc")
-		)
-		(pin "4"
-			(uuid "8db33eec-68ce-4337-8522-6d1d4d0fc093")
-		)
-		(pin "2"
-			(uuid "681f97b5-da08-4a73-82c3-c89b841ef8b0")
-		)
-		(pin "5"
-			(uuid "07823e08-e523-4d14-a21c-74ae10267f8a")
-		)
-		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
-					(reference "U4001")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Sensor_Current:ACS758xCB-150B-PSS")
 		(at 208.28 54.61 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1968a2ce-1492-4fe6-a397-020839ef2615")
+		(uuid "1968a2ce-1492-4fe6-a397-020839ef2616")
 		(property "Reference" "U17"
 			(at 201.422 64.516 90)
 			(effects
@@ -3773,19 +3685,19 @@
 			)
 		)
 		(pin "3"
-			(uuid "f1990d61-69fd-4439-bea0-d73cb317292c")
+			(uuid "f1990d61-69fd-4439-bea0-d73cb317292d")
 		)
 		(pin "1"
-			(uuid "543de0c6-5675-402f-99fb-96f6e49083fc")
+			(uuid "543de0c6-5675-402f-99fb-96f6e49083fd")
 		)
 		(pin "4"
-			(uuid "8db33eec-68ce-4337-8522-6d1d4d0fc093")
+			(uuid "8db33eec-68ce-4337-8522-6d1d4d0fc094")
 		)
 		(pin "2"
-			(uuid "681f97b5-da08-4a73-82c3-c89b841ef8b0")
+			(uuid "681f97b5-da08-4a73-82c3-c89b841ef8b1")
 		)
 		(pin "5"
-			(uuid "07823e08-e523-4d14-a21c-74ae10267f8a")
+			(uuid "07823e08-e523-4d14-a21c-74ae10267f8b")
 		)
 		(instances
 			(project ""
@@ -3824,7 +3736,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 168.6052 104.14 0)
 			(effects
 				(font
@@ -3876,7 +3788,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "354c77d6-9cc8-4801-ac55-f94b9a8b7f11")
-		(property "Reference" "C69"
+		(property "Reference" "C4012"
 			(at 154.94 146.0499 0)
 			(effects
 				(font
@@ -3894,7 +3806,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 152.0952 151.13 0)
 			(effects
 				(font
@@ -3937,6 +3849,88 @@
 		)
 	)
 	(symbol
+		(lib_id "PCIe 2x3 Conn GPU:353180620")
+		(at 54.61 143.51 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "463355b4-6070-43d2-844e-5290e4df1f32")
+		(property "Reference" "J3"
+			(at 45.72 123.19 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "353180620"
+			(at 45.72 125.73 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "CONN_35318-06xx_MOL"
+			(at 54.61 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "353180620"
+			(at 54.61 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 54.61 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "37c969b5-5910-48ab-bd05-1d7b49101499")
+		)
+		(pin "5"
+			(uuid "2a8de982-878e-4e70-830a-571f540c888b")
+		)
+		(pin "1"
+			(uuid "a674a1a7-1c04-4f12-aba1-261e2a64abbe")
+		)
+		(pin "3"
+			(uuid "926a0d8f-26a2-4eda-8e0f-234614915e08")
+		)
+		(pin "4"
+			(uuid "9a8841f2-d297-4276-a703-ebad5075db75")
+		)
+		(pin "2"
+			(uuid "8882ea1d-0085-4831-a591-d8429e555aa8")
+		)
+		(instances
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 111.76 147.32 0)
 		(unit 1)
@@ -3946,7 +3940,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ad69f80-4926-42e7-b0cd-7231d41520f3")
-		(property "Reference" "C63"
+		(property "Reference" "C4006"
 			(at 115.57 146.0499 0)
 			(effects
 				(font
@@ -3964,7 +3958,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 112.7252 151.13 0)
 			(effects
 				(font
@@ -4016,7 +4010,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f30b056-902b-47dd-8661-dd336aa38bae")
-		(property "Reference" "C60"
+		(property "Reference" "C4003"
 			(at 100.33 146.0499 0)
 			(effects
 				(font
@@ -4034,7 +4028,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 97.4852 151.13 0)
 			(effects
 				(font
@@ -4240,7 +4234,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 230.8352 144.78 0)
 			(effects
 				(font
@@ -4364,7 +4358,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "736336ba-0b03-41d6-9d8f-e8f251891064")
-		(property "Reference" "C64"
+		(property "Reference" "C4007"
 			(at 130.81 52.0699 0)
 			(effects
 				(font
@@ -4382,7 +4376,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 127.9652 57.15 0)
 			(effects
 				(font
@@ -4434,7 +4428,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74bfa175-82b9-4754-a596-c438f3877283")
-		(property "Reference" "C65"
+		(property "Reference" "C4008"
 			(at 130.81 99.0599 0)
 			(effects
 				(font
@@ -4452,7 +4446,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 127.9652 104.14 0)
 			(effects
 				(font
@@ -4496,78 +4490,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 176.53 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "75bc743e-62e6-4f0d-aa54-fdce086877e4")
-		(property "Reference" "#PWR02"
-			(at 176.53 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 176.53 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 176.53 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 176.53 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 176.53 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1302390a-8345-4240-bdf5-a91a9fab33fb")
-		)
-		(instances
-			(project "12V_Supply"
-				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-			(project "gpu-external-power-supply"
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
-					(reference "#PWR04004")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 151.13 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4575,7 +4497,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "75bc743e-62e6-4f0d-aa54-fdce086877e4")
+		(uuid "75bc743e-62e6-4f0d-aa54-fdce086877e5")
 		(property "Reference" "#PWR02"
 			(at 151.13 64.77 0)
 			(effects
@@ -4621,7 +4543,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "1302390a-8345-4240-bdf5-a91a9fab33fb")
+			(uuid "1302390a-8345-4240-bdf5-a91a9fab33fc")
 		)
 		(instances
 			(project "12V_Supply"
@@ -4639,6 +4561,88 @@
 		)
 	)
 	(symbol
+		(lib_id "PCIe 2x3 Conn GPU:353180620")
+		(at 54.61 46.99 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7666e120-7940-4db5-9137-cbb19abc83cb")
+		(property "Reference" "J1"
+			(at 45.72 26.67 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "353180620"
+			(at 45.72 29.21 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "CONN_35318-06xx_MOL"
+			(at 54.61 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "353180620"
+			(at 54.61 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 54.61 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "45260dc3-c129-44a2-91e4-966af87d87c4")
+		)
+		(pin "5"
+			(uuid "8976eee9-d8ef-4d45-bc67-03e4e846345b")
+		)
+		(pin "1"
+			(uuid "dec39af6-3e33-48f7-aab0-49f8ef1d03c3")
+		)
+		(pin "3"
+			(uuid "d7fe8978-78d5-42bc-9318-25c2df7eb58f")
+		)
+		(pin "4"
+			(uuid "8a3c1f5e-ae22-4da6-a4a0-c0a4adb32be2")
+		)
+		(pin "2"
+			(uuid "ae62160e-24f9-4939-b3bb-ed45f913706f")
+		)
+		(instances
+			(project ""
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 167.64 53.34 0)
 		(unit 1)
@@ -4648,7 +4652,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7abb0ebe-dfb4-4747-98e1-64cb290cab4f")
-		(property "Reference" "C70"
+		(property "Reference" "C4013"
 			(at 171.45 52.0699 0)
 			(effects
 				(font
@@ -4666,7 +4670,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 168.6052 57.15 0)
 			(effects
 				(font
@@ -4718,7 +4722,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "808c0864-3e9a-402a-bd8d-3ba0d858eb89")
-		(property "Reference" "L17"
+		(property "Reference" "L4003"
 			(at 138.43 135.89 90)
 			(effects
 				(font
@@ -4804,7 +4808,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 220.6752 48.26 0)
 			(effects
 				(font
@@ -4856,7 +4860,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "86944ef8-a1c4-4772-9386-630f2f268552")
-		(property "Reference" "C72"
+		(property "Reference" "C4015"
 			(at 171.45 146.0499 0)
 			(effects
 				(font
@@ -4874,7 +4878,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 168.6052 151.13 0)
 			(effects
 				(font
@@ -4983,167 +4987,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PCIe 2x3 Conn GPU:353180620")
-		(at 54.61 143.51 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8cf79f32-439c-4745-bcee-e1e219248689")
-		(property "Reference" "J3"
-			(at 45.72 123.19 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "353180620"
-			(at 45.72 125.73 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "CONN_35318-06xx_MOL"
-			(at 54.61 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "353180620"
-			(at 54.61 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 54.61 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 215.9 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "79ee180f-5757-4d07-bb79-9f9b24069e1a")
-		)
-		(pin "1"
-			(uuid "89f6430d-def6-4cbe-b5f5-5ad54e9c9513")
-		)
-		(instances
-			(project "gpu-external-power-supply"
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
-					(reference "#PWR04006")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCIe 2x3 Conn GPU:353180620")
-		(at 80.01 142.24 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8cf79f32-439c-4745-bcee-e1e219248689")
-		(property "Reference" "J4003"
-			(at 71.12 121.92 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "353180620"
-			(at 71.12 124.46 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "CONN_35318-06xx_MOL"
-			(at 80.01 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "353180620"
-			(at 80.01 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 80.01 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "0bce5e70-9c6c-4f22-9a82-5e67ae778a4e")
-		)
-		(pin "1"
-			(uuid "7d86d739-7151-400b-a7c1-939e15722ec7")
-		)
-		(pin "3"
-			(uuid "657509ee-ce9f-4d9a-9cd6-5e909f8be471")
-		)
-		(pin "6"
-			(uuid "c017c5f3-e483-4c09-8bb3-f646d276678e")
-		)
-		(pin "5"
-			(uuid "9522d3ac-e0fd-4d91-a2c2-87f5272fd68b")
-		)
-		(pin "2"
-			(uuid "a38b8ef4-e8b6-4a83-ac9f-374666264d2f")
-		)
-		(instances
-			(project "gpu-external-power-supply"
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
-					(reference "J4003")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 218.44 140.97 0)
 		(unit 1)
@@ -5223,7 +5066,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5e01e27-2071-4041-954b-f7c64cb6290d")
-		(property "Reference" "C68"
+		(property "Reference" "C4011"
 			(at 154.94 99.0599 0)
 			(effects
 				(font
@@ -5241,7 +5084,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 152.0952 104.14 0)
 			(effects
 				(font
@@ -5359,7 +5202,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad8aedba-c13a-4ca0-8ce6-6750bf146187")
-		(property "Reference" "L15"
+		(property "Reference" "L4001"
 			(at 138.43 41.91 90)
 			(effects
 				(font
@@ -5427,7 +5270,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0323c9c-4f1e-4c8d-bfc1-5a9783877ada")
-		(property "Reference" "C61"
+		(property "Reference" "C4004"
 			(at 115.57 52.0699 0)
 			(effects
 				(font
@@ -5445,7 +5288,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 112.7252 57.15 0)
 			(effects
 				(font
@@ -5515,7 +5358,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 220.6752 66.04 0)
 			(effects
 				(font
@@ -5558,84 +5401,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PCIe 2x3 Conn GPU:353180620")
-		(at 54.61 46.99 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cdfdd09a-36a9-46a1-b208-7af3c900e78d")
-		(property "Reference" "J1"
-			(at 45.72 26.67 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "353180620"
-			(at 45.72 29.21 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "CONN_35318-06xx_MOL"
-			(at 54.61 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "353180620"
-			(at 54.61 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 54.61 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "bbb6334b-b76f-4e41-a266-2cf5bf2c6b3f")
-		)
-		(pin "1"
-			(uuid "f88c2782-42f4-4a97-b0c5-b3139bf904f0")
-		)
-		(pin "3"
-			(uuid "9ad05893-da97-486d-9e24-d9ca1c4b96df")
-		)
-		(pin "6"
-			(uuid "e59c4479-0515-4036-81a4-2969ba814fc1")
-		)
-		(pin "5"
-			(uuid "b293c804-4909-458c-9a98-f4be1344bceb")
-		)
-		(pin "2"
-			(uuid "d0e6343c-29a9-4b0a-9f6a-a91f8e994850")
-		)
-		(instances
-			(project "gpu-external-power-supply"
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
-					(reference "J4001")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 111.76 100.33 0)
 		(unit 1)
@@ -5645,7 +5410,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3823df9-a490-4c2a-b75e-b05dfb6fbfdd")
-		(property "Reference" "C62"
+		(property "Reference" "C4005"
 			(at 115.57 99.0599 0)
 			(effects
 				(font
@@ -5663,7 +5428,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 112.7252 104.14 0)
 			(effects
 				(font
@@ -5715,7 +5480,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e155418d-0279-4ce1-af15-862fa0145463")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR04001"
 			(at 77.47 69.85 0)
 			(effects
 				(font
@@ -5781,7 +5546,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5092934-e153-498a-9c3f-4f5a7feed242")
-		(property "Reference" "L16"
+		(property "Reference" "L4002"
 			(at 138.43 88.9 90)
 			(effects
 				(font
@@ -5849,7 +5614,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5ad9d0a-81ff-4018-a0d9-43ac44f8ef94")
-		(property "Reference" "C59"
+		(property "Reference" "C4002"
 			(at 100.33 99.0599 0)
 			(effects
 				(font
@@ -5867,7 +5632,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 97.4852 104.14 0)
 			(effects
 				(font
@@ -5990,7 +5755,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f251ebad-f1c9-47d4-8ecd-5dd25f78a93c")
+		(uuid "fd4d23e2-63bd-4950-97de-465636c4b765")
 		(property "Reference" "J2"
 			(at 45.72 73.66 0)
 			(effects
@@ -6036,113 +5801,28 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 215.9 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ca90657b-5da7-4d08-bb67-bcbf7e4e6b36")
-		)
-		(pin "1"
-			(uuid "e7b8d1b6-cfca-46d5-bb96-2ccb5250e75d")
-		)
-		(instances
-			(project "12V_Supply"
-				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-			(project "gpu-external-power-supply"
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
-					(reference "#PWR04005")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCIe 2x3 Conn GPU:353180620")
-		(at 80.01 92.71 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f251ebad-f1c9-47d4-8ecd-5dd25f78a93c")
-		(property "Reference" "J4002"
-			(at 71.12 72.39 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "353180620"
-			(at 71.12 74.93 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "CONN_35318-06xx_MOL"
-			(at 80.01 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "353180620"
-			(at 80.01 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 80.01 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "cf7042ad-dff3-41d6-8e95-c084f382df69")
-		)
-		(pin "1"
-			(uuid "4ca4e414-3194-49b5-9360-e3114c360931")
-		)
-		(pin "3"
-			(uuid "bd13ea28-3beb-49a8-8262-d87ec031566c")
-		)
 		(pin "6"
-			(uuid "16cc5fd1-5c15-43fb-92e4-c79b64063c0c")
+			(uuid "57493583-3811-4411-b6fb-deb070d4c57a")
 		)
 		(pin "5"
-			(uuid "88f67ba9-69c2-45d1-8482-d5ce8128e8fa")
+			(uuid "c21caa51-2bd1-4569-bfbd-74287879358a")
+		)
+		(pin "1"
+			(uuid "8e5bbec4-c5d4-4646-88b7-8c3c1b21793c")
+		)
+		(pin "3"
+			(uuid "311432c5-d37e-4aea-a740-3ed76970f2d7")
+		)
+		(pin "4"
+			(uuid "9395a86c-858b-420b-b731-54f6fea88282")
 		)
 		(pin "2"
-			(uuid "fe56211b-0c58-4317-a60a-1dc6da45ff1b")
+			(uuid "f4a37593-162a-4027-b3e1-471110169c4c")
 		)
 		(instances
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
-					(reference "J4002")
+					(reference "J2")
 					(unit 1)
 				)
 			)
