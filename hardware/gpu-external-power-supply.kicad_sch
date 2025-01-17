@@ -184,45 +184,75 @@
 				(justify left top)
 			)
 		)
-		(pin "vrm_cntrllr_vmm_vrm_stg_dsig" input
-			(at 203.2 77.47 180)
+		(pin "12Vin" input
+			(at 203.2 73.66 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a626173b-073c-4e8d-90b4-6909524be9dd")
+			(uuid "be0924b6-2cbf-47b7-8948-650232d3b8a7")
 		)
-		(pin "12v_spply_vmm_vrm_stg_dcpwr" input
-			(at 203.2 82.55 180)
+		(pin "PWM" input
+			(at 203.2 81.28 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ed492c86-df65-4f4c-9578-ffbe0392db7c")
+			(uuid "13873f25-da0e-4c6e-b29a-7127d2af0dc2")
 		)
-		(pin "vmm_vrm_stg_otsd_dcpwr" input
-			(at 270.51 77.47 0)
+		(pin "Cur_Sense" output
+			(at 203.2 83.82 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e1174da3-152b-4886-9798-00734f4c7831")
+		)
+		(pin "Vref" input
+			(at 203.2 78.74 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a67650a1-4c74-4fa2-a9c3-835e50bdad89")
+		)
+		(pin "5Vin" input
+			(at 203.2 76.2 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4bd5e8b8-54f4-4c76-8d15-2e15637959fb")
+		)
+		(pin "Tout" output
+			(at 270.51 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "855ca65e-ad45-4ea6-b30c-68284c5e5d28")
+			(uuid "cc260946-be3e-4b58-9b07-2e51a2b619fa")
 		)
-		(pin "vmm_vrm_stg_vrm_cntrllr_asig" input
-			(at 270.51 83.82 0)
+		(pin "Vmem" output
+			(at 270.51 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2eff128a-db9a-4f2e-b258-186f0e2ccc5c")
+			(uuid "c7127cf1-4c48-4554-ad36-15dcaaf474da")
 		)
 		(instances
 			(project "gpu-external-power-supply"
@@ -834,7 +864,37 @@
 				(justify left top)
 			)
 		)
-		(pin "vrm_cntrllr_vcr_vrm_stg_dsig" input
+		(pin "Vref" input
+			(at 205.74 116.84 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b03dcacd-cdba-4887-a9f1-04a0a01e8d19")
+		)
+		(pin "Tout" output
+			(at 271.78 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "aa5859bc-369b-455f-995e-869c14916d3d")
+		)
+		(pin "Cur_Sense" output
+			(at 205.74 121.92 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "193ab940-416c-4066-86ce-81b864dd70c4")
+		)
+		(pin "5Vin" input
 			(at 205.74 114.3 180)
 			(effects
 				(font
@@ -842,37 +902,37 @@
 				)
 				(justify left)
 			)
-			(uuid "89f2b54c-0e93-43b5-a094-54fd38fbbe74")
+			(uuid "3a11e00b-e620-4b54-89e8-1fc55bd0b02d")
 		)
-		(pin "12v_spply_vcr_vrm_stg_dcpwr" input
-			(at 205.74 118.11 180)
+		(pin "12Vin" input
+			(at 205.74 111.76 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "69d3741a-9c01-4203-a4dd-a5a1d4b36c70")
+			(uuid "2e551038-14ec-41a7-a238-32394fdcb809")
 		)
-		(pin "vcr_vrm_stg_otsd_dcpwr" input
-			(at 271.78 114.3 0)
+		(pin "PWM" input
+			(at 205.74 119.38 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8e3288cc-2523-4508-9fa0-9ef55ed67e7c")
+		)
+		(pin "Vcore" output
+			(at 271.78 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "cbd6454f-aa33-4002-abdc-482e1e396b22")
-		)
-		(pin "vcr_vrm_stg_vrm_cntrllr_asig" input
-			(at 271.78 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "675bf7ff-d14f-488a-a636-94e475d8c776")
+			(uuid "8947b7e5-b583-4091-931e-ef29af9a489a")
 		)
 		(instances
 			(project "gpu-external-power-supply"
