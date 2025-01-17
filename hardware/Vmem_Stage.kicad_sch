@@ -79,13 +79,13 @@
 	)
 	(hierarchical_label "Vmem"
 		(shape output)
-		(at 275.59 19.05 180)
+		(at 275.59 19.05 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "e2b35cf8-041e-404f-9378-487c15f781fc")
 	)
