@@ -311,7 +311,7 @@
 		)
 	)
 	(sheet
-		(at 34.29 143.51)
+		(at 16.51 142.24)
 		(size 64.77 15.24)
 		(fields_autoplaced yes)
 		(stroke
@@ -323,7 +323,7 @@
 		)
 		(uuid "c1da4524-645b-40e4-93f8-f7b345299022")
 		(property "Sheetname" "Low Current Supply"
-			(at 34.29 142.7984 0)
+			(at 16.51 141.5284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -332,7 +332,7 @@
 			)
 		)
 		(property "Sheetfile" "Low_Current_Supply.kicad_sch"
-			(at 34.29 159.3346 0)
+			(at 16.51 158.0646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -341,7 +341,7 @@
 			)
 		)
 		(pin "lw_crrnt_spply_u_cntrllr_dcpwr" input
-			(at 99.06 148.59 0)
+			(at 81.28 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -351,7 +351,7 @@
 			(uuid "6c09a4c5-e42a-4b6c-9112-3047e749f10d")
 		)
 		(pin "12v_spply_lw_crrnt_spply_dcpwr" input
-			(at 34.29 149.86 180)
+			(at 16.51 148.59 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -361,7 +361,7 @@
 			(uuid "ad21774d-11fa-4cd3-aa39-33bcefb518a4")
 		)
 		(pin "lw_crrnt_spply_vrm_cntrllr_dcpwr" input
-			(at 99.06 152.4 0)
+			(at 81.28 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -457,8 +457,8 @@
 		)
 	)
 	(sheet
-		(at 111.76 111.76)
-		(size 69.85 26.67)
+		(at 109.22 99.06)
+		(size 69.85 63.5)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -469,7 +469,7 @@
 		)
 		(uuid "e6dc7bfe-1f99-4466-9581-badeb70bd091")
 		(property "Sheetname" "VRM Controller"
-			(at 111.76 111.0484 0)
+			(at 109.22 98.3484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -478,7 +478,7 @@
 			)
 		)
 		(property "Sheetfile" "VRM_Controller.kicad_sch"
-			(at 111.76 139.0146 0)
+			(at 109.22 163.1446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -486,75 +486,315 @@
 				(justify left top)
 			)
 		)
-		(pin "u_cntrllr_vrm_cntrllr_dsig" input
-			(at 111.76 116.84 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "9b417460-b4ea-4a6b-b5f1-7af767d01a6a")
-		)
-		(pin "u_cntrllr_vrm_cntrllr_data" input
-			(at 111.76 121.92 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "a76476d8-541c-449f-bf3a-ab061116b2fe")
-		)
-		(pin "lw_crrnt_spply_vrm_cntrllr_dcpwr" input
-			(at 111.76 125.73 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "6e06461d-0385-4b32-9bf7-3c2f45005b8d")
-		)
-		(pin "vcr_vrm_stg_vrm_cntrllr_asig" input
-			(at 111.76 130.81 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "020b2157-4681-441e-a99f-8c9d23015964")
-		)
-		(pin "vmm_vrm_stg_vrm_cntrllr_asig" input
-			(at 111.76 135.89 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "28c692d3-eae4-4fe5-b7f7-34814eb40a7f")
-		)
-		(pin "vrm_cntrllr_vcr_vrm_stg_dsig" input
-			(at 181.61 119.38 0)
+		(pin "Vmem" input
+			(at 133.35 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "25a7539b-f84e-4d9e-9a21-01e62e16840e")
+			(uuid "39fcc356-91b5-473d-bdbc-d47a837a5a0b")
 		)
-		(pin "vrm_cntrllr_vmm_vrm_stg_dsig" input
-			(at 181.61 129.54 0)
+		(pin "Vcore" input
+			(at 130.81 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f7eba230-a4e5-4052-b8de-7bea5311bdfd")
+			(uuid "d67994c3-abd9-4fa4-b3ab-9a86ed47fc0b")
+		)
+		(pin "12V_To_Fets" output
+			(at 144.78 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e940e366-9904-455f-ba48-6d7430b99dab")
+		)
+		(pin "12V_Sense_In" input
+			(at 109.22 101.6 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e1b0f58c-f3e0-4d0d-b34b-0c93ec2fdfdd")
+		)
+		(pin "1.5V_VREF_Out" output
+			(at 147.32 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "70b68cf9-3909-4eb3-a220-ea05e86173c1")
+		)
+		(pin "B_TEMP" input
+			(at 161.29 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "fc3acdf1-a98c-4228-994f-58d677c94e94")
+		)
+		(pin "A_TEMP" input
+			(at 158.75 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6134750d-ec98-44c8-8a78-4ee08f250360")
+		)
+		(pin "CUR_A_9" input
+			(at 179.07 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7661c6d2-db51-4a5d-96ea-f9a7f6def0e8")
+		)
+		(pin "PWM_A_9" output
+			(at 179.07 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6c2bf2f9-14ab-4630-89a0-fa137f8e3b4f")
+		)
+		(pin "Cur_A_10" input
+			(at 179.07 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ca1cf6aa-e80a-4e44-8255-5f029bf751b0")
+		)
+		(pin "Cur_A_6" input
+			(at 179.07 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c33b58c0-5d6c-4e30-b235-75fc77f9565d")
+		)
+		(pin "Cur_A_7" input
+			(at 179.07 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "83e8c308-e977-4662-984e-ac363c04d543")
+		)
+		(pin "PWM_A_8" output
+			(at 179.07 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e062821f-5d2f-4b6f-a001-0b6e1278eb54")
+		)
+		(pin "PWM_A_7" output
+			(at 179.07 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "1c93020d-e5e9-435a-89d0-26fc8177d113")
+		)
+		(pin "PWM_A_6" output
+			(at 179.07 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f4e87737-e533-4aec-bb94-8d190a9850d3")
+		)
+		(pin "Cur_A_8" input
+			(at 179.07 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "8561eba2-c347-4784-94ba-d0e9281d4067")
+		)
+		(pin "Cur_B_2" input
+			(at 179.07 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a67bb399-1e0f-4c74-9b3d-296daee1ec59")
+		)
+		(pin "Cur_B_1" input
+			(at 179.07 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a7d0914b-6a64-45c2-a199-c12f43da18f7")
+		)
+		(pin "PWM_B_2" output
+			(at 179.07 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "083dd77a-b6a3-44bf-b5e7-d52df951e880")
+		)
+		(pin "PWM_B_1" output
+			(at 179.07 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0bd7d62f-8036-4bb7-a297-20405d16daf9")
+		)
+		(pin "PWM_A_10" output
+			(at 179.07 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "212ad0ee-e85a-4b2c-bf13-11a3e3448707")
+		)
+		(pin "PWM_A_2" output
+			(at 179.07 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "15fa09f8-cf4e-4aba-ac06-79b359a633c8")
+		)
+		(pin "Cur_A_2" input
+			(at 179.07 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9ace8a33-e51e-4a40-b612-ebd0c40148eb")
+		)
+		(pin "Cur_A_3" input
+			(at 179.07 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9760a25f-7697-4274-9a90-c9a662a525dc")
+		)
+		(pin "PWM_A_1" output
+			(at 179.07 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2b5cad7c-aef5-414c-a3da-cc175dba4725")
+		)
+		(pin "Cur_A_1" input
+			(at 179.07 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "da855730-b7d8-4ffb-84b5-8cd3b3b3411f")
+		)
+		(pin "Cur_A_5" input
+			(at 179.07 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6fb2ffca-b431-49b3-bd4b-6ce3c8f24601")
+		)
+		(pin "Cur_A_4" input
+			(at 179.07 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "66b88625-2fa4-46b1-b24a-df10fb829037")
+		)
+		(pin "PWM_A_5" output
+			(at 179.07 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "712aeb9f-550d-491b-a9a6-758defdfa873")
+		)
+		(pin "PWM_A_3" output
+			(at 179.07 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b9317125-511f-4680-af5f-82edb4036049")
+		)
+		(pin "PWM_A_4" output
+			(at 179.07 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "529b69df-8d05-46a4-bc33-b1f4ecab6a6b")
 		)
 		(instances
 			(project "gpu-external-power-supply"
