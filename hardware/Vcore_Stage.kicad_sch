@@ -1730,7 +1730,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 72.39) (xy 240.03 72.39)
+			(xy 238.76 72.39) (xy 242.57 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2648,6 +2648,50 @@
 		)
 		(uuid "fff4694a-a278-4441-9df8-9a4207d1c6d2")
 	)
+	(global_label "Vcore"
+		(shape output)
+		(at 242.57 72.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "16c1db55-bc23-4317-b6ef-c8e38fd73b7d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.7562 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CORE_TEMP"
+		(shape output)
+		(at 124.46 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4ba1b4f9-6a0d-4bb1-8faa-22bb56f13e6b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 110.6497 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(hierarchical_label "Cur_Sense"
 		(shape output)
 		(at 95.25 102.87 180)
@@ -2684,30 +2728,6 @@
 		)
 		(uuid "96e8a28d-8d7a-4a9f-adef-7826b2de5977")
 	)
-	(hierarchical_label "Tout"
-		(shape output)
-		(at 124.46 97.79 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a4fded18-1949-4940-b483-befcb2fbe79b")
-	)
-	(hierarchical_label "Vcore"
-		(shape output)
-		(at 240.03 72.39 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ae872ec5-416f-4a04-a238-37bf7590d0ed")
-	)
 	(hierarchical_label "5Vin"
 		(shape input)
 		(at 113.03 62.23 180)
@@ -2741,7 +2761,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "057a6dd0-525a-4bc5-a9c5-0ca705bb185b")
-		(property "Reference" "C15"
+		(property "Reference" "C11007"
 			(at 167.64 99.06 0)
 			(effects
 				(font
@@ -2759,7 +2779,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 166.0652 104.14 0)
 			(effects
 				(font
@@ -2787,15 +2807,47 @@
 			)
 		)
 		(pin "2"
-			(uuid "6126f9f7-0c06-4fe5-981c-ebe4dd865cf5")
+			(uuid "c90fda94-e535-484f-b869-e6dd3de6f939")
 		)
 		(pin "1"
-			(uuid "0996029e-1dbc-4858-a418-44d8069d089b")
+			(uuid "c81874d6-35c8-40d3-8b4c-f5131430bf0e")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C15")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "C16024")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "C12007")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "C15007")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "C19007")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "C18007")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "C13007")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "C14007")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "C11007")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "C17007")
 					(unit 1)
 				)
 			)
@@ -2811,7 +2863,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "069bb7b5-5d1e-45ac-80ab-5a90546bbc24")
-		(property "Reference" "C26"
+		(property "Reference" "C11016"
 			(at 231.14 74.9299 0)
 			(effects
 				(font
@@ -2829,7 +2881,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 228.2952 80.01 0)
 			(effects
 				(font
@@ -2857,15 +2909,47 @@
 			)
 		)
 		(pin "2"
-			(uuid "87b97f30-0f5d-48db-a379-2a0e88e8c0be")
+			(uuid "874a7fce-3b83-4049-8d68-45a9fa1549f6")
 		)
 		(pin "1"
-			(uuid "a27b9665-d19d-4b2f-ab9d-d70eaff5096d")
+			(uuid "42cd9db4-b07b-4291-8ef3-0aa8cc5870a0")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C26")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "C16033")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "C12016")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "C15016")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "C19016")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "C18016")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "C13016")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "C14016")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "C11016")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "C17016")
 					(unit 1)
 				)
 			)
@@ -2881,7 +2965,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a6ccb71-54ac-4bc0-8f8c-4e877adaa247")
-		(property "Reference" "C16"
+		(property "Reference" "C11008"
 			(at 179.07 99.0599 0)
 			(effects
 				(font
@@ -2899,7 +2983,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 176.2252 104.14 0)
 			(effects
 				(font
@@ -2927,15 +3011,47 @@
 			)
 		)
 		(pin "1"
-			(uuid "c70e5b74-a022-4ae2-8ae3-58c2f534ec4b")
+			(uuid "64e0f51f-c177-4320-acf3-0407b4a3fbee")
 		)
 		(pin "2"
-			(uuid "64cc7d76-fd6f-49bb-bb8e-8854e77ae3ad")
+			(uuid "9629a83b-3954-4490-8ed9-8131b2820c76")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C16")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "C16025")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "C12008")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "C15008")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "C19008")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "C18008")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "C13008")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "C14008")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "C11008")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "C17008")
 					(unit 1)
 				)
 			)
@@ -2950,7 +3066,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1e8beffb-7edb-40f0-aec3-9a960be87e3c")
-		(property "Reference" "C13"
+		(property "Reference" "C11002"
 			(at 105.918 67.31 0)
 			(effects
 				(font
@@ -2968,7 +3084,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 115.2652 72.39 0)
 			(effects
 				(font
@@ -2996,15 +3112,47 @@
 			)
 		)
 		(pin "1"
-			(uuid "e0d9d999-e24a-4220-9ea2-00987ed603d9")
+			(uuid "367c0a8f-e22d-4bc4-9020-b47cfe6227d4")
 		)
 		(pin "2"
-			(uuid "ab90630c-930c-4d77-9061-3959ac9dc2de")
+			(uuid "1bde8fcf-3de3-4d95-b7b6-2ed161f10821")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C13")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "C16019")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "C12002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "C15002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "C19002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "C18002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "C13002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "C14002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "C11002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "C17002")
 					(unit 1)
 				)
 			)
@@ -3020,7 +3168,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28ed0a86-c69d-4a34-ba22-7365c262044a")
-		(property "Reference" "R22"
+		(property "Reference" "R11001"
 			(at 121.92 53.34 90)
 			(effects
 				(font
@@ -3036,7 +3184,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 121.92 61.468 90)
 			(effects
 				(font
@@ -3064,15 +3212,47 @@
 			)
 		)
 		(pin "2"
-			(uuid "cfddb2cd-a760-43df-8f1f-6641216dc1be")
+			(uuid "495c2d9e-7062-41ee-a2c8-36ea96c390f0")
 		)
 		(pin "1"
-			(uuid "05e55077-ee6b-4c6c-96cc-dfe32392c37e")
+			(uuid "83318ac7-4e40-43cb-879c-661a860693b8")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "R22")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "R16003")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "R12001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "R15001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "R19001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "R18001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "R13001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "R14001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "R11001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "R17001")
 					(unit 1)
 				)
 			)
@@ -3087,7 +3267,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2a7d5fde-3845-4621-9bb3-1f7f8ee84053")
-		(property "Reference" "R21"
+		(property "Reference" "R11002"
 			(at 127 81.28 90)
 			(effects
 				(font
@@ -3103,7 +3283,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 127 88.138 90)
 			(effects
 				(font
@@ -3131,15 +3311,47 @@
 			)
 		)
 		(pin "2"
-			(uuid "a85dbb01-1c18-4cbf-a127-c68f51ef6a1e")
+			(uuid "8535da6e-9f53-4da2-906f-b352acf51941")
 		)
 		(pin "1"
-			(uuid "660388f6-3175-4864-b283-b1a8c70233bd")
+			(uuid "db421653-844d-4a66-a1f4-ff47b4ec43ff")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "R21")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "R16004")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "R12002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "R15002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "R19002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "R18002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "R13002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "R14002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "R11002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "R17002")
 					(unit 1)
 				)
 			)
@@ -3155,7 +3367,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a877436-8bc1-4dd1-9097-de7a72665a01")
-		(property "Reference" "C23"
+		(property "Reference" "C11009"
 			(at 182.88 74.9299 0)
 			(effects
 				(font
@@ -3173,7 +3385,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "work:CP_EIA-7343-40_Kemet-Y"
 			(at 180.0352 80.01 0)
 			(effects
 				(font
@@ -3182,7 +3394,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/EEF-SX0D471XE/1731681"
 			(at 179.07 76.2 0)
 			(effects
 				(font
@@ -3201,15 +3413,47 @@
 			)
 		)
 		(pin "2"
-			(uuid "8d0fa899-51d3-4a02-be0b-a462c5c4a066")
+			(uuid "de149c03-1193-44cf-9f27-90466b9bba2e")
 		)
 		(pin "1"
-			(uuid "3f1b713f-d23b-48f6-b75c-9cb4d2be94b4")
+			(uuid "25d2d28b-3c5e-4e3e-a32b-d1f91d7fe9de")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C23")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "C16026")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "C12009")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "C15009")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "C19009")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "C18009")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "C13009")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "C14009")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "C11009")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "C17009")
 					(unit 1)
 				)
 			)
@@ -3225,7 +3469,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ba01d9b-e257-4edc-bbab-128e1a130dee")
-		(property "Reference" "C18"
+		(property "Reference" "C11012"
 			(at 200.66 99.0599 0)
 			(effects
 				(font
@@ -3243,7 +3487,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 197.8152 104.14 0)
 			(effects
 				(font
@@ -3271,15 +3515,47 @@
 			)
 		)
 		(pin "1"
-			(uuid "8e0bc3a6-399a-4672-98c7-b79f852996b2")
+			(uuid "fc75a727-234d-4ceb-99d5-e0e582bbec20")
 		)
 		(pin "2"
-			(uuid "9237b005-10e5-40f9-86cb-db88b68d32ea")
+			(uuid "4f8b2744-e5c3-45ff-84e0-c55465a768b9")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C18")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "C16029")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "C12012")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "C15012")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "C19012")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "C18012")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "C13012")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "C14012")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "C11012")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "C17012")
 					(unit 1)
 				)
 			)
@@ -3295,7 +3571,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3bdb184b-13f2-4705-9a81-e3ffd156785d")
-		(property "Reference" "C17"
+		(property "Reference" "C11010"
 			(at 189.23 99.0599 0)
 			(effects
 				(font
@@ -3313,7 +3589,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 186.3852 104.14 0)
 			(effects
 				(font
@@ -3341,15 +3617,47 @@
 			)
 		)
 		(pin "2"
-			(uuid "afc1253a-fde1-453d-b451-496c7ebebe60")
+			(uuid "99f95727-e207-4d81-a33a-615e04786841")
 		)
 		(pin "1"
-			(uuid "fc0b58c9-2dc9-4f1d-89b4-eb2936f615f4")
+			(uuid "ad104c1c-f6ff-45f3-a870-f416092ac934")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C17")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "C16027")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "C12010")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "C15010")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "C19010")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "C18010")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "C13010")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "C14010")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "C11010")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "C17010")
 					(unit 1)
 				)
 			)
@@ -3364,7 +3672,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3c4641f4-57da-4392-8b7e-2b17ff8ed6c1")
-		(property "Reference" "C28"
+		(property "Reference" "C11005"
 			(at 129.794 101.346 0)
 			(effects
 				(font
@@ -3382,7 +3690,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 136.8552 109.22 0)
 			(effects
 				(font
@@ -3410,15 +3718,47 @@
 			)
 		)
 		(pin "2"
-			(uuid "335ba43f-e8d4-49a9-9a79-0a0df963d61a")
+			(uuid "906e27ee-446e-4acb-9588-e0f55765ac4b")
 		)
 		(pin "1"
-			(uuid "e15a7c96-4e8a-4e04-9aee-9e8462ee68be")
+			(uuid "705878a3-3204-466a-bdf7-0afa17b40aff")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C28")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "C16022")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "C12005")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "C15005")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "C19005")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "C18005")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "C13005")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "C14005")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "C11005")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "C17005")
 					(unit 1)
 				)
 			)
@@ -3434,7 +3774,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "414a4075-657d-4c83-be1a-1b1be60f76c0")
-		(property "Reference" "C27"
+		(property "Reference" "C11001"
 			(at 105.41 105.4099 0)
 			(effects
 				(font
@@ -3452,7 +3792,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 102.5652 110.49 0)
 			(effects
 				(font
@@ -3480,15 +3820,47 @@
 			)
 		)
 		(pin "1"
-			(uuid "2111f9e8-61ce-4c88-a2d2-ac1eee7f601d")
+			(uuid "bc49d00a-09e9-48ca-9edc-083d8b22c4c3")
 		)
 		(pin "2"
-			(uuid "3d370be2-0cd6-47b0-8c14-0797f7c853fc")
+			(uuid "07dd2301-0353-4f70-baa3-75a22cffc80a")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C27")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "C16018")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "C12001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "C15001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "C19001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "C18001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "C13001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "C14001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "C11001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "C17001")
 					(unit 1)
 				)
 			)
@@ -3504,7 +3876,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "43cfdf59-ee23-4100-af9f-6c6b211526f9")
-		(property "Reference" "C24"
+		(property "Reference" "C11011"
 			(at 194.31 74.9299 0)
 			(effects
 				(font
@@ -3522,7 +3894,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 191.4652 80.01 0)
 			(effects
 				(font
@@ -3531,7 +3903,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/kyocera-avx/RPA0608221M016B/17634426"
 			(at 190.5 76.2 0)
 			(effects
 				(font
@@ -3550,15 +3922,47 @@
 			)
 		)
 		(pin "1"
-			(uuid "07b347cb-4cea-4381-aa10-51fc80876403")
+			(uuid "3d0ec874-55cf-4fa2-a665-523e7e1c9c47")
 		)
 		(pin "2"
-			(uuid "67fa912f-a170-44d3-b386-4f92e437ec3e")
+			(uuid "14b4e356-4818-4361-a013-c97d17056497")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C24")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "C16028")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "C12011")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "C15011")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "C19011")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "C18011")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "C13011")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "C14011")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "C11011")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "C17011")
 					(unit 1)
 				)
 			)
@@ -3573,7 +3977,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4b3fd7f1-1723-49b7-bf90-c4fd712cc2e9")
-		(property "Reference" "C20"
+		(property "Reference" "C11006"
 			(at 137.16 80.264 90)
 			(effects
 				(font
@@ -3589,7 +3993,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 140.97 85.3948 0)
 			(effects
 				(font
@@ -3617,15 +4021,47 @@
 			)
 		)
 		(pin "1"
-			(uuid "624c3c35-5d9e-4fd1-9a58-f04c8b2af0f3")
+			(uuid "99d9f112-b4d9-4add-9db7-3115da3b4acc")
 		)
 		(pin "2"
-			(uuid "9a084810-6d3f-44bc-9400-1fa10ed183aa")
+			(uuid "4d7b7993-ee74-41f6-8399-a181a8205bf5")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C20")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "C16023")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "C12006")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "C15006")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "C19006")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "C18006")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "C13006")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "C14006")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "C11006")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "C17006")
 					(unit 1)
 				)
 			)
@@ -3641,7 +4077,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4cc4a8c6-4c83-4a44-af5c-b32d16b14c6b")
-		(property "Reference" "C25"
+		(property "Reference" "C11013"
 			(at 205.74 74.9299 0)
 			(effects
 				(font
@@ -3659,7 +4095,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 202.8952 80.01 0)
 			(effects
 				(font
@@ -3687,15 +4123,47 @@
 			)
 		)
 		(pin "1"
-			(uuid "ce0098db-7241-4746-b276-a3949c77a0f9")
+			(uuid "137c3254-ebdf-425f-927e-0c48c927769e")
 		)
 		(pin "2"
-			(uuid "a3ade3ea-7d40-440c-b0af-8f847554cbe3")
+			(uuid "6a6332d4-bf12-4e5f-bfc6-0454dde8d762")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C25")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "C16030")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "C12013")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "C15013")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "C19013")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "C18013")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "C13013")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "C14013")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "C11013")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "C17013")
 					(unit 1)
 				)
 			)
@@ -3711,7 +4179,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "53361fba-cbdf-4f26-bf8c-66a6489e153e")
-		(property "Reference" "C14"
+		(property "Reference" "C11003"
 			(at 129.54 107.9499 0)
 			(effects
 				(font
@@ -3729,7 +4197,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 126.6952 113.03 0)
 			(effects
 				(font
@@ -3757,15 +4225,47 @@
 			)
 		)
 		(pin "1"
-			(uuid "b8e7764a-e0cd-449e-b95f-95f9cf81922c")
+			(uuid "3dd5b2b0-6b07-4caa-8588-fab71523426d")
 		)
 		(pin "2"
-			(uuid "6b735e63-a5c4-4416-bea1-338a6375d9a3")
+			(uuid "20b34f31-9b83-438b-8091-8b74f4db6f19")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C14")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "C16020")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "C12003")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "C15003")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "C19003")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "C18003")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "C13003")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "C14003")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "C11003")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "C17003")
 					(unit 1)
 				)
 			)
@@ -3781,7 +4281,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5632e5d4-acb8-456d-86f4-261625246001")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR011003"
 			(at 196.85 90.17 0)
 			(effects
 				(font
@@ -3826,12 +4326,44 @@
 			)
 		)
 		(pin "1"
-			(uuid "18f252e8-e323-4500-bac7-6f382d8e3f07")
+			(uuid "81b6d72c-f92e-447f-ab22-ede3600ee115")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "#PWR013")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "#PWR016007")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "#PWR012003")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "#PWR015003")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "#PWR019003")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "#PWR018003")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "#PWR013003")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "#PWR014003")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "#PWR011003")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "#PWR017003")
 					(unit 1)
 				)
 			)
@@ -3847,7 +4379,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "68747f14-e81a-4199-819b-ffcaa708f5cc")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR011002"
 			(at 129.54 119.38 0)
 			(effects
 				(font
@@ -3892,12 +4424,44 @@
 			)
 		)
 		(pin "1"
-			(uuid "965b736c-e124-4f3d-9432-9f7ea91f756d")
+			(uuid "e2a283a4-5ef5-4a1d-a05a-64fa29d4985b")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "#PWR012")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "#PWR016006")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "#PWR012002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "#PWR015002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "#PWR019002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "#PWR018002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "#PWR013002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "#PWR014002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "#PWR011002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "#PWR017002")
 					(unit 1)
 				)
 			)
@@ -3913,7 +4477,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ab1f5fa-8fa8-49de-84f5-45a9982f6b5e")
-		(property "Reference" "C22"
+		(property "Reference" "C11004"
 			(at 134.62 68.5799 0)
 			(effects
 				(font
@@ -3931,7 +4495,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 131.7752 73.66 0)
 			(effects
 				(font
@@ -3959,15 +4523,47 @@
 			)
 		)
 		(pin "1"
-			(uuid "b03cdcc5-de45-4e31-88c4-e81b593b510f")
+			(uuid "5f345acc-525d-4b10-8906-3378c4f8f5ea")
 		)
 		(pin "2"
-			(uuid "6893a4c3-e4cf-40db-b422-2a9b76316614")
+			(uuid "3b224b20-1927-49c2-bb00-37c310ccc75e")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C22")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "C16021")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "C12004")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "C15004")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "C19004")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "C18004")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "C13004")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "C14004")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "C11004")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "C17004")
 					(unit 1)
 				)
 			)
@@ -3983,7 +4579,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9392752b-f0c4-49d9-aede-c110ddf4a548")
-		(property "Reference" "C29"
+		(property "Reference" "C11015"
 			(at 219.71 74.9299 0)
 			(effects
 				(font
@@ -4001,7 +4597,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 216.8652 80.01 0)
 			(effects
 				(font
@@ -4029,15 +4625,47 @@
 			)
 		)
 		(pin "1"
-			(uuid "7d6ce04d-7576-4ef5-a212-96c2ca8311da")
+			(uuid "c5614927-7f39-4c48-9965-046f969dfef7")
 		)
 		(pin "2"
-			(uuid "26e7b855-5d04-4d62-afba-a547a7bb026b")
+			(uuid "e08d60a5-6ec4-4deb-8a91-f8975be0fddf")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C29")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "C16032")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "C12015")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "C15015")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "C19015")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "C18015")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "C13015")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "C14015")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "C11015")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "C17015")
 					(unit 1)
 				)
 			)
@@ -4053,7 +4681,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "95411235-7cb6-412e-9135-85be4725e8df")
-		(property "Reference" "C19"
+		(property "Reference" "C11014"
 			(at 212.09 99.0599 0)
 			(effects
 				(font
@@ -4071,7 +4699,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 209.2452 104.14 0)
 			(effects
 				(font
@@ -4080,7 +4708,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/kyocera-avx/RPA0608221M016B/17634426"
 			(at 208.28 100.33 0)
 			(effects
 				(font
@@ -4099,15 +4727,47 @@
 			)
 		)
 		(pin "2"
-			(uuid "312f804a-22ba-4664-8564-bba84f453b5a")
+			(uuid "8a72d6e1-d77e-4323-a857-ae14172870e7")
 		)
 		(pin "1"
-			(uuid "d43cadb5-58bd-45b5-94b6-cc5ec85324c2")
+			(uuid "5de025a0-16bf-497f-b3a2-006f8216dd61")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C19")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "C16031")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "C12014")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "C15014")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "C19014")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "C18014")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "C13014")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "C14014")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "C11014")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "C17014")
 					(unit 1)
 				)
 			)
@@ -4123,7 +4783,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b217ed09-4fbe-40cb-83cf-24943c455812")
-		(property "Reference" "U1"
+		(property "Reference" "U11001"
 			(at 150.495 53.34 0)
 			(effects
 				(font
@@ -4139,7 +4799,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "work:AOZ5276QI"
 			(at 151.13 67.31 0)
 			(effects
 				(font
@@ -4167,132 +4827,164 @@
 			)
 		)
 		(pin "26"
-			(uuid "1c75fb77-e4ec-41a8-ba84-4deb9375e1ab")
+			(uuid "b29adb37-18d8-4f54-bbfe-c24931c9ade2")
 		)
 		(pin "11"
-			(uuid "c499b6d1-934f-4dab-a56d-d4191ea070b7")
+			(uuid "30e8ece8-71d2-48f0-83df-39f2ebaca2cd")
 		)
 		(pin "21"
-			(uuid "bacfff0e-9f89-4a23-aa15-4976251b1011")
+			(uuid "16f456be-fc4f-4725-8cb8-f4281db3d9a1")
 		)
 		(pin "36"
-			(uuid "011f6278-8cd1-452e-a4bb-e689b87795a8")
+			(uuid "7965b9ba-2406-496f-8762-b98d16df2177")
 		)
 		(pin "19"
-			(uuid "707bb8df-bdde-4b05-af25-72ade3c0e664")
+			(uuid "0c7ee4dd-2545-47e4-8212-bc6ee0d317ab")
 		)
 		(pin "30"
-			(uuid "ac88ec01-27d1-4191-a33f-9a9ee8b184d9")
+			(uuid "0b2bceed-8148-4b8b-92d9-b1f2e6f6840d")
 		)
 		(pin "12"
-			(uuid "f16f003a-85a5-43cb-9098-9082015bf3b5")
+			(uuid "f30f37e2-ef9d-4424-87e8-4e3cd4a6bea2")
 		)
 		(pin "15"
-			(uuid "11e592c6-ac69-4014-b310-a8b83fb24db6")
+			(uuid "4cd2745a-f277-4fca-8ac4-f8a082fc7d73")
 		)
 		(pin "13"
-			(uuid "e0a86959-58fc-4eed-928e-a131565701d0")
+			(uuid "4068b810-2038-4d2d-b5e0-42c8c298eb73")
 		)
 		(pin "25"
-			(uuid "1840ca64-7f31-4eed-b26b-c470b14e12fc")
+			(uuid "24a0ccf0-6d78-4f90-8730-7c556fba1705")
 		)
 		(pin "24"
-			(uuid "968f4147-452a-43d6-b69d-422e7f228e4b")
+			(uuid "1e15488c-7912-41ed-a713-96565bed0ce4")
 		)
 		(pin "32"
-			(uuid "e04b3586-d213-4ac0-905c-773dec42e296")
+			(uuid "2f41d8ee-955c-44d5-a090-9229e41bc4f8")
 		)
 		(pin "41"
-			(uuid "9bc72cfe-a4d0-4920-a40d-d38230af036c")
+			(uuid "0e9fcbd0-4a79-4738-a881-ca63fa8444cd")
 		)
 		(pin "7"
-			(uuid "e8a48686-cc52-4999-a173-d75ab9c5080d")
+			(uuid "908fc73c-d174-450b-a00d-c86e5eb8373e")
 		)
 		(pin "27"
-			(uuid "eb108e65-e059-409d-aa6b-7409de436932")
+			(uuid "2d9eea74-45f3-4565-820e-3eb0380d6e10")
 		)
 		(pin "8"
-			(uuid "87cc72a3-03df-48a2-b723-cddd0323fcd2")
+			(uuid "ffe74ade-69be-47fc-868e-2bcbfcf8250d")
 		)
 		(pin "1"
-			(uuid "d4250f56-ff75-4aff-a25c-d7c3ca736608")
+			(uuid "81c526f7-8230-497e-b90f-d57c89c86177")
 		)
 		(pin "33"
-			(uuid "6796b10a-5d08-4481-96c7-3a7666aa406c")
+			(uuid "ccc896d7-b0e0-4cee-a4b3-87c0c4bc477b")
 		)
 		(pin "17"
-			(uuid "f0ab4559-49f1-4059-b28d-2a5d55a52dab")
+			(uuid "a29b89f7-d6d3-4226-b0ee-2e631a2b1962")
 		)
 		(pin "5"
-			(uuid "566199cc-5ce6-46de-be73-bd837deff46c")
+			(uuid "53985ba0-b992-45ab-9861-b9c5fe328bad")
 		)
 		(pin "14"
-			(uuid "358fa38d-d517-458c-946a-426b236254f4")
+			(uuid "2d5465cb-a796-413a-9ff6-75500ba11628")
 		)
 		(pin "31"
-			(uuid "8e76c056-f120-4218-adb2-894cb87fe52c")
+			(uuid "b4eb8c8b-ba34-4933-9ed9-6148227f70d9")
 		)
 		(pin "6"
-			(uuid "dcdde544-0781-480c-b4ce-531cdbd58564")
+			(uuid "0421ae6a-3250-468a-89ec-8d43c7ec827d")
 		)
 		(pin "22"
-			(uuid "b07c7bf5-5000-438a-9220-bb89d447c3f0")
+			(uuid "9034cf4c-ec8d-4df3-bce9-6176120e2889")
 		)
 		(pin "35"
-			(uuid "1f1648ed-c246-4154-b3ee-cea73cdd8c43")
+			(uuid "4287910e-0770-42fc-8719-7a043f5fb57e")
 		)
 		(pin "9"
-			(uuid "14551d66-5a7a-46d3-9e68-5bb4356ac6cf")
+			(uuid "12447857-5a3d-42d7-805d-eb6cc922f65e")
 		)
 		(pin "10"
-			(uuid "78db855b-8883-42cb-9215-30ba9d0a7163")
+			(uuid "9cd4a3a9-b589-4e4e-a69a-87e7d6b9ad90")
 		)
 		(pin "28"
-			(uuid "0505be2a-400a-42b2-a0c0-ba4733b45b0d")
+			(uuid "1a74b5e5-e51f-40f9-94c6-e627b6278410")
 		)
 		(pin "18"
-			(uuid "ea834a57-06bb-4e3a-a13b-09073867a3ec")
+			(uuid "24a0ac37-9e3c-4f20-a535-0ac70802aec8")
 		)
 		(pin "23"
-			(uuid "972de2b7-161b-4905-81b8-592dfa5dccfd")
+			(uuid "f7a4a7ad-7f53-4045-b4a8-8d30f08f2070")
 		)
 		(pin "3"
-			(uuid "be39e821-b70e-4e71-b90f-f00bf424b130")
+			(uuid "4ca58301-84d2-4395-9c2f-2f54ffa8a045")
 		)
 		(pin "20"
-			(uuid "3da1064e-27c9-4ae7-8fbf-b630d4256c0b")
+			(uuid "97088c16-5da7-4bdb-ab79-11c2996436cd")
 		)
 		(pin "34"
-			(uuid "ed1e69a5-1250-429a-b7e1-8af957265f4e")
+			(uuid "8781840a-fd37-40b0-bfbb-5cfea978e353")
 		)
 		(pin "29"
-			(uuid "52ee7126-ace6-4650-acc5-ea4d1100a1c3")
+			(uuid "fc8a4242-efc1-4c03-81da-7fa1fb4ce34d")
 		)
 		(pin "37"
-			(uuid "3149103f-7053-40af-8733-2d4747a4b8cf")
+			(uuid "8782816d-6789-44ec-b228-564468cc1263")
 		)
 		(pin "39"
-			(uuid "f20cf88c-696b-419e-94f3-49cc8b989400")
+			(uuid "2ae8a281-650a-4a06-a75a-cd597d49ad52")
 		)
 		(pin "4"
-			(uuid "3e2df9c7-9213-4603-8c30-f22e7a4cd003")
+			(uuid "02a1dce4-de9b-4323-aa92-94aa0d85ee49")
 		)
 		(pin "16"
-			(uuid "c1ab84f4-0256-4034-8ab1-9c3ce4f8054f")
+			(uuid "5c3db73f-75c2-4c17-b320-1d9bc8329e7e")
 		)
 		(pin "2"
-			(uuid "12001c0e-2d26-4d25-b336-26e46ab6f3f9")
+			(uuid "18c0e543-efcb-4c81-9ae2-bf0f1a91a52d")
 		)
 		(pin "40"
-			(uuid "3ba63b64-31a4-4ca1-9f34-03c3f457d420")
+			(uuid "e8e96de9-9622-4ed3-99c7-15e386a965fa")
 		)
 		(pin "38"
-			(uuid "d3ad40f4-cd4d-4247-8c2d-ba305dd8ac2b")
+			(uuid "189738a5-69f8-44d7-a724-95c814866091")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "U1")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "U16002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "U12001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "U15001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "U19001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "U18001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "U13001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "U14001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "U11001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "U17001")
 					(unit 1)
 				)
 			)
@@ -4308,7 +5000,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4043e51-80ea-449d-b738-b8ec783c79e8")
-		(property "Reference" "C30"
+		(property "Reference" "C11017"
 			(at 242.57 74.9299 0)
 			(effects
 				(font
@@ -4326,7 +5018,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 239.7252 80.01 0)
 			(effects
 				(font
@@ -4354,15 +5046,47 @@
 			)
 		)
 		(pin "2"
-			(uuid "0c1bcec8-2739-4dfc-8335-ceb02014ff1a")
+			(uuid "3473a900-4813-4bf4-a4e7-9ca6ab4baa64")
 		)
 		(pin "1"
-			(uuid "77d3963c-1dbf-4fb5-b097-6229d9050fe2")
+			(uuid "cdc3af8d-4537-4cac-83f0-883fa513b7e2")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C30")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "C16034")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "C12017")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "C15017")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "C19017")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "C18017")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "C13017")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "C14017")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "C11017")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "C17017")
 					(unit 1)
 				)
 			)
@@ -4378,7 +5102,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b8f5b569-bc05-4a2c-b880-90929f101677")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR011004"
 			(at 215.9 116.84 0)
 			(effects
 				(font
@@ -4423,12 +5147,44 @@
 			)
 		)
 		(pin "1"
-			(uuid "44a2baf4-5591-49e7-beb1-701641339381")
+			(uuid "459b4f12-f80d-410e-a136-8a729299dc8c")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "#PWR011")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "#PWR016008")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "#PWR012004")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "#PWR015004")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "#PWR019004")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "#PWR018004")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "#PWR013004")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "#PWR014004")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "#PWR011004")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "#PWR017004")
 					(unit 1)
 				)
 			)
@@ -4444,7 +5200,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8565824-4ad9-418b-9a7b-c07bd4e1cd47")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR011001"
 			(at 104.14 73.66 0)
 			(effects
 				(font
@@ -4490,12 +5246,44 @@
 			)
 		)
 		(pin "1"
-			(uuid "2db3a3fe-1ffc-4885-afe3-cf3043418838")
+			(uuid "c62c9cfc-9334-44c4-8a4b-92ff15b5b75a")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "#PWR010")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "#PWR016005")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "#PWR012001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "#PWR015001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "#PWR019001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "#PWR018001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "#PWR013001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "#PWR014001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "#PWR011001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "#PWR017001")
 					(unit 1)
 				)
 			)
@@ -4511,7 +5299,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9f6cea2-c345-43f2-bca8-27bde98f921d")
-		(property "Reference" "L1"
+		(property "Reference" "L11001"
 			(at 172.72 67.31 90)
 			(effects
 				(font
@@ -4527,7 +5315,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "work:IND_IHVR-4025JZ-3Z_VIS"
 			(at 172.72 72.39 0)
 			(effects
 				(font
@@ -4536,7 +5324,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/vishay-dale/IHVR4025JZEZR15M3Z/14545068"
 			(at 172.72 72.39 0)
 			(effects
 				(font
@@ -4555,15 +5343,47 @@
 			)
 		)
 		(pin "2"
-			(uuid "fe39eb61-0c9c-45f0-825e-6c9a8f1fd689")
+			(uuid "b96d14ee-fc64-41f3-a7d7-f58d8ef269ca")
 		)
 		(pin "1"
-			(uuid "25793bc1-465b-43bb-bbc0-003cf49dbd0a")
+			(uuid "79e5bdef-351b-4bfd-b60b-7455800488c6")
 		)
 		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "L1")
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
+					(reference "L16002")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
+					(reference "L12001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
+					(reference "L15001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
+					(reference "L19001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
+					(reference "L18001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
+					(reference "L13001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
+					(reference "L14001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
+					(reference "L11001")
+					(unit 1)
+				)
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
+					(reference "L17001")
 					(unit 1)
 				)
 			)
