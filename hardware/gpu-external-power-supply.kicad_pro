@@ -633,32 +633,48 @@
       "Onboard Control"
     ],
     [
-      "2e3b2d45-9c69-461c-b7ac-0b2c0f0ca5b7",
-      "Vcore VRM Pair1"
+      "9f68ccd3-0983-4a5e-b653-3439cd2061d4",
+      "Vmem VRM Stage1"
     ],
     [
       "95740f03-887c-4f4a-acc0-1e5b6f74d30f",
       "Computer Control"
     ],
     [
-      "8887b803-f4fb-47b8-9df1-bed4c051689f",
-      "Vcore VRM Pair"
+      "d8c0ae4b-1079-42a5-9412-f5c12c8efe93",
+      "Vcore VRM Stage1"
     ],
     [
-      "d3021501-6487-4996-9e4a-911a0a1d2c3e",
-      "Vcore VRM Pair2"
+      "61a0cb7a-9d01-4760-8ce8-789a6ab49ba4",
+      "Vcore VRM Stage2"
     ],
     [
-      "acfe9d58-fac7-4e46-8542-d68d2288f1ac",
-      "Vcore VRM Pair3"
+      "95d79d2d-f5ad-46ce-832a-3e27966061c2",
+      "Vcore VRM Stage3"
     ],
     [
-      "1fadbf66-fea2-4a71-bdfe-3af1a47d12ba",
-      "Vcore VRM Pair4"
+      "c5652880-1b75-42d4-a1cb-09cfb95d4a18",
+      "Vcore VRM Stage4"
     ],
     [
-      "2495dd8a-db5c-4b27-83d4-bf76f30920df",
-      "Vcore VRM Pair5"
+      "655b25ca-de6c-4e3a-af15-4fcc6e2bd037",
+      "Vcore VRM Stage5"
+    ],
+    [
+      "49a17099-106d-4abb-ae14-dd757ef91d45",
+      "Vcore VRM Stage6"
+    ],
+    [
+      "d9fa39fa-1ff5-40d0-a988-b7fa258daa9e",
+      "Vcore VRM Stage7"
+    ],
+    [
+      "6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14",
+      "Vcore VRM Stage8"
+    ],
+    [
+      "69405101-d09e-4d45-aab1-12aa0a1b3acb",
+      "Vcore VRM Stage9"
     ]
   ],
   "text_variables": {}
