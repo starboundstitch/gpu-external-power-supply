@@ -6185,7 +6185,7 @@
 				)
 			)
 		)
-		(property "Footprint" "QFN48_6X6_TEX"
+		(property "Footprint" "work:QFN48_6X6_TEX"
 			(at 148.59 88.9 0)
 			(effects
 				(font
