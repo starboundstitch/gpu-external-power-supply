@@ -1262,12 +1262,6 @@
 		(uuid "13fb1ccd-b986-44d8-a417-10b77116a45b")
 	)
 	(junction
-		(at 125.73 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1b314e39-116a-4319-86de-3394fb539e2a")
-	)
-	(junction
 		(at 228.6 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1725,16 +1719,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 90.17) (xy 125.73 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87a669a8-b1fd-49fd-be7f-2d0bbeef8469")
-	)
-	(wire
-		(pts
 			(xy 158.75 113.03) (xy 191.77 113.03)
 		)
 		(stroke
@@ -1915,7 +1899,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 90.17) (xy 132.08 90.17)
+			(xy 109.22 90.17) (xy 132.08 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2048,7 +2032,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "153b7b44-e36b-444d-aab6-b9dd66f2b14c")
-		(property "Reference" "TP5"
+		(property "Reference" "TP5005"
 			(at 242.824 84.582 0)
 			(effects
 				(font
@@ -2066,7 +2050,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 250.19 95.25 0)
 			(effects
 				(font
@@ -2099,7 +2083,7 @@
 		(instances
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "TP5")
+					(reference "TP5005")
 					(unit 1)
 				)
 			)
@@ -2114,7 +2098,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "16c5aa31-4013-42b2-97db-8b8d4a1e8a06")
-		(property "Reference" "TP6"
+		(property "Reference" "TP5003"
 			(at 193.294 66.548 0)
 			(effects
 				(font
@@ -2132,7 +2116,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 199.39 71.12 0)
 			(effects
 				(font
@@ -2165,7 +2149,7 @@
 		(instances
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "TP6")
+					(reference "TP5003")
 					(unit 1)
 				)
 			)
@@ -2181,7 +2165,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ea0fe91-e81d-49cd-afdb-2d0fc7513767")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR05004"
 			(at 237.49 130.81 0)
 			(effects
 				(font
@@ -2231,7 +2215,7 @@
 		(instances
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "#PWR05")
+					(reference "#PWR05004")
 					(unit 1)
 				)
 			)
@@ -2247,7 +2231,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "39d232d4-9b8f-4e1b-81df-29b74ba4ab20")
-		(property "Reference" "D6"
+		(property "Reference" "D5002"
 			(at 241.3 118.4274 90)
 			(effects
 				(font
@@ -2301,7 +2285,7 @@
 		(instances
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "D6")
+					(reference "D5002")
 					(unit 1)
 				)
 			)
@@ -2317,7 +2301,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65283efd-eb97-4a26-8984-613190d4de28")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR05001"
 			(at 71.12 105.41 0)
 			(effects
 				(font
@@ -2367,7 +2351,7 @@
 		(instances
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "#PWR01")
+					(reference "#PWR05001")
 					(unit 1)
 				)
 			)
@@ -2383,7 +2367,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a386e89-678d-4c01-b29f-312ee4e83a8e")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR05003"
 			(at 191.77 123.19 0)
 			(effects
 				(font
@@ -2433,7 +2417,7 @@
 		(instances
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "#PWR02")
+					(reference "#PWR05003")
 					(unit 1)
 				)
 			)
@@ -2449,7 +2433,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6de6122f-9d31-4772-9116-42d7a42c5f7e")
-		(property "Reference" "L1"
+		(property "Reference" "L5001"
 			(at 111.76 66.04 90)
 			(effects
 				(font
@@ -2501,73 +2485,7 @@
 		(instances
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "L1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 125.73 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "70672ff3-bbef-47f5-b804-f48d21ba4e21")
-		(property "Reference" "TP3"
-			(at 123.952 92.202 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 123.952 94.742 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
-			(at 130.81 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 130.81 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 125.73 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cc961543-1e44-44ad-84be-a72259f2cba5")
-		)
-		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "TP3")
+					(reference "L5001")
 					(unit 1)
 				)
 			)
@@ -2583,7 +2501,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82a8c81c-3e80-407a-aeda-1f6330cc33f5")
-		(property "Reference" "R3"
+		(property "Reference" "R5002"
 			(at 147.32 80.0099 0)
 			(effects
 				(font
@@ -2637,7 +2555,7 @@
 		(instances
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "R3")
+					(reference "R5002")
 					(unit 1)
 				)
 			)
@@ -2651,9 +2569,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "84d0dfad-6619-412e-a489-53b76b421a54")
-		(property "Reference" "U2"
+		(property "Reference" "U5002"
 			(at 193.04 85.09 0)
 			(effects
 				(font
@@ -2669,8 +2586,8 @@
 				)
 			)
 		)
-		(property "Footprint" "DBV5"
-			(at 162.56 95.25 0)
+		(property "Footprint" "TPS73633DBVR_SOT23-5:DBV5"
+			(at 174.498 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2716,7 +2633,7 @@
 		(instances
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "U2")
+					(reference "U5002")
 					(unit 1)
 				)
 			)
@@ -2731,8 +2648,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "88679560-7d2b-47f5-8152-b9ca82580eac")
-		(property "Reference" "C1"
-			(at 63.5 78.74 0)
+		(property "Reference" "C5001"
+			(at 63.5 77.978 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2741,7 +2658,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 63.5 81.28 0)
+			(at 64.008 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2785,7 +2702,7 @@
 		(instances
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "C1")
+					(reference "C5001")
 					(unit 1)
 				)
 			)
@@ -2800,7 +2717,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8af2628b-dc18-46cd-8ab2-91aa799825ac")
-		(property "Reference" "C4"
+		(property "Reference" "C5003"
 			(at 162.56 105.41 0)
 			(effects
 				(font
@@ -2854,7 +2771,7 @@
 		(instances
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "C4")
+					(reference "C5003")
 					(unit 1)
 				)
 			)
@@ -2870,7 +2787,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c504094-13a6-4197-8026-e5d9185e736b")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR05002"
 			(at 144.78 106.68 0)
 			(effects
 				(font
@@ -2920,7 +2837,7 @@
 		(instances
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "#PWR04")
+					(reference "#PWR05002")
 					(unit 1)
 				)
 			)
@@ -2935,7 +2852,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9f2bbb9c-f317-4dcf-97fc-03e4e56f6c22")
-		(property "Reference" "R8"
+		(property "Reference" "R5005"
 			(at 254 92.964 90)
 			(effects
 				(font
@@ -2987,7 +2904,7 @@
 		(instances
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "R8")
+					(reference "R5005")
 					(unit 1)
 				)
 			)
@@ -3003,7 +2920,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f6554fd-1c8b-4bc3-94a8-ce26e896a298")
-		(property "Reference" "R6"
+		(property "Reference" "R5004"
 			(at 240.03 105.4099 0)
 			(effects
 				(font
@@ -3057,7 +2974,7 @@
 		(instances
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "R6")
+					(reference "R5004")
 					(unit 1)
 				)
 			)
@@ -3072,7 +2989,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b724ca8f-2528-4413-8b77-4c8589183524")
-		(property "Reference" "D4"
+		(property "Reference" "D5001"
 			(at 148.59 93.0274 90)
 			(effects
 				(font
@@ -3126,7 +3043,7 @@
 		(instances
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "D4")
+					(reference "D5001")
 					(unit 1)
 				)
 			)
@@ -3140,10 +3057,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c41a51f1-1686-4bf9-bd44-e921658d59df")
-		(property "Reference" "C2"
-			(at 135.89 80.0099 0)
+		(property "Reference" "C5002"
+			(at 135.128 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3152,7 +3068,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 135.89 82.5499 0)
+			(at 135.128 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3196,7 +3112,7 @@
 		(instances
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "C2")
+					(reference "C5002")
 					(unit 1)
 				)
 			)
@@ -3211,7 +3127,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c9b380b1-9263-47f1-a550-cc9bf2f09400")
-		(property "Reference" "TP1"
+		(property "Reference" "TP5001"
 			(at 58.42 66.5479 0)
 			(effects
 				(font
@@ -3229,7 +3145,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 60.96 71.12 0)
 			(effects
 				(font
@@ -3262,7 +3178,7 @@
 		(instances
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "TP1")
+					(reference "TP5001")
 					(unit 1)
 				)
 			)
@@ -3278,7 +3194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db07f268-80b9-4320-aa6f-9376e60c0540")
-		(property "Reference" "U1"
+		(property "Reference" "U5001"
 			(at 93.98 63.5 0)
 			(effects
 				(font
@@ -3352,7 +3268,7 @@
 		(instances
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "U1")
+					(reference "U5001")
 					(unit 1)
 				)
 			)
@@ -3367,7 +3283,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e262a1f0-13c7-43c7-aa65-cd7cd144fda2")
-		(property "Reference" "R1"
+		(property "Reference" "R5001"
 			(at 101.6 94.234 90)
 			(effects
 				(font
@@ -3419,7 +3335,7 @@
 		(instances
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "R1")
+					(reference "R5001")
 					(unit 1)
 				)
 			)
@@ -3434,8 +3350,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e5994188-7e9f-4fc2-814b-3b51d07dcf74")
-		(property "Reference" "C3"
-			(at 222.504 104.14 0)
+		(property "Reference" "C5004"
+			(at 219.964 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3488,7 +3404,7 @@
 		(instances
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "C3")
+					(reference "C5004")
 					(unit 1)
 				)
 			)
@@ -3503,7 +3419,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e75f6e5d-be4e-49c9-9f5b-5f63ac309a8d")
-		(property "Reference" "TP7"
+		(property "Reference" "TP5006"
 			(at 259.334 84.582 0)
 			(effects
 				(font
@@ -3521,7 +3437,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 266.7 95.25 0)
 			(effects
 				(font
@@ -3554,7 +3470,7 @@
 		(instances
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "TP7")
+					(reference "TP5006")
 					(unit 1)
 				)
 			)
@@ -3570,7 +3486,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef9b40a7-6284-4e34-ba8a-a02b316adcc5")
-		(property "Reference" "TP4"
+		(property "Reference" "TP5004"
 			(at 224.79 66.5479 0)
 			(effects
 				(font
@@ -3588,7 +3504,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 227.33 71.12 0)
 			(effects
 				(font
@@ -3621,7 +3537,7 @@
 		(instances
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "TP4")
+					(reference "TP5004")
 					(unit 1)
 				)
 			)
@@ -3636,7 +3552,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f6452c1c-54b0-4210-8492-607fb1718e44")
-		(property "Reference" "R7"
+		(property "Reference" "R5003"
 			(at 208.28 68.834 90)
 			(effects
 				(font
@@ -3688,7 +3604,7 @@
 		(instances
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c1da4524-645b-40e4-93f8-f7b345299022"
-					(reference "R7")
+					(reference "R5003")
 					(unit 1)
 				)
 			)
