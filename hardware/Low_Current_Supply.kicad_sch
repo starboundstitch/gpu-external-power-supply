@@ -1977,6 +1977,50 @@
 		)
 		(uuid "fe3c7a97-1b58-4abd-aaf9-59522cc96354")
 	)
+	(global_label "5V"
+		(shape input)
+		(at 270.51 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "54317d70-5933-4dde-a541-2531735429e5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 275.7933 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "12V"
+		(shape input)
+		(at 46.99 71.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7bcfc4e9-fb35-4528-a43c-a38fc0a53a5b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 40.4972 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "3.3V"
 		(shape input)
 		(at 269.24 95.25 0)
@@ -1998,30 +2042,6 @@
 				(hide yes)
 			)
 		)
-	)
-	(hierarchical_label "12v_spply_lw_crrnt_spply_dcpwr"
-		(shape input)
-		(at 46.99 71.12 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "619bf820-8b92-45f9-a47a-3c4dc9ef765a")
-	)
-	(hierarchical_label "+5V "
-		(shape input)
-		(at 270.51 71.12 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ca3f1e17-876d-4696-aeb0-0f9718b587ed")
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
