@@ -4498,7 +4498,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 64.77) (xy 226.06 64.77)
+			(xy 219.71 60.96) (xy 226.06 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4965,16 +4965,6 @@
 			(type default)
 		)
 		(uuid "9fdcd662-87e7-438d-b4e6-afe16f862d6d")
-	)
-	(wire
-		(pts
-			(xy 219.71 60.96) (xy 226.06 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6a00681-af3b-4815-94ca-e121b4a2a42f")
 	)
 	(wire
 		(pts
@@ -5498,7 +5488,7 @@
 	)
 	(rectangle
 		(start 218.44 54.61)
-		(end 243.84 67.31)
+		(end 243.84 63.5)
 		(stroke
 			(width 0)
 			(type default)
@@ -5751,7 +5741,7 @@
 		(uuid "2fc1cfe1-0682-4a69-8f6d-257dea6d63d3")
 	)
 	(label "PA2"
-		(at 219.71 64.77 0)
+		(at 219.71 60.96 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5958,17 +5948,6 @@
 			(justify left bottom)
 		)
 		(uuid "7a16316a-6ce8-463f-a5ee-0a5196d0452f")
-	)
-	(label "PA0"
-		(at 219.71 60.96 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7f921633-2dc5-438a-b7e9-38d029ad3e71")
 	)
 	(label "PB3"
 		(at 119.38 80.01 0)
@@ -6632,7 +6611,7 @@
 	)
 	(global_label "12V_VOL_SENS"
 		(shape input)
-		(at 226.06 64.77 0)
+		(at 226.06 60.96 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6642,29 +6621,7 @@
 		)
 		(uuid "ca4dba15-0bba-40b9-a818-f1fac05875d7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 242.8337 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "12V_CUR_SENS"
-		(shape input)
-		(at 226.06 60.96 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cd0d36f1-3297-46a6-abdc-488bbb62c630")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 243.257 60.96 0)
+			(at 242.8337 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
