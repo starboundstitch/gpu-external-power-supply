@@ -2249,16 +2249,6 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 82.55) (xy 25.4 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "676efb7b-1ae5-4406-b145-52134e19e37b")
-	)
-	(wire
-		(pts
 			(xy 210.82 93.98) (xy 210.82 125.73)
 		)
 		(stroke
@@ -3127,17 +3117,6 @@
 		)
 		(uuid "ff7da771-a23e-4807-970f-a1eb669f0388")
 	)
-	(label "+5V"
-		(at 25.4 82.55 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7c47068d-a961-4357-b24f-4418dfdeeb70")
-	)
 	(global_label "12V_VOL_SENS"
 		(shape input)
 		(at 229.87 137.16 0)
@@ -3193,18 +3172,6 @@
 			(justify right)
 		)
 		(uuid "763fa011-a726-407c-bfce-6550ff3ac25b")
-	)
-	(hierarchical_label "+5V"
-		(shape input)
-		(at 20.32 82.55 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a410fd37-1aea-4e70-94f2-6ea0129e7fe6")
 	)
 	(symbol
 		(lib_id "Device:C")

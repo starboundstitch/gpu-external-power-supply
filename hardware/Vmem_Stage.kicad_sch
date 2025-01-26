@@ -2841,7 +2841,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470uF"
+		(property "Value" "330uF"
 			(at 161.29 83.8199 0)
 			(effects
 				(font
@@ -2859,7 +2859,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/EEF-SX0D471XE/1731681"
+		(property "Datasheet" ""
 			(at 157.48 82.55 0)
 			(effects
 				(font
@@ -4631,7 +4631,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220uF"
+		(property "Value" "330uF"
 			(at 172.72 83.8199 0)
 			(effects
 				(font
@@ -4640,7 +4640,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "work:CP_EIA-7343-40_Kemet-Y"
 			(at 169.8752 86.36 0)
 			(effects
 				(font
@@ -4649,7 +4649,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/kyocera-avx/RPA0608221M016B/17634426"
+		(property "Datasheet" ""
 			(at 168.91 82.55 0)
 			(effects
 				(font

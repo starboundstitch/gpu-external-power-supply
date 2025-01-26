@@ -258,16 +258,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 88.9) (xy 140.97 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "087e1a69-1114-4731-81f3-c0f2e41010aa")
-	)
-	(wire
-		(pts
 			(xy 241.3 59.69) (xy 241.3 78.74)
 		)
 		(stroke
@@ -1138,7 +1128,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 88.9) (xy 140.97 88.9)
+			(xy 179.07 88.9) (xy 144.78 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1518,6 +1508,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 25.4) (xy 107.95 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d29ad975-f47d-4627-97f6-db8108475771")
+	)
+	(wire
+		(pts
 			(xy 250.19 160.02) (xy 220.98 160.02)
 		)
 		(stroke
@@ -1766,17 +1766,6 @@
 		)
 		(uuid "fca1487f-de37-4f2b-9808-6a2874bed7bc")
 	)
-	(label "5v"
-		(at 140.97 93.98 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "09e0fab6-f939-48d3-97bc-33c4a05c3a4c")
-	)
 	(global_label "CORE_TEMO"
 		(shape input)
 		(at 157.48 17.78 0)
@@ -1821,6 +1810,28 @@
 			)
 		)
 	)
+	(global_label "5V"
+		(shape input)
+		(at 144.78 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "689f8d93-a9b0-4885-9c7f-e9d6560a8d09")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.4967 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Vmem"
 		(shape input)
 		(at 134.62 17.78 0)
@@ -1861,6 +1872,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "12V"
+		(shape input)
+		(at 101.6 25.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fd160105-ea54-41df-abd9-5cb16428c098")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.1072 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -2823,36 +2856,6 @@
 				(justify left top)
 			)
 		)
-		(pin "lw_crrnt_spply_u_cntrllr_dcpwr" input
-			(at 86.36 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "6c09a4c5-e42a-4b6c-9112-3047e749f10d")
-		)
-		(pin "12v_spply_lw_crrnt_spply_dcpwr" input
-			(at 21.59 107.95 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "ad21774d-11fa-4cd3-aa39-33bcefb518a4")
-		)
-		(pin "lw_crrnt_spply_vrm_cntrllr_dcpwr" input
-			(at 86.36 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "5225852d-ad84-4a0f-bcc8-ed38b7dfacf7")
-		)
 		(instances
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7"
@@ -2988,36 +2991,6 @@
 				(justify left)
 			)
 			(uuid "e3b3f02c-8eff-407c-b980-3eb929294ed5")
-		)
-		(pin "12v_spply_lw_crrnt_spply_dcpwr" input
-			(at 80.01 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "04c977dd-bd82-49e7-993d-d0f13a85e6ed")
-		)
-		(pin "12v_spply_vcr_vrm_stg_dcpwr" input
-			(at 80.01 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "9c1d2a53-75fd-4f71-9cd7-87e86b576b9f")
-		)
-		(pin "12v_spply_vmm_vrm_stg_dcpwr" input
-			(at 80.01 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "edc3effe-6210-49aa-a8c9-09ffd3d93dae")
 		)
 		(instances
 			(project "gpu-external-power-supply"
