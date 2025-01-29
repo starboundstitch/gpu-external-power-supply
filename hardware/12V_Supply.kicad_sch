@@ -4527,7 +4527,7 @@
 				)
 			)
 		)
-		(property "Footprint" "170nH_SMD_Ind:IND_IFLR4031GCERR17M01_VIS-L"
+		(property "Footprint" "work:IND_IFLR4031GCERR17M01_VIS"
 			(at 138.43 140.97 0)
 			(effects
 				(font
@@ -4871,7 +4871,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CONN_35318-06xx_MOL"
+		(property "Footprint" "work:CONN_55690007-SD_06_MOL"
 			(at 54.61 140.97 0)
 			(effects
 				(font
@@ -4953,7 +4953,7 @@
 				)
 			)
 		)
-		(property "Footprint" "170nH_SMD_Ind:IND_IFLR4031GCERR17M01_VIS-L"
+		(property "Footprint" "work:IND_IFLR4031GCERR17M01_VIS"
 			(at 138.43 46.99 0)
 			(effects
 				(font
@@ -5091,7 +5091,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CONN_35318-06xx_MOL"
+		(property "Footprint" "work:CONN_55690007-SD_06_MOL"
 			(at 54.61 46.99 0)
 			(effects
 				(font
@@ -5519,7 +5519,7 @@
 				)
 			)
 		)
-		(property "Footprint" "170nH_SMD_Ind:IND_IFLR4031GCERR17M01_VIS-L"
+		(property "Footprint" "work:IND_IFLR4031GCERR17M01_VIS"
 			(at 138.43 93.98 0)
 			(effects
 				(font
@@ -5729,7 +5729,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CONN_35318-06xx_MOL"
+		(property "Footprint" "work:CONN_55690007-SD_06_MOL"
 			(at 54.61 93.98 0)
 			(effects
 				(font

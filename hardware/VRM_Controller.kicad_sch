@@ -422,6 +422,187 @@
 				)
 			)
 		)
+		(symbol "Device:R_Shunt"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at -4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Shunt"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Shunt resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res shunt resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*Shunt*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Shunt_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Shunt_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 -2.54 180)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "TPS536C7B1:TPS536C7B1RSLT"
 			(pin_names
 				(offset 0.254)
@@ -1611,6 +1792,12 @@
 		(uuid "2814bd34-ba41-4df4-bb7d-584ac8ec3271")
 	)
 	(junction
+		(at 116.84 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2963e854-7e88-4f26-a3f2-3f4028399c2c")
+	)
+	(junction
 		(at 82.55 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1629,16 +1816,16 @@
 		(uuid "3fe244ba-101e-476a-8437-ee0842bf1aae")
 	)
 	(junction
+		(at 106.68 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e9b0c1f-3e12-46a9-b899-0b7f119bd42d")
+	)
+	(junction
 		(at 25.4 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5197b7bb-4ee3-4178-95ea-36d8c8acc22e")
-	)
-	(junction
-		(at 106.68 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "54e78044-462f-4bbf-bf9c-a3ae42c4ca58")
 	)
 	(junction
 		(at 90.17 129.54)
@@ -1659,10 +1846,22 @@
 		(uuid "5fa12c49-6532-4369-9875-9d5135175a96")
 	)
 	(junction
+		(at 116.84 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5fa77066-ae46-45f5-9209-8ec7abf862da")
+	)
+	(junction
 		(at 67.31 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "70f41e9c-caaa-4136-949c-33166818f80c")
+	)
+	(junction
+		(at 106.68 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76503b02-c1e3-47e4-a12e-478a20c7171e")
 	)
 	(junction
 		(at 101.6 21.59)
@@ -1719,10 +1918,22 @@
 		(uuid "a06f52aa-8798-45b0-af55-5d9366380a80")
 	)
 	(junction
-		(at 114.3 30.48)
+		(at 106.68 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ac5fbd64-3f7b-4cd1-82be-1c70458a5a71")
+		(uuid "a432f7a0-6734-45ab-8a59-06e8c83e057b")
+	)
+	(junction
+		(at 116.84 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a758b209-8c34-4c50-b249-5d387e13d0ab")
+	)
+	(junction
+		(at 116.84 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa95961d-2306-470b-9577-fe08fbec0d2f")
 	)
 	(junction
 		(at 30.48 17.78)
@@ -1755,12 +1966,6 @@
 		(uuid "c4b28a9a-d369-42ae-9f87-d26cebe4a6d0")
 	)
 	(junction
-		(at 106.68 21.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c51909da-81ad-4cce-8d71-9d77ffa081a7")
-	)
-	(junction
 		(at 176.53 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1785,12 +1990,6 @@
 		(uuid "dd8993f2-d146-485c-bcb7-5493a0e70a86")
 	)
 	(junction
-		(at 114.3 21.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "df81f854-b257-42f5-b249-5e6876ccce0b")
-	)
-	(junction
 		(at 74.93 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1807,6 +2006,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7cc9d58-2606-4aca-823e-02956efa2c8f")
+	)
+	(junction
+		(at 106.68 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f08ecb6c-8bdb-41d2-971f-b5f8984598b0")
 	)
 	(junction
 		(at 30.48 38.1)
@@ -1922,6 +2127,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 34.29) (xy 106.68 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ef714b0-a8a7-4f39-b26d-ca354aae6e03")
+	)
+	(wire
+		(pts
 			(xy 116.84 109.22) (xy 121.92 109.22)
 		)
 		(stroke
@@ -2012,16 +2227,6 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 21.59) (xy 114.3 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21c1b992-c898-4947-b724-4bb9e7a01300")
-	)
-	(wire
-		(pts
 			(xy 30.48 27.94) (xy 50.8 27.94)
 		)
 		(stroke
@@ -2042,13 +2247,13 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 21.59) (xy 106.68 30.48)
+			(xy 116.84 21.59) (xy 119.38 21.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "23c7f295-ed16-454b-a260-9c1432df8aa3")
+		(uuid "276928ac-ed01-4d62-b483-5a0a07a64bb2")
 	)
 	(wire
 		(pts
@@ -2142,7 +2347,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 30.48) (xy 106.68 41.91)
+			(xy 106.68 21.59) (xy 106.68 25.4)
 		)
 		(stroke
 			(width 0)
@@ -2179,6 +2384,16 @@
 			(type default)
 		)
 		(uuid "3b1e55b4-60dc-442f-9b82-760c8a866128")
+	)
+	(wire
+		(pts
+			(xy 116.84 34.29) (xy 116.84 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e75f2ac-0515-4adc-b72b-82933f761266")
 	)
 	(wire
 		(pts
@@ -2312,6 +2527,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 30.48) (xy 116.84 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f67e6d2-7223-4577-a91f-c3e712f712ff")
+	)
+	(wire
+		(pts
 			(xy 15.24 149.86) (xy 25.4 149.86)
 		)
 		(stroke
@@ -2342,13 +2567,13 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 21.59) (xy 119.38 21.59)
+			(xy 106.68 25.4) (xy 106.68 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "66a405f4-d469-4d30-9012-5f1cd9b52a65")
+		(uuid "659ab0e5-6a36-4281-b19f-f024f25b0f03")
 	)
 	(wire
 		(pts
@@ -2359,6 +2584,16 @@
 			(type default)
 		)
 		(uuid "66e8e816-1023-4432-a6df-717545d548e4")
+	)
+	(wire
+		(pts
+			(xy 114.3 34.29) (xy 116.84 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "690223d3-1a95-4b08-bada-8ca3b985c664")
 	)
 	(wire
 		(pts
@@ -2409,6 +2644,16 @@
 			(type default)
 		)
 		(uuid "73f86a5b-90fb-4270-99b0-5df0e3ed90da")
+	)
+	(wire
+		(pts
+			(xy 106.68 25.4) (xy 109.22 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "754aca3a-5a95-4fcf-a8cd-6620686e33c5")
 	)
 	(wire
 		(pts
@@ -2472,6 +2717,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 41.91) (xy 116.84 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85ee047b-fe8b-464b-bf33-195f56f9124c")
+	)
+	(wire
+		(pts
 			(xy 173.99 68.58) (xy 177.8 68.58)
 		)
 		(stroke
@@ -2489,6 +2744,16 @@
 			(type default)
 		)
 		(uuid "87a47d73-1501-441f-b673-b63b3b68c486")
+	)
+	(wire
+		(pts
+			(xy 114.3 25.4) (xy 116.84 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87dd1a5d-7313-462b-9167-b8dd68855025")
 	)
 	(wire
 		(pts
@@ -2852,7 +3117,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 30.48) (xy 114.3 41.91)
+			(xy 116.84 21.59) (xy 116.84 25.4)
 		)
 		(stroke
 			(width 0)
@@ -2919,6 +3184,16 @@
 			(type default)
 		)
 		(uuid "c6856b8f-02e1-4df6-9b5f-079d3f372c87")
+	)
+	(wire
+		(pts
+			(xy 106.68 41.91) (xy 107.95 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca814b46-7489-471c-a987-27343f2a4bba")
 	)
 	(wire
 		(pts
@@ -3052,6 +3327,26 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 25.4) (xy 116.84 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2f1e946-739a-44dd-9a4b-268d55854fa0")
+	)
+	(wire
+		(pts
+			(xy 106.68 34.29) (xy 109.22 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e85a446d-69c0-49ac-80fa-f88d5f85f0d8")
+	)
+	(wire
+		(pts
 			(xy 176.53 139.7) (xy 176.53 142.24)
 		)
 		(stroke
@@ -3149,6 +3444,16 @@
 			(type default)
 		)
 		(uuid "fae9da65-7754-444d-8bdc-630c515ef462")
+	)
+	(wire
+		(pts
+			(xy 106.68 30.48) (xy 106.68 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb825492-36a0-4259-b841-9c15ef18b1d4")
 	)
 	(wire
 		(pts
@@ -3540,7 +3845,7 @@
 			)
 		)
 	)
-	(global_label "BRV_READY"
+	(global_label "BVR_READY"
 		(shape output)
 		(at 110.49 96.52 180)
 		(fields_autoplaced yes)
@@ -4155,7 +4460,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2430k"
+		(property "Value" "130k"
 			(at 41.91 22.8599 0)
 			(effects
 				(font
@@ -4622,73 +4927,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 110.49 21.59 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "31f06651-ddc9-49eb-b154-996485aed495")
-		(property "Reference" "R2019"
-			(at 110.236 16.256 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1m"
-			(at 110.49 18.796 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_Shunt_Vishay_WSK2512_6332Metric_T1.19mm"
-			(at 110.49 19.812 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/rohm-semiconductor/PMR100HZP7FV1L00/22517953"
-			(at 110.49 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 110.49 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1c221009-814b-4bd6-8ddc-8f05d19e4e19")
-		)
-		(pin "1"
-			(uuid "10451be9-1459-43d6-8e3f-ec8134dbb390")
-		)
-		(instances
-			(project ""
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/e6dc7bfe-1f99-4466-9581-badeb70bd091"
-					(reference "R2019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 25.4 22.86 180)
 		(unit 1)
@@ -4760,16 +4998,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 110.49 41.91 90)
+		(at 111.76 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "39112b92-9cee-4427-9fc6-a986ded1c404")
 		(property "Reference" "C2011"
-			(at 110.49 34.29 90)
+			(at 111.76 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4777,7 +5014,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 110.49 36.83 90)
+			(at 111.76 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4785,7 +5022,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 114.3 40.9448 0)
+			(at 115.57 40.9448 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4794,7 +5031,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 110.49 41.91 0)
+			(at 111.76 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4803,7 +5040,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 110.49 41.91 0)
+			(at 111.76 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5509,6 +5746,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Shunt")
+		(at 111.76 21.59 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7673cb82-9a09-4e96-b150-edc2e9dc5658")
+		(property "Reference" "R2019"
+			(at 111.76 19.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1m"
+			(at 111.76 21.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Shunt_Vishay_WSK2512_6332Metric_T1.19mm"
+			(at 111.76 19.812 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/rohm-semiconductor/PMR100HZP7FV1L00/22517953"
+			(at 111.76 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Shunt resistor"
+			(at 111.76 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "689bcfc7-b0b4-4821-8ff6-22ab2549aa15")
+		)
+		(pin "1"
+			(uuid "63d300e6-2b19-447f-9a58-4c024eeb4671")
+		)
+		(pin "3"
+			(uuid "ed5df613-9cf6-40af-8223-7c12a02f0a5e")
+		)
+		(pin "4"
+			(uuid "98168ecb-bf37-4fc7-a61f-6e3ea63a8aed")
+		)
+		(instances
+			(project ""
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/e6dc7bfe-1f99-4466-9581-badeb70bd091"
+					(reference "R2019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 35.56 93.98 270)
 		(unit 1)
@@ -5578,17 +5888,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 110.49 30.48 90)
+		(lib_id "Device:R_Shunt")
+		(at 111.76 30.48 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8d810aa5-d3bd-46e3-a1fa-46123cf29dfd")
 		(property "Reference" "R2020"
-			(at 110.49 24.13 90)
+			(at 111.76 27.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5596,7 +5905,7 @@
 			)
 		)
 		(property "Value" "1m"
-			(at 110.49 26.67 90)
+			(at 111.76 30.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5604,7 +5913,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Shunt_Vishay_WSK2512_6332Metric_T1.19mm"
-			(at 110.49 32.258 90)
+			(at 111.76 28.702 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5612,8 +5921,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/rohm-semiconductor/PMR100HZP7FV1L00/22517953"
-			(at 110.49 30.48 0)
+		(property "Datasheet" "~"
+			(at 111.76 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5621,8 +5930,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 110.49 30.48 0)
+		(property "Description" "Shunt resistor"
+			(at 111.76 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5635,6 +5944,12 @@
 		)
 		(pin "2"
 			(uuid "1959c40a-65a7-46f5-b086-f07ce713e62d")
+		)
+		(pin "3"
+			(uuid "c02abaf4-3a22-461c-bf80-bbadb364a0c4")
+		)
+		(pin "4"
+			(uuid "1f17c084-1500-4a0f-bc3a-02960972e082")
 		)
 		(instances
 			(project ""

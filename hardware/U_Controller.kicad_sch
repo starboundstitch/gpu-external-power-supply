@@ -690,8 +690,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 0 22.225 0)
+			(property "Reference" "J7003"
+				(at 0 22.86 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -699,23 +699,22 @@
 				)
 			)
 			(property "Value" "USB_C_Receptacle_USB2.0_16P"
-				(at 0 19.685 0)
+				(at 0 20.32 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "work:CUI_UJ20-C-H-C-4-SMT-TR"
 				(at 3.81 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+			(property "Datasheet" "https://www.digikey.com/en/products/detail/amphenol-cs-commercial-products/12402012E212A/13683192"
 				(at 3.81 0 0)
 				(effects
 					(font
@@ -1084,24 +1083,6 @@
 					)
 				)
 				(pin passive line
-					(at 0 -22.86 90)
-					(length 5.08) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 15.24 15.24 180)
 					(length 5.08)
 					(name "VBUS"
@@ -1192,24 +1173,6 @@
 					)
 				)
 				(pin passive line
-					(at 15.24 15.24 180)
-					(length 5.08) hide
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 0 -22.86 90)
 					(length 5.08) hide
 					(name "GND"
@@ -1220,24 +1183,6 @@
 						)
 					)
 					(number "B1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -22.86 90)
-					(length 5.08) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1336,24 +1281,6 @@
 					)
 				)
 				(pin passive line
-					(at 15.24 15.24 180)
-					(length 5.08) hide
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -7.62 -22.86 90)
 					(length 5.08)
 					(name "SHIELD"
@@ -1363,7 +1290,61 @@
 							)
 						)
 					)
-					(number "S1"
+					(number "SH1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -22.86 90)
+					(length 5.08) hide
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SH2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -22.86 90)
+					(length 5.08) hide
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SH3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -22.86 90)
+					(length 5.08) hide
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SH4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8340,13 +8321,12 @@
 				)
 			)
 		)
-		(property "Footprint" "work:12402012E212A_AMP"
+		(property "Footprint" "work:CUI_UJ20-C-H-C-4-SMT-TR"
 			(at 34.29 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.digikey.com/en/products/detail/amphenol-cs-commercial-products/12402012E212A/13683192"
@@ -8367,9 +8347,6 @@
 				(hide yes)
 			)
 		)
-		(pin "A9"
-			(uuid "e0c2a10e-06fd-48e8-ae9b-25af67e0bdc6")
-		)
 		(pin "B8"
 			(uuid "5bfdbca3-55db-496e-80d2-88d2ede1bb9c")
 		)
@@ -8379,19 +8356,13 @@
 		(pin "B7"
 			(uuid "60ff8708-a488-46f6-826d-ee7f560f9ec9")
 		)
-		(pin "A12"
-			(uuid "f40b68fa-7e50-4b83-96c7-9dea7c7625a1")
-		)
 		(pin "B5"
 			(uuid "e9d2c6fa-f4e6-4ca6-a20d-b8ed9f0559db")
-		)
-		(pin "B12"
-			(uuid "f47e6b57-712e-4bdb-b5cc-60a21ba7da76")
 		)
 		(pin "B1"
 			(uuid "68f49048-8eb9-40f8-9af2-1cbae274d98a")
 		)
-		(pin "S1"
+		(pin "SH3"
 			(uuid "924c8098-2e70-43b3-9e0e-efe91f2f5b94")
 		)
 		(pin "A4"
@@ -8409,14 +8380,20 @@
 		(pin "A8"
 			(uuid "25a220ce-6ec9-4d5c-98fc-c421d7c9cffb")
 		)
-		(pin "B9"
-			(uuid "8d275401-51f2-4372-b5cf-c952e75ce98b")
-		)
 		(pin "A1"
 			(uuid "49cce00d-58cf-4a34-9057-21800ca2843f")
 		)
 		(pin "B4"
 			(uuid "fa4ce84a-1fc0-4498-a2d7-f500aaea2f66")
+		)
+		(pin "SH4"
+			(uuid "4a4de67d-1ce4-430b-9565-37a6efe1d2a4")
+		)
+		(pin "SH1"
+			(uuid "44ab72d2-fde7-4ca5-bc08-0d0d7418e8be")
+		)
+		(pin "SH2"
+			(uuid "d264e06e-98bf-4558-bfc6-890c6c6c37b7")
 		)
 		(instances
 			(project ""
@@ -8599,7 +8576,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LQFP-64_STM"
+		(property "Footprint" "work:LQFP-64_STM"
 			(at 123.19 29.21 0)
 			(effects
 				(font
