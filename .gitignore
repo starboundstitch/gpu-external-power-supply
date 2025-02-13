@@ -15,4 +15,10 @@ fp-info-cache# Netlist files (exported from Eeschema)
 ~*
 *backups
 
+temp
 fp-info-cache
+
+# Rust Ignore
+**/target/
+**/*.orig
+**/*.rs.bk
