@@ -26,8 +26,18 @@ fn main() -> ! {
     let dp = stm32::Peripherals::take().expect("cannot take peripherals");
     let mut rcc = dp.RCC.constrain();
 
+    //** Declare GPIOs **//
     let gpioa = dp.GPIOA.split(&mut rcc);
+    let gpiob = dp.GPIOB.split(&mut rcc);
+    let gpioc = dp.GPIOC.split(&mut rcc);
     let mut led = gpioa.pa5.into_push_pull_output();
+
+    //** Enable VRM Controller Pins **//
+    let _avr_ready = gpioc.pc6.into_push_pull_output_in_state(PinState::High);
+    let _bvr_ready = gpioc.pc7.into_push_pull_output_in_state(PinState::High);
+    let _a_enable = gpioc.pc9.into_push_pull_output_in_state(PinState::High);
+    let _b_enable = gpioc.pc10.into_push_pull_output_in_state(PinState::High);
+
     // Read Boot Pins
     defmt::info!("BtSl: {}", dp.FLASH.optr().read().n_boot_sel().bit_is_set());
     defmt::info!("nBoot1: {}", dp.FLASH.optr().read().n_boot1().bit_is_set());
