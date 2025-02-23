@@ -19,7 +19,7 @@ use ssd1306::{prelude::*, I2CDisplayInterface, Ssd1306};
 use defmt;
 use defmt_rtt as _;
 
-use panic_halt as _;
+use panic_semihosting as _; // Sends Backtraces through Probe-rs
 
 #[entry]
 fn main() -> ! {
