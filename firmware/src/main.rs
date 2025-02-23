@@ -3,9 +3,9 @@
 
 use cortex_m_rt::entry;
 use nb::block;
-use ssd1306::{prelude::*, I2CDisplayInterface, Ssd1306};
+
 use stm32c0xx_hal::prelude::*;
-use stm32c0xx_hal::{i2c::Config, stm32};
+use stm32c0xx_hal::{i2c::Config, rcc, stm32};
 
 use embedded_graphics::{
     mono_font::{ascii::FONT_6X10, MonoTextStyleBuilder},
@@ -14,6 +14,7 @@ use embedded_graphics::{
     primitives::{PrimitiveStyle, Rectangle},
     text::{Baseline, Text},
 };
+use ssd1306::{prelude::*, I2CDisplayInterface, Ssd1306};
 
 use defmt;
 use defmt_rtt as _;
