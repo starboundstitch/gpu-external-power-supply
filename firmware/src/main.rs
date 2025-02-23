@@ -15,6 +15,9 @@ use embedded_graphics::{
     text::{Baseline, Text},
 };
 
+use defmt;
+use defmt_rtt as _;
+
 use panic_halt as _;
 
 #[entry]
@@ -24,6 +27,14 @@ fn main() -> ! {
 
     let gpioa = dp.GPIOA.split(&mut rcc);
     let mut led = gpioa.pa5.into_push_pull_output();
+    // Read Boot Pins
+    defmt::info!("BtSl: {}", dp.FLASH.optr().read().n_boot_sel().bit_is_set());
+    defmt::info!("nBoot1: {}", dp.FLASH.optr().read().n_boot1().bit_is_set());
+    defmt::info!(
+        "Boot_Lock: {}",
+        dp.FLASH.secr().read().boot_lock().bit_is_set()
+    );
+
     //** Display Configuration (I2C Channel 2) **//
     let sda = gpioa.pa6.into_open_drain_output_in_state(PinState::High);
     let scl = gpioa.pa7.into_open_drain_output_in_state(PinState::High);
