@@ -65,6 +65,9 @@ fn main() -> ! {
         .text_color(BinaryColor::On)
         .build();
 
+    // Fill
+    let fill = PrimitiveStyle::with_fill(BinaryColor::Off);
+
     // Write Text to the display
     Text::with_baseline("Nyan~Pasu", Point::zero(), text_style, Baseline::Top)
         .draw(&mut display)
@@ -80,4 +83,15 @@ fn main() -> ! {
         led.toggle();
         block!(timer.wait()).unwrap();
     }
+}
+
+// Clears the Display
+fn clear_display<I: embedded_hal::i2c::I2c, D: ssd1306::size::DisplaySize>(
+    display: &mut Ssd1306<I2CInterface<I>, D, ssd1306::mode::BufferedGraphicsMode<D>>,
+    fill: PrimitiveStyle<BinaryColor>,
+) {
+    Rectangle::new(Point::new(0, 0), Size::new(128, 64))
+        .into_styled(fill)
+        .draw(display)
+        .unwrap();
 }
