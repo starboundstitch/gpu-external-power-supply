@@ -23,6 +23,8 @@ use defmt_rtt as _;
 
 use panic_semihosting as _; // Sends Backtraces through Probe-rs
 
+mod vrm_controller;
+
 #[entry]
 fn main() -> ! {
     let dp = stm32::Peripherals::take().expect("cannot take peripherals");
@@ -57,10 +59,21 @@ fn main() -> ! {
 
     //** I2C Configuration **//
 
+    // I2C Channel 1
+    let sda1 = gpioa.pa10.into_open_drain_output_in_state(PinState::High);
+    let scl1 = gpioa.pa9.into_open_drain_output_in_state(PinState::High);
+    let mut i2c1 = dp.I2C1.i2c(sda1, scl1, Config::new(400.kHz()), &mut rcc);
+
     // I2C Channel 2
     let sda2 = gpioa.pa6.into_open_drain_output_in_state(PinState::High);
     let scl2 = gpioa.pa7.into_open_drain_output_in_state(PinState::High);
     let i2c2 = dp.I2C2.i2c(sda2, scl2, Config::new(400.kHz()), &mut rcc);
+
+    //** VRM Controller Initialization **//
+    let i2c_addr = 0x5F;
+    // Create Controller
+    let mut controller = vrm_controller::TPSC536C7::new(i2c1, i2c_addr);
+    defmt::info!("Past VRM Controller Init");
 
     //** Display Configuration **//
     // I2C interface
