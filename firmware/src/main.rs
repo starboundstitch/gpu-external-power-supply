@@ -53,13 +53,16 @@ fn main() -> ! {
         dp.FLASH.secr().read().boot_lock().bit_is_set()
     );
 
-    //** Display Configuration (I2C Channel 2) **//
-    let sda = gpioa.pa6.into_open_drain_output_in_state(PinState::High);
-    let scl = gpioa.pa7.into_open_drain_output_in_state(PinState::High);
-    let i2c = dp.I2C2.i2c(sda, scl, Config::new(400.kHz()), &mut rcc);
+    //** I2C Configuration **//
 
+    // I2C Channel 2
+    let sda2 = gpioa.pa6.into_open_drain_output_in_state(PinState::High);
+    let scl2 = gpioa.pa7.into_open_drain_output_in_state(PinState::High);
+    let i2c2 = dp.I2C2.i2c(sda2, scl2, Config::new(400.kHz()), &mut rcc);
+
+    //** Display Configuration **//
     // I2C interface
-    let interface = I2CDisplayInterface::new(i2c);
+    let interface = I2CDisplayInterface::new(i2c2);
 
     // Configure the display
     let mut display = Ssd1306::new(interface, DisplaySize128x64, DisplayRotation::Rotate0)
@@ -91,6 +94,8 @@ fn main() -> ! {
     let mut count: i32 = 10;
 
     loop {
+        let mut update_display = false;
+
         if led_time.wait().is_ok() {
             led.toggle();
         }
@@ -106,6 +111,8 @@ fn main() -> ! {
                 update_display = true;
             }
 
+            if update_display {
+            }
         }
     }
 }
