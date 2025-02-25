@@ -120,6 +120,19 @@ fn main() -> ! {
                 let num_chars = lexical_core::write(count, &mut buffer);
                 defmt::info!("Num Chars: {}", num_chars);
                 let num_chars: usize = (num_chars.len()).into();
+
+                clear_display(&mut display, fill);
+
+                Text::with_baseline(
+                    unsafe { core::str::from_utf8_unchecked(&(buffer[..num_chars])) },
+                    Point::zero(),
+                    text_style,
+                    Baseline::Top,
+                )
+                .draw(&mut display)
+                .unwrap();
+
+                display.flush().unwrap();
             }
         }
     }
