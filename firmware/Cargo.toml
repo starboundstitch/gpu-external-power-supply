@@ -14,6 +14,11 @@ panic-halt = "1.0.0"
 panic-semihosting = "0.6.0"
 ssd1306 = "0.9.0"
 
+[dependencies.lexical-core]
+version = "^1.0"
+default-features = false
+features = [ "write-integers" ]
+
 [dependencies.stm32c0xx-hal]
 git = "https://github.com/starboundstitch/stm32c0xx-hal/"
 features = ["stm32c071", "rt"]

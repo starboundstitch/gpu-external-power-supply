@@ -16,6 +16,8 @@ use embedded_graphics::{
 };
 use ssd1306::{prelude::*, I2CDisplayInterface, Ssd1306};
 
+use lexical_core::BUFFER_SIZE;
+
 use defmt;
 use defmt_rtt as _;
 
@@ -111,7 +113,13 @@ fn main() -> ! {
                 update_display = true;
             }
 
+            // Runs only if there is a value to update on the display to save on unnecessary write
+            // cycles and full display clears
             if update_display {
+                let mut buffer = [b'0'; BUFFER_SIZE];
+                let num_chars = lexical_core::write(count, &mut buffer);
+                defmt::info!("Num Chars: {}", num_chars);
+                let num_chars: usize = (num_chars.len()).into();
             }
         }
     }
