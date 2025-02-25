@@ -38,6 +38,13 @@ fn main() -> ! {
     let _a_enable = gpioc.pc9.into_push_pull_output_in_state(PinState::High);
     let _b_enable = gpioc.pc10.into_push_pull_output_in_state(PinState::High);
 
+    //** Enable Onboard Control Pins **//
+    let up = gpiob.pb4.into_pull_up_input();
+    let down = gpiob.pb5.into_pull_up_input();
+    let left = gpiob.pb6.into_pull_up_input();
+    let right = gpiob.pb7.into_pull_up_input();
+    let enter = gpiob.pb8.into_pull_up_input();
+
     // Read Boot Pins
     defmt::info!("BtSl: {}", dp.FLASH.optr().read().n_boot_sel().bit_is_set());
     defmt::info!("nBoot1: {}", dp.FLASH.optr().read().n_boot1().bit_is_set());
@@ -81,12 +88,24 @@ fn main() -> ! {
     led_time.start(1000.millis());
     ui_time.start(50.millis());
 
+    let mut count: i32 = 10;
+
     loop {
         if led_time.wait().is_ok() {
             led.toggle();
         }
         // Code that Runs Periodically
         if ui_time.wait().is_ok() {
+            // Button Input
+            if up.is_low() {
+                count = count + 1;
+                update_display = true;
+            }
+            if down.is_low() {
+                count = count - 1;
+                update_display = true;
+            }
+
         }
     }
 }
