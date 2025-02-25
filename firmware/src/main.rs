@@ -76,15 +76,17 @@ fn main() -> ! {
     // Flush Display
     display.flush().unwrap();
 
-    let mut timer = dp.TIM17.timer(&mut rcc);
-    timer.start(500.millis());
     let mut led_time = dp.TIM14.timer(&mut rcc);
+    let mut ui_time = dp.TIM17.timer(&mut rcc);
     led_time.start(1000.millis());
+    ui_time.start(50.millis());
 
     loop {
-        block!(timer.wait()).unwrap();
         if led_time.wait().is_ok() {
             led.toggle();
+        }
+        // Code that Runs Periodically
+        if ui_time.wait().is_ok() {
         }
     }
 }
