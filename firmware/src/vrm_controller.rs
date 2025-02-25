@@ -7,12 +7,26 @@ pub struct TPSC536C7<I> {
 
 pub enum Command {
     Page,
+    Operation,
     OnOffConfig,
+    ClearFaults,
+    VOUTCommand,
+    VOUTDroop,
+    FrequencySwitch,
+    StatusByte,
+}
+
 impl Command {
     pub fn to_address(self) -> u8 {
         match self {
             Command::Page => 0x00,
+            Command::Operation => 0x01,
             Command::OnOffConfig => 0x02,
+            Command::ClearFaults => 0x03,
+            Command::VOUTCommand => 0x21,
+            Command::VOUTDroop => 0x28,
+            Command::FrequencySwitch => 0x33,
+            Command::StatusByte => 0x78,
         }
     }
 }
@@ -66,3 +80,8 @@ impl<I: embedded_hal::i2c::I2c> TPSC536C7<I> {
     pub fn ch_ab(&mut self) {
         self.page(Page::Both);
     }
+
+    pub fn clear_faults(&mut self) {
+        self.command(&[Command::ClearFaults.to_address()]);
+    }
+
