@@ -8,7 +8,7 @@ use stm32c0xx_hal::prelude::*;
 use stm32c0xx_hal::{i2c::Config, rcc, stm32};
 
 use embedded_graphics::{
-    mono_font::{ascii::FONT_6X10, MonoTextStyleBuilder},
+    mono_font::{ascii::FONT_10X20, MonoTextStyleBuilder},
     pixelcolor::BinaryColor,
     prelude::*,
     primitives::{PrimitiveStyle, Rectangle},
@@ -61,7 +61,7 @@ fn main() -> ! {
 
     // Font and text color from the embedded_graphics library
     let text_style = MonoTextStyleBuilder::new()
-        .font(&FONT_6X10)
+        .font(&FONT_10X20)
         .text_color(BinaryColor::On)
         .build();
 
