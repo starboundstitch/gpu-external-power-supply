@@ -6,16 +6,29 @@ pub struct TPSC536C7<I> {
 }
 
 pub enum Command {
+    Page,
     OnOffConfig,
 impl Command {
     pub fn to_address(self) -> u8 {
         match self {
+            Command::Page => 0x00,
             Command::OnOffConfig => 0x02,
         }
     }
 }
 
+pub enum Page {
+    ChannelA,
+    ChannelB,
+    Both,
 }
+
+impl Page {
+    pub fn to_bits(self) -> u8 {
+        match self {
+            Page::ChannelA => 0x00,
+            Page::ChannelB => 0x01,
+            Page::Both => 0xFF,
         }
     }
 }
@@ -38,3 +51,18 @@ impl<I: embedded_hal::i2c::I2c> TPSC536C7<I> {
         self.command(&[Command::OnOffConfig.to_address(), 0x00]);
     }
 
+    fn page(&mut self, ch: Page) {
+        self.command(&[Command::Page.to_address(), ch.to_bits()]);
+    }
+
+    pub fn ch_a(&mut self) {
+        self.page(Page::ChannelA);
+    }
+
+    pub fn ch_b(&mut self) {
+        self.page(Page::ChannelB);
+    }
+
+    pub fn ch_ab(&mut self) {
+        self.page(Page::Both);
+    }
