@@ -33,8 +33,8 @@ fn main() -> ! {
     let mut led = gpioa.pa5.into_push_pull_output();
 
     //** Enable VRM Controller Pins **//
-    let _avr_ready = gpioc.pc6.into_push_pull_output_in_state(PinState::High);
-    let _bvr_ready = gpioc.pc7.into_push_pull_output_in_state(PinState::High);
+    let _avr_ready = gpioc.pc6.into_floating_input();
+    let _bvr_ready = gpioc.pc7.into_floating_input();
     let _a_enable = gpioc.pc9.into_push_pull_output_in_state(PinState::High);
     let _b_enable = gpioc.pc10.into_push_pull_output_in_state(PinState::High);
 
