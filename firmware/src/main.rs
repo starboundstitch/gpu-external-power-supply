@@ -78,10 +78,14 @@ fn main() -> ! {
 
     let mut timer = dp.TIM17.timer(&mut rcc);
     timer.start(500.millis());
+    let mut led_time = dp.TIM14.timer(&mut rcc);
+    led_time.start(1000.millis());
 
     loop {
-        led.toggle();
         block!(timer.wait()).unwrap();
+        if led_time.wait().is_ok() {
+            led.toggle();
+        }
     }
 }
 
