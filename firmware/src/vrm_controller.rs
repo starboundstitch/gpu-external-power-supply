@@ -85,3 +85,4 @@ impl<I: embedded_hal::i2c::I2c> TPSC536C7<I> {
         self.command(&[Command::ClearFaults.to_address()]);
     }
 
+}
