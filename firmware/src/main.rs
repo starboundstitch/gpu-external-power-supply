@@ -93,8 +93,17 @@ fn main() -> ! {
     // Fill
     let fill = PrimitiveStyle::with_fill(BinaryColor::Off);
 
-    // Write Text to the display
-    Text::with_baseline("Nyan~Pasu", Point::zero(), text_style, Baseline::Top)
+    // GUI Text
+    Text::with_baseline("   Vcore Vmem", Point::zero(), text_style, Baseline::Top)
+        .draw(&mut display)
+        .unwrap();
+    Text::with_baseline("V:", Point::new(0, 16), text_style, Baseline::Top)
+        .draw(&mut display)
+        .unwrap();
+    Text::with_baseline("A:", Point::new(0, 32), text_style, Baseline::Top)
+        .draw(&mut display)
+        .unwrap();
+    Text::with_baseline("T:", Point::new(0, 48), text_style, Baseline::Top)
         .draw(&mut display)
         .unwrap();
 
