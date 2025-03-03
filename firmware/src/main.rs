@@ -8,7 +8,7 @@ use stm32c0xx_hal::prelude::*;
 use stm32c0xx_hal::{i2c::Config, rcc, stm32};
 
 use embedded_graphics::{
-    mono_font::{ascii::FONT_10X20, MonoTextStyleBuilder},
+    mono_font::{ascii::FONT_9X18, MonoTextStyle, MonoTextStyleBuilder},
     pixelcolor::BinaryColor,
     prelude::*,
     primitives::{PrimitiveStyle, Rectangle},
@@ -86,7 +86,7 @@ fn main() -> ! {
 
     // Font and text color from the embedded_graphics library
     let text_style = MonoTextStyleBuilder::new()
-        .font(&FONT_10X20)
+        .font(&FONT_9X18)
         .text_color(BinaryColor::On)
         .build();
 
@@ -106,7 +106,7 @@ fn main() -> ! {
     led_time.start(1000.millis());
     ui_time.start(50.millis());
 
-    let mut count: i32 = 10;
+    let mut count: f32 = 10.;
 
     loop {
         let mut update_display = false;
@@ -114,41 +114,66 @@ fn main() -> ! {
         if led_time.wait().is_ok() {
             led.toggle();
         }
+
         // Code that Runs Periodically
         if ui_time.wait().is_ok() {
             // Button Input
             if up.is_low() {
-                count = count + 1;
+                count = count + 1.;
                 update_display = true;
             }
             if down.is_low() {
-                count = count - 1;
+                count = count - 1.;
                 update_display = true;
             }
 
             // Runs only if there is a value to update on the display to save on unnecessary write
             // cycles and full display clears
             if update_display {
-                let mut buffer = [b'0'; BUFFER_SIZE];
-                let num_chars = lexical_core::write(count, &mut buffer);
-                defmt::info!("Num Chars: {}", num_chars);
-                let num_chars: usize = (num_chars.len()).into();
+                // clear_display(&mut display, fill);
 
-                clear_display(&mut display, fill);
-
-                Text::with_baseline(
-                    unsafe { core::str::from_utf8_unchecked(&(buffer[..num_chars])) },
-                    Point::zero(),
-                    text_style,
-                    Baseline::Top,
-                )
-                .draw(&mut display)
-                .unwrap();
+                display_data(&mut display, text_style, (0, 0), count);
 
                 display.flush().unwrap();
             }
         }
     }
+}
+
+// Displays a floating point value in the 2x3 grid of values on the main display
+fn display_data<I: embedded_hal::i2c::I2c, D: ssd1306::size::DisplaySize>(
+    display: &mut Ssd1306<I2CInterface<I>, D, ssd1306::mode::BufferedGraphicsMode<D>>,
+    text_style: MonoTextStyle<BinaryColor>,
+    loc: (i32, i32),
+    val: f32,
+) {
+    // Positioning on the Display
+    let x_pos = 27 + 6 * 9 * loc.0;
+    let y_pos = 16 + 16 * loc.1;
+    let point = Point::new(x_pos, y_pos);
+
+    // Fill
+    let fill = PrimitiveStyle::with_fill(BinaryColor::Off);
+
+    Rectangle::new(point, Size::new(9 * 6, 16))
+        .into_styled(fill)
+        .draw(display)
+        .unwrap();
+
+    // Parse Float Values
+    let mut buf = [b'0'; BUFFER_SIZE];
+    let num_chars = lexical_core::write(val, &mut buf);
+    let num_chars: usize = num_chars.len().into();
+
+    // Write to Display
+    Text::with_baseline(
+        unsafe { core::str::from_utf8_unchecked(&(buf[..num_chars])) },
+        point,
+        text_style,
+        Baseline::Top,
+    )
+    .draw(display)
+    .unwrap();
 }
 
 // Clears the Display
