@@ -20,7 +20,7 @@ features = [ "defmt-03" ]
 [dependencies.lexical-core]
 version = "^1.0"
 default-features = false
-features = [ "write-integers" ]
+features = [ "write-integers", "write-floats" ]
 
 [dependencies.stm32c0xx-hal]
 git = "https://github.com/starboundstitch/stm32c0xx-hal/"
