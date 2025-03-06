@@ -138,13 +138,28 @@ fn main() -> ! {
         // Code that Runs Periodically
         if ui_time.wait().is_ok() {
             // Button Input
-            if up.is_low() {
-                count = count + 1.;
-                update_display = true;
-            }
-            if down.is_low() {
-                count = count - 1.;
-                update_display = true;
+            match nav.get_mode() {
+                navigation::Mode::Navigation => {
+                    if up.is_low() {
+                        nav.move_up();
+                    } else if down.is_low() {
+                        nav.move_down();
+                    } else if right.is_low() {
+                        nav.move_right();
+                    } else if left.is_low() {
+                        nav.move_left();
+                    } else if enter.is_low() {
+                        if nav.get_position().1 == 2 {
+                            continue;
+                        }
+                        nav.change_mode();
+                    } else {
+                        update_display = false;
+                    }
+                }
+                navigation::Mode::Update => {
+                    } else {
+                }
             }
 
             // Runs only if there is a value to update on the display to save on unnecessary write
