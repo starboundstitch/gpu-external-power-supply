@@ -4,6 +4,7 @@
 use cortex_m_rt::entry;
 use nb::block;
 
+use navigation::Navigation;
 use stm32c0xx_hal::prelude::*;
 use stm32c0xx_hal::{i2c::Config, rcc, stm32};
 
@@ -23,6 +24,7 @@ use defmt_rtt as _;
 
 use panic_semihosting as _; // Sends Backtraces through Probe-rs
 
+mod navigation;
 mod vrm_controller;
 
 #[entry]
@@ -113,12 +115,15 @@ fn main() -> ! {
     let mut led_time = dp.TIM14.timer(&mut rcc);
     let mut ui_time = dp.TIM17.timer(&mut rcc);
     led_time.start(1000.millis());
-    ui_time.start(50.millis());
+    ui_time.start(100.millis());
 
-    let mut count: f32 = 10.;
+    // Current State of Devices
+    let mut nav = Navigation::default();
+    let mut dev = navigation::Device::default();
+    let mut updated_val: f32 = 10.;
 
     loop {
-        let mut update_display = false;
+        let mut update_display = true;
 
         if led_time.wait().is_ok() {
             led.toggle();
