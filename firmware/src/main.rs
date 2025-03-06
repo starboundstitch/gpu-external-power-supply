@@ -191,9 +191,51 @@ fn main() -> ! {
             // Runs only if there is a value to update on the display to save on unnecessary write
             // cycles and full display clears
             if update_display {
-                // clear_display(&mut display, fill);
-
-                display_data(&mut display, text_style, (0, 0), count);
+                // Updates the displays for all stored values
+                // Vcore
+                display_data(
+                    &mut display,
+                    text_style,
+                    fill,
+                    navigation::translate_point((0, 0)),
+                    dev.core().voltage(),
+                );
+                display_data(
+                    &mut display,
+                    text_style,
+                    fill,
+                    navigation::translate_point((0, 1)),
+                    dev.core().current(),
+                );
+                display_data(
+                    &mut display,
+                    text_style,
+                    fill,
+                    navigation::translate_point((0, 2)),
+                    dev.core().temperature(),
+                );
+                // Vmem
+                display_data(
+                    &mut display,
+                    text_style,
+                    fill,
+                    navigation::translate_point((1, 0)),
+                    dev.mem().voltage(),
+                );
+                display_data(
+                    &mut display,
+                    text_style,
+                    fill,
+                    navigation::translate_point((1, 1)),
+                    dev.mem().current(),
+                );
+                display_data(
+                    &mut display,
+                    text_style,
+                    fill,
+                    navigation::translate_point((1, 2)),
+                    dev.mem().temperature(),
+                );
 
                 display.flush().unwrap();
             }
