@@ -153,6 +153,17 @@ fn main() -> ! {
                             continue;
                         }
                         nav.change_mode();
+
+                        // temporary value that is being updated
+                        updated_val = match nav.get_position() {
+                            (0, 0) => dev.core().voltage(),
+                            (0, 1) => dev.core().current(),
+                            (0, 2) => dev.core().temperature(),
+                            (1, 0) => dev.mem().voltage(),
+                            (1, 1) => dev.mem().current(),
+                            (1, 2) => dev.mem().temperature(),
+                            (_, _) => 0., // Default condition that sound never match
+                        };
                     } else {
                         update_display = false;
                     }
