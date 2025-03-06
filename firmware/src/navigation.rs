@@ -67,6 +67,35 @@ impl Default for Mode {
     }
 }
 
+#[derive(Default)]
+pub struct Channel {
+    voltage: f32,
+    set_voltage: f32,
+    current: f32,
+    current_limit: f32,
+    temperature: f32,
+}
+
+impl Channel {
+    pub fn voltage(&self) -> f32 {
+        self.voltage
+    }
+    pub fn set_voltage(&mut self, val: f32) {
+        // Change once I2C hooked up to be self.set_voltage
+        self.voltage = val;
+    }
+    pub fn current(&self) -> f32 {
+        self.current
+    }
+    pub fn set_current(&mut self, val: f32) {
+        // Change once I2C hooked up to be self.current_limit
+        self.current = val;
+    }
+    pub fn temperature(&self) -> f32 {
+        self.temperature
+    }
+}
+
 pub fn translate_point(point: (i32, i32)) -> Point {
     Point::new(27 + 6 * 9 * point.0, 16 + 16 * point.1)
 }
