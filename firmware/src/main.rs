@@ -190,18 +190,11 @@ fn main() -> ! {
 fn display_data<I: embedded_hal::i2c::I2c, D: ssd1306::size::DisplaySize>(
     display: &mut Ssd1306<I2CInterface<I>, D, ssd1306::mode::BufferedGraphicsMode<D>>,
     text_style: MonoTextStyle<BinaryColor>,
-    loc: (i32, i32),
+    fill: PrimitiveStyle<BinaryColor>,
+    point: Point,
     val: f32,
 ) {
-    // Positioning on the Display
-    let x_pos = 27 + 6 * 9 * loc.0;
-    let y_pos = 16 + 16 * loc.1;
-    let point = Point::new(x_pos, y_pos);
-
-    // Fill
-    let fill = PrimitiveStyle::with_fill(BinaryColor::Off);
-
-    Rectangle::new(point, Size::new(9 * 6, 16))
+    Rectangle::new(point, Size::new(9 * 5, 16))
         .into_styled(fill)
         .draw(display)
         .unwrap();
