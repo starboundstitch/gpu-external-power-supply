@@ -68,6 +68,33 @@ impl Default for Mode {
 }
 
 #[derive(Default)]
+pub struct Device {
+    core: Channel,
+    mem: Channel,
+}
+
+impl Device {
+    pub fn core(&mut self) -> &mut Channel {
+        &mut self.core
+    }
+    pub fn mem(&mut self) -> &mut Channel {
+        &mut self.mem
+    }
+    pub fn store_value(&mut self, point: (i32, i32), val: f32) {
+        let chan = match point {
+            (0, _) => self.core(),
+            (1, _) => self.mem(),
+            (_, _) => return,
+        };
+        match point {
+            (_, 0) => chan.set_voltage(val),
+            (_, 1) => chan.set_current(val),
+            (_, _) => (),
+        };
+    }
+}
+
+#[derive(Default)]
 pub struct Channel {
     voltage: f32,
     set_voltage: f32,
