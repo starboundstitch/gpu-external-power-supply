@@ -169,7 +169,22 @@ fn main() -> ! {
                     }
                 }
                 navigation::Mode::Update => {
+                    if up.is_low() {
+                        updated_val += 0.005;
+                    } else if down.is_low() {
+                        updated_val -= 0.005;
+                    } else if right.is_low() {
+                        updated_val += 0.1;
+                    } else if left.is_low() {
+                        updated_val -= 0.1;
+                    } else if enter.is_low() {
+                        nav.change_mode();
+
+                        // Write Data to I2C and update dev voltages here
+                        dev.store_value(nav.get_position(), updated_val);
                     } else {
+                        update_display = false;
+                    }
                 }
             }
 
