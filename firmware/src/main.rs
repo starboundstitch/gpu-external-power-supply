@@ -202,7 +202,10 @@ fn display_data<I: embedded_hal::i2c::I2c, D: ssd1306::size::DisplaySize>(
     // Parse Float Values
     let mut buf = [b'0'; BUFFER_SIZE];
     let num_chars = lexical_core::write(val, &mut buf);
-    let num_chars: usize = num_chars.len().into();
+    let mut num_chars: usize = num_chars.len().into();
+    if num_chars > 5 {
+        num_chars = 5;
+    }
 
     // Write to Display
     Text::with_baseline(
