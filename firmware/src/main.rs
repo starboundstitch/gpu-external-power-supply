@@ -237,6 +237,25 @@ fn main() -> ! {
                     dev.mem().temperature(),
                 );
 
+                // Update Currently Hovered
+                match nav.get_mode() {
+                    navigation::Mode::Navigation => {
+                        Rectangle::new(nav.get_point(), Size::new(9 * 5, 16))
+                            .into_styled(hollow)
+                            .draw(&mut display)
+                            .unwrap();
+                    }
+                    navigation::Mode::Update => {
+                        display_data(
+                            &mut display,
+                            text_style_inv,
+                            fill_inv,
+                            nav.get_point(),
+                            updated_val,
+                        );
+                    }
+                }
+
                 display.flush().unwrap();
             }
         }
