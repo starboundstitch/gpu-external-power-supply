@@ -94,6 +94,8 @@ fn main() -> ! {
 
     // Fill
     let fill = PrimitiveStyle::with_fill(BinaryColor::Off);
+    let fill_inv = PrimitiveStyle::with_fill(BinaryColor::On);
+    let hollow = PrimitiveStyle::with_stroke(BinaryColor::On, 1);
 
     // GUI Text
     Text::with_baseline("   Vcore Vmem", Point::zero(), text_style, Baseline::Top)
