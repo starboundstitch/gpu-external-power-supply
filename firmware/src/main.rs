@@ -91,6 +91,10 @@ fn main() -> ! {
         .font(&FONT_9X18)
         .text_color(BinaryColor::On)
         .build();
+    let text_style_inv = MonoTextStyleBuilder::new()
+        .font(&FONT_9X18)
+        .text_color(BinaryColor::Off)
+        .build();
 
     // Fill
     let fill = PrimitiveStyle::with_fill(BinaryColor::Off);
