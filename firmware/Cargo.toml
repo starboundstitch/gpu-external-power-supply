@@ -22,6 +22,6 @@ version = "^1.0"
 default-features = false
 features = [ "write-integers", "write-floats" ]
 
-[dependencies.stm32c0xx-hal]
-git = "https://github.com/starboundstitch/stm32c0xx-hal/"
-features = ["stm32c071", "rt"]
+[dependencies.stm32f4xx-hal]
+version = "0.22.1"
+features = [ "stm32f401" ]
