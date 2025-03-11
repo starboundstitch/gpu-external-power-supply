@@ -121,6 +121,10 @@ impl Channel {
     pub fn temperature(&self) -> f32 {
         self.temperature
     }
+
+    pub fn set_temperature(&mut self, val: f32) {
+        self.temperature = val;
+    }
 }
 
 pub fn translate_point(point: (i32, i32)) -> Point {
