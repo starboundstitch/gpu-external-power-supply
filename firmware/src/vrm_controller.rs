@@ -13,7 +13,12 @@ pub enum Command {
     VOUTCommand,
     VOUTDroop,
     FrequencySwitch,
+    IoutOCFaultLimit,
     StatusByte,
+    ReadVout,
+    ReadTemperature1,
+    StatusAll,
+    StatusExtended,
 }
 
 impl Command {
@@ -26,7 +31,12 @@ impl Command {
             Command::VOUTCommand => 0x21,
             Command::VOUTDroop => 0x28,
             Command::FrequencySwitch => 0x33,
+            Command::IoutOCFaultLimit => 0x46,
             Command::StatusByte => 0x78,
+            Command::ReadVout => 0x8B,
+            Command::ReadTemperature1 => 0x8D,
+            Command::StatusAll => 0xDB,
+            Command::StatusExtended => 0xDD,
         }
     }
 }
@@ -50,7 +60,6 @@ impl Page {
 impl<I: embedded_hal::i2c::I2c> TPSC536C7<I> {
     pub fn new(i2c: I, address: u8) -> TPSC536C7<I> {
         let mut controller = TPSC536C7 { address, i2c };
-        controller.on_off_config();
         return controller;
     }
 
