@@ -4,9 +4,7 @@
 use cortex_m_rt::entry;
 use nb::block;
 
-use navigation::Navigation;
-use stm32c0xx_hal::prelude::*;
-use stm32c0xx_hal::{i2c::Config, rcc, stm32};
+use stm32f4xx_hal::{self as hal, gpio::PinState, i2c::I2c, pac, prelude::*};
 
 use embedded_graphics::{
     mono_font::{ascii::FONT_9X18, MonoTextStyle, MonoTextStyleBuilder},
@@ -24,52 +22,56 @@ use defmt_rtt as _;
 
 use panic_semihosting as _; // Sends Backtraces through Probe-rs
 
+use navigation::Navigation;
 mod navigation;
 mod vrm_controller;
 
 #[entry]
 fn main() -> ! {
-    let dp = stm32::Peripherals::take().expect("cannot take peripherals");
+    //** Microcontroller Configuration **//
+    let dp = pac::Peripherals::take().expect("Cannot Take Peripherals");
     let mut rcc = dp.RCC.constrain();
+    let clocks = rcc.cfgr.sysclk(48.MHz()).freeze();
 
     //** Declare GPIOs **//
-    let gpioa = dp.GPIOA.split(&mut rcc);
-    let gpiob = dp.GPIOB.split(&mut rcc);
-    let gpioc = dp.GPIOC.split(&mut rcc);
+    let gpioa = dp.GPIOA.split();
+    let gpiob = dp.GPIOB.split();
+    let gpioc = dp.GPIOC.split();
     let mut led = gpioa.pa5.into_push_pull_output();
 
     //** Enable VRM Controller Pins **//
     let _avr_ready = gpioc.pc6.into_floating_input();
     let _bvr_ready = gpioc.pc7.into_floating_input();
-    let _a_enable = gpioc.pc9.into_push_pull_output_in_state(PinState::High);
     let _b_enable = gpioc.pc10.into_push_pull_output_in_state(PinState::High);
 
     //** Enable Onboard Control Pins **//
     let up = gpiob.pb4.into_pull_up_input();
     let down = gpiob.pb5.into_pull_up_input();
-    let left = gpiob.pb6.into_pull_up_input();
-    let right = gpiob.pb7.into_pull_up_input();
     let enter = gpiob.pb8.into_pull_up_input();
 
     // Read Boot Pins
-    defmt::info!("BtSl: {}", dp.FLASH.optr().read().n_boot_sel().bit_is_set());
-    defmt::info!("nBoot1: {}", dp.FLASH.optr().read().n_boot1().bit_is_set());
-    defmt::info!(
-        "Boot_Lock: {}",
-        dp.FLASH.secr().read().boot_lock().bit_is_set()
-    );
 
     //** I2C Configuration **//
 
     // I2C Channel 1
-    let sda1 = gpioa.pa10.into_open_drain_output_in_state(PinState::High);
-    let scl1 = gpioa.pa9.into_open_drain_output_in_state(PinState::High);
-    let mut i2c1 = dp.I2C1.i2c(sda1, scl1, Config::new(400.kHz()), &mut rcc);
+    let sda1 = gpiob.pb7;
+    let scl1 = gpiob.pb6;
+    let i2c1 = I2c::new(
+        dp.I2C1,
+        (scl1, sda1),
+        hal::i2c::Mode::standard(100.kHz()),
+        &clocks,
+    );
 
     // I2C Channel 2
-    let sda2 = gpioa.pa6.into_open_drain_output_in_state(PinState::High);
-    let scl2 = gpioa.pa7.into_open_drain_output_in_state(PinState::High);
-    let i2c2 = dp.I2C2.i2c(sda2, scl2, Config::new(400.kHz()), &mut rcc);
+    let sda2 = gpioc.pc9;
+    let scl2 = gpioa.pa8;
+    let i2c2 = I2c::new(
+        dp.I2C3,
+        (scl2, sda2),
+        hal::i2c::Mode::standard(100.kHz()),
+        &clocks,
+    );
 
     //** VRM Controller Initialization **//
     let i2c_addr = 0x5F;
@@ -85,6 +87,8 @@ fn main() -> ! {
     let mut display = Ssd1306::new(interface, DisplaySize128x64, DisplayRotation::Rotate0)
         .into_buffered_graphics_mode();
     display.init().unwrap();
+
+    defmt::info!("Past Display Init");
 
     // Font and text color from the embedded_graphics library
     let text_style = MonoTextStyleBuilder::new()
@@ -118,10 +122,13 @@ fn main() -> ! {
     // Flush Display
     display.flush().unwrap();
 
-    let mut led_time = dp.TIM14.timer(&mut rcc);
-    let mut ui_time = dp.TIM17.timer(&mut rcc);
-    led_time.start(1000.millis());
-    ui_time.start(100.millis());
+    defmt::info!("First Display Flush");
+
+    // Timer Configuration
+    let mut led_time = dp.TIM1.counter_ms(&clocks);
+    let mut ui_time = dp.TIM3.counter_ms(&clocks);
+    led_time.start(1000.millis()).unwrap();
+    ui_time.start(100.millis()).unwrap();
 
     // Current State of Devices
     let mut nav = Navigation::default();
