@@ -1,12 +1,14 @@
- [target.thumbv6m-none-eabi]
- runner = "probe-rs run --chip STM32C071RBTx --always-print-stacktrace"
+ [target.thumbv7em-none-eabihf]
+ runner = "probe-rs run --chip STM32F401RETx --always-print-stacktrace"
 
 rustflags = [
-  "-C", "linker=arm-none-eabi-ld",
   "-C", "link-arg=-Tlink.x",
   # Defmt Link Part
   "-C", "link-arg=-Tdefmt.x"
 ]
 
 [build]
- target = "thumbv6m-none-eabi"
+ target = "thumbv7em-none-eabihf"
+
+[env]
+DEFMT_LOG = "trace"
