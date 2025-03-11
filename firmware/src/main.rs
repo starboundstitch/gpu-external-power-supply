@@ -188,76 +188,76 @@ fn main() -> ! {
                 }
             }
 
+
             // Runs only if there is a value to update on the display to save on unnecessary write
             // cycles and full display clears
-            if update_display {
-                // Updates the displays for all stored values
-                // Vcore
-                display_data(
-                    &mut display,
-                    text_style,
-                    fill,
-                    navigation::translate_point((0, 0)),
-                    dev.core().voltage(),
-                );
-                display_data(
-                    &mut display,
-                    text_style,
-                    fill,
-                    navigation::translate_point((0, 1)),
-                    dev.core().current(),
-                );
-                display_data(
-                    &mut display,
-                    text_style,
-                    fill,
-                    navigation::translate_point((0, 2)),
-                    dev.core().temperature(),
-                );
-                // Vmem
-                display_data(
-                    &mut display,
-                    text_style,
-                    fill,
-                    navigation::translate_point((1, 0)),
-                    dev.mem().voltage(),
-                );
-                display_data(
-                    &mut display,
-                    text_style,
-                    fill,
-                    navigation::translate_point((1, 1)),
-                    dev.mem().current(),
-                );
-                display_data(
-                    &mut display,
-                    text_style,
-                    fill,
-                    navigation::translate_point((1, 2)),
-                    dev.mem().temperature(),
-                );
+            // if update_display {
+            // Updates the displays for all stored values
+            // Vcore
+            display_data(
+                &mut display,
+                text_style,
+                fill,
+                navigation::translate_point((0, 0)),
+                dev.core().voltage(),
+            );
+            display_data(
+                &mut display,
+                text_style,
+                fill,
+                navigation::translate_point((0, 1)),
+                dev.core().current(),
+            );
+            display_data(
+                &mut display,
+                text_style,
+                fill,
+                navigation::translate_point((0, 2)),
+                dev.core().temperature(),
+            );
+            // Vmem
+            display_data(
+                &mut display,
+                text_style,
+                fill,
+                navigation::translate_point((1, 0)),
+                dev.mem().voltage(),
+            );
+            display_data(
+                &mut display,
+                text_style,
+                fill,
+                navigation::translate_point((1, 1)),
+                dev.mem().current(),
+            );
+            display_data(
+                &mut display,
+                text_style,
+                fill,
+                navigation::translate_point((1, 2)),
+                dev.mem().temperature(),
+            );
 
-                // Update Currently Hovered
-                match nav.get_mode() {
-                    navigation::Mode::Navigation => {
-                        Rectangle::new(nav.get_point(), Size::new(9 * 5, 16))
-                            .into_styled(hollow)
-                            .draw(&mut display)
-                            .unwrap();
-                    }
-                    navigation::Mode::Update => {
-                        display_data(
-                            &mut display,
-                            text_style_inv,
-                            fill_inv,
-                            nav.get_point(),
-                            updated_val,
-                        );
-                    }
+            // Update Currently Hovered
+            match nav.get_mode() {
+                navigation::Mode::Navigation => {
+                    Rectangle::new(nav.get_point(), Size::new(9 * 5, 16))
+                        .into_styled(hollow)
+                        .draw(&mut display)
+                        .unwrap();
                 }
-
-                display.flush().unwrap();
+                navigation::Mode::Update => {
+                    display_data(
+                        &mut display,
+                        text_style_inv,
+                        fill_inv,
+                        nav.get_point(),
+                        updated_val,
+                    );
+                }
             }
+
+            display.flush().unwrap();
         }
     }
 }
