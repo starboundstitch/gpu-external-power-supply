@@ -37,6 +37,7 @@ fn main() -> ! {
     let gpioa = dp.GPIOA.split();
     let gpiob = dp.GPIOB.split();
     let gpioc = dp.GPIOC.split();
+    let gpiod = dp.GPIOD.split();
     let mut led = gpioa.pa5.into_push_pull_output();
 
     //** Enable VRM Controller Pins **//
@@ -45,9 +46,11 @@ fn main() -> ! {
     let _b_enable = gpioc.pc10.into_push_pull_output_in_state(PinState::High);
 
     //** Enable Onboard Control Pins **//
-    let up = gpiob.pb4.into_pull_up_input();
-    let down = gpiob.pb5.into_pull_up_input();
-    let enter = gpiob.pb8.into_pull_up_input();
+    let up = gpioc.pc8.into_pull_up_input();
+    let down = gpioc.pc5.into_pull_up_input();
+    let left = gpiod.pd8.into_pull_up_input();
+    let right = gpioa.pa12.into_pull_up_input();
+    let enter = gpioa.pa11.into_pull_up_input();
 
     // Read Boot Pins
 
