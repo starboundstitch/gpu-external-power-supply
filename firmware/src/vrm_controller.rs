@@ -70,6 +70,13 @@ impl<I: embedded_hal::i2c::I2c> TPSC536C7<I> {
         }
     }
 
+    pub fn read(&mut self, cmd: u8, buf: &mut [u8]) {
+        match self.i2c.write_read(self.address, &[cmd], buf) {
+            Ok(val) => defmt::trace!("Read_OK: {:#X}, {:#X}", cmd, buf),
+            Err(val) => defmt::error!("Controller Read: {:#X}, {}", cmd, val.kind()),
+        }
+    }
+
     pub fn on_off_config(&mut self) {
         self.command(&[Command::OnOffConfig.to_address(), 0x00]);
     }
