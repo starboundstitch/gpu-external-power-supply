@@ -200,6 +200,21 @@ fn main() -> ! {
 
                         // Write Data to I2C and update dev voltages here
                         dev.store_value(nav.get_position(), updated_val);
+
+                        match nav.get_position() {
+                            (0, _) => {
+                                controller.ch_a();
+                            }
+                            (1, _) => {
+                                controller.ch_b();
+                            }
+                            (_, _) => (),
+                        };
+                        match nav.get_position() {
+                            (_, 0) => controller.vout(updated_val),
+                            (_, 1) => controller.set_iout_limit(updated_val),
+                            (_, _) => (), // Default condition that sound never match
+                        };
                     } else {
                         update_display = false;
                     }
