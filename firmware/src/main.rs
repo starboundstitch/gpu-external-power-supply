@@ -182,14 +182,19 @@ fn main() -> ! {
                     }
                 }
                 navigation::Mode::Update => {
+                    let (step_small, step_large) = match nav.get_position() {
+                        (_, 0) => (0.005, 0.1),
+                        (_, 1) => (1., 10.),
+                        (_, _) => (0., 0.),
+                    };
                     if up.is_low() {
-                        updated_val += 0.005;
+                        updated_val += step_small;
                     } else if down.is_low() {
-                        updated_val -= 0.005;
+                        updated_val -= step_small;
                     } else if right.is_low() {
-                        updated_val += 0.1;
+                        updated_val += step_large;
                     } else if left.is_low() {
-                        updated_val -= 0.1;
+                        updated_val -= step_large;
                     } else if enter.is_low() {
                         nav.change_mode();
 
