@@ -62,7 +62,7 @@ fn main() -> ! {
     let i2c1 = I2c::new(
         dp.I2C1,
         (scl1, sda1),
-        hal::i2c::Mode::standard(100.kHz()),
+        hal::i2c::Mode::standard(400.kHz()),
         &clocks,
     );
 
@@ -72,7 +72,7 @@ fn main() -> ! {
     let i2c2 = I2c::new(
         dp.I2C3,
         (scl2, sda2),
-        hal::i2c::Mode::standard(100.kHz()),
+        hal::i2c::Mode::standard(400.kHz()),
         &clocks,
     );
 
