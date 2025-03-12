@@ -138,6 +138,9 @@ fn main() -> ! {
     let mut dev = navigation::Device::default();
     let mut updated_val: f32 = 10.;
 
+    // Get Initial Values
+    update_vrm_read(&mut dev, &mut controller);
+
     loop {
         let mut update_display = true;
 
@@ -197,7 +200,6 @@ fn main() -> ! {
                     }
                 }
             }
-
 
             // Runs only if there is a value to update on the display to save on unnecessary write
             // cycles and full display clears
@@ -268,6 +270,10 @@ fn main() -> ! {
             }
 
             display.flush().unwrap();
+
+            // Read new I2C Values (at end so that it has the whole UI time for the values to
+            // collect)
+            update_vrm_read(&mut dev, &mut controller);
         }
     }
 }
@@ -313,4 +319,19 @@ fn clear_display<I: embedded_hal::i2c::I2c, D: ssd1306::size::DisplaySize>(
         .into_styled(fill)
         .draw(display)
         .unwrap();
+}
+
+fn update_vrm_read<I: embedded_hal::i2c::I2c>(
+    dev: &mut navigation::Device,
+    controller: &mut TPSC536C7<I>,
+) {
+    // Get Values for Display
+    dev.core().set_voltage(controller.ch_a().read_vout_cmd());
+    dev.mem().set_voltage(controller.ch_b().read_vout_cmd());
+    dev.core()
+        .set_temperature(controller.ch_a().read_temperature());
+    dev.mem()
+        .set_temperature(controller.ch_b().read_temperature());
+    dev.core().set_current(controller.ch_a().read_iout_limit());
+    dev.mem().set_current(controller.ch_b().read_iout_limit());
 }
