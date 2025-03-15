@@ -20,7 +20,10 @@ features = [ "defmt-03" ]
 [dependencies.lexical-core]
 version = "^1.0"
 default-features = false
-features = [ "write-integers", "write-floats" ]
+features = [ "parse-floats", "write-floats" ]
+
+[dependencies.pmbus-types-rs]
+git = "https://github.com/starboundstitch/pmbus-types-rs"
 
 [dependencies.stm32f4xx-hal]
 version = "0.22.1"
