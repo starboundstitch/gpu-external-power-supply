@@ -1928,56 +1928,6 @@
 				(justify left top)
 			)
 		)
-		(pin "cmptr_ntrfc_u_cntrllr_data" input
-			(at 19.05 130.81 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "34ecab7a-c5ea-4bc4-833a-143482b99784")
-		)
-		(pin "onbrd_cntrl_u_cntrllr_dsig" input
-			(at 19.05 134.62 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "25e23ef7-1612-417f-a0cf-8f906912a4ee")
-		)
-		(pin "lw_crrnt_spply_u_cntrllr_dcpwr" input
-			(at 19.05 138.43 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "8025429c-7109-4888-bdf4-878a056d39ab")
-		)
-		(pin "u_cntrllr_vrm_cntrllr_data" input
-			(at 80.01 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "f1aaec82-a233-4047-8cca-1640e64d8e41")
-		)
-		(pin "u_cntrllr_vrm_cntrllr_dsig" input
-			(at 80.01 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "55f0b1e0-fe2c-4851-82be-76fd18c1aec7")
-		)
 		(instances
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7"
@@ -2103,26 +2053,6 @@
 				)
 				(justify left top)
 			)
-		)
-		(pin "otsd_onbrd_cntrl_usrin" input
-			(at 21.59 30.48 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "a4ff1653-04f7-40da-8432-beea7eaade78")
-		)
-		(pin "onbrd_cntrl_cntrllr_dsig" input
-			(at 78.74 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "e705969b-e4cc-4c6b-8538-e1d67e233eaa")
 		)
 		(instances
 			(project "gpu-external-power-supply"
@@ -2573,84 +2503,6 @@
 		)
 	)
 	(sheet
-		(at 21.59 46.99)
-		(size 54.61 17.78)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "95740f03-887c-4f4a-acc0-1e5b6f74d30f")
-		(property "Sheetname" "Computer Control"
-			(at 21.59 46.2784 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Computer_Control.kicad_sch"
-			(at 21.59 65.3546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "otsd_cmptr_ntrfc_data" input
-			(at 21.59 49.53 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "0e961421-b739-46a3-bfe6-4802f74f2f93")
-		)
-		(pin "otsd_cmptr_ntrfc_usrin" input
-			(at 21.59 54.61 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "7860f50d-0553-44e6-9760-81b59b4853de")
-		)
-		(pin "cmptr_ntrfc_u_cntrllr_data" input
-			(at 76.2 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "0bf693e9-c347-4149-b022-35c91e9e2990")
-		)
-		(pin "otsd_cmptr_ntrfc_usrout" input
-			(at 21.59 59.69 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "f937c3c3-ba79-40e7-a11d-a3b5e104859c")
-		)
-		(instances
-			(project "gpu-external-power-supply"
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7"
-					(page "10")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 250.19 110.49)
 		(size 30.48 13.97)
 		(fields_autoplaced yes)
@@ -2981,16 +2833,6 @@
 				)
 				(justify left top)
 			)
-		)
-		(pin "otsd_12v_spply_dcpwr" input
-			(at 21.59 83.82 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "e3b3f02c-8eff-407c-b980-3eb929294ed5")
 		)
 		(instances
 			(project "gpu-external-power-supply"

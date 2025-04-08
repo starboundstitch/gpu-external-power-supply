@@ -3161,18 +3161,6 @@
 			)
 		)
 	)
-	(hierarchical_label "otsd_12v_spply_dcpwr"
-		(shape input)
-		(at 36.83 110.49 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "763fa011-a726-407c-bfce-6550ff3ac25b")
-	)
 	(symbol
 		(lib_id "Device:C")
 		(at 151.13 53.34 0)
