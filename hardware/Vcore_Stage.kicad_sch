@@ -2031,7 +2031,6 @@
 	(hierarchical_label "Cur_Sense"
 		(shape output)
 		(at 95.25 102.87 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2043,7 +2042,6 @@
 	(hierarchical_label "PWM"
 		(shape input)
 		(at 137.16 92.71 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2055,7 +2053,6 @@
 	(hierarchical_label "Vref"
 		(shape input)
 		(at 118.11 105.41 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2067,7 +2064,6 @@
 	(hierarchical_label "5Vin"
 		(shape input)
 		(at 113.03 62.23 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2079,7 +2075,6 @@
 	(hierarchical_label "12Vin"
 		(shape input)
 		(at 219.71 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

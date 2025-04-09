@@ -1664,6 +1664,126 @@
 				)
 			)
 		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -3517,7 +3637,6 @@
 	)
 	(label "CSPIN"
 		(at 101.6 20.32 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3528,7 +3647,6 @@
 	)
 	(label "CSPIN"
 		(at 116.84 109.22 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3539,7 +3657,6 @@
 	)
 	(label "VBOOT_A"
 		(at 115.57 114.3 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3550,7 +3667,6 @@
 	)
 	(label "VR_FAULT#"
 		(at 113.03 104.14 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3561,7 +3677,6 @@
 	)
 	(label "ADDR_CONFIG"
 		(at 111.76 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3572,7 +3687,6 @@
 	)
 	(label "B_Enable"
 		(at 35.56 139.7 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3583,7 +3697,6 @@
 	)
 	(label "VBOOT_A"
 		(at 50.8 27.94 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3594,7 +3707,6 @@
 	)
 	(label "B_Enable"
 		(at 121.92 93.98 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3605,7 +3717,6 @@
 	)
 	(label "AVR_RDY"
 		(at 113.03 86.36 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3616,7 +3727,6 @@
 	)
 	(label "VREF"
 		(at 113.03 119.38 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3627,7 +3737,6 @@
 	)
 	(label "CSNIN"
 		(at 120.65 20.32 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3638,7 +3747,6 @@
 	)
 	(label "VREF"
 		(at 21.59 17.78 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3649,7 +3757,6 @@
 	)
 	(label "CSNIN"
 		(at 116.84 111.76 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3660,7 +3767,6 @@
 	)
 	(label "ADDR_CONFIG"
 		(at 50.8 25.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3671,7 +3777,6 @@
 	)
 	(label "SMB_CLK"
 		(at 105.41 142.24 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3682,7 +3787,6 @@
 	)
 	(label "SMB_ALERT"
 		(at 105.41 139.7 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3693,7 +3797,6 @@
 	)
 	(label "SMB_CLK"
 		(at 114.3 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3704,7 +3807,6 @@
 	)
 	(label "AVR_RDY"
 		(at 105.41 147.32 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3715,7 +3817,6 @@
 	)
 	(label "BVR_RDY"
 		(at 113.03 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3726,7 +3827,6 @@
 	)
 	(label "SMB_ALERT"
 		(at 113.03 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3737,7 +3837,6 @@
 	)
 	(label "VR_FAULT#"
 		(at 105.41 152.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3748,7 +3847,6 @@
 	)
 	(label "BVR_RDY"
 		(at 105.41 149.86 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3759,7 +3857,6 @@
 	)
 	(label "A_Enable"
 		(at 121.92 83.82 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3770,7 +3867,6 @@
 	)
 	(label "SMB_DIO"
 		(at 114.3 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3781,7 +3877,6 @@
 	)
 	(label "SMB_DIO"
 		(at 105.41 144.78 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3792,7 +3887,6 @@
 	)
 	(label "A_Enable"
 		(at 13.97 139.7 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3977,32 +4071,9 @@
 			)
 		)
 	)
-	(global_label "3.3V"
-		(shape input)
-		(at 91.44 116.84 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f97ffac0-e419-45fa-a6bd-fc3d4bb7345d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 84.3424 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(hierarchical_label "Vmem"
 		(shape input)
 		(at 27.94 99.06 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4014,7 +4085,6 @@
 	(hierarchical_label "12V_Sense_In"
 		(shape input)
 		(at 100.33 21.59 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4026,7 +4096,6 @@
 	(hierarchical_label "Cur_A_6"
 		(shape input)
 		(at 177.8 86.36 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4038,7 +4107,6 @@
 	(hierarchical_label "Cur_A_5"
 		(shape input)
 		(at 177.8 81.28 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4050,7 +4118,6 @@
 	(hierarchical_label "B_TEMP"
 		(shape input)
 		(at 179.07 129.54 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4062,7 +4129,6 @@
 	(hierarchical_label "PWM_A_2"
 		(shape output)
 		(at 177.8 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4074,7 +4140,6 @@
 	(hierarchical_label "Cur_B_2"
 		(shape input)
 		(at 177.8 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4086,7 +4151,6 @@
 	(hierarchical_label "Cur_A_7"
 		(shape input)
 		(at 177.8 91.44 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4098,7 +4162,6 @@
 	(hierarchical_label "Cur_B_1"
 		(shape input)
 		(at 177.8 114.3 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4110,7 +4173,6 @@
 	(hierarchical_label "PWM_A_8"
 		(shape output)
 		(at 177.8 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4122,7 +4184,6 @@
 	(hierarchical_label "CUR_A_9"
 		(shape input)
 		(at 177.8 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4134,7 +4195,6 @@
 	(hierarchical_label "PWM_A_7"
 		(shape output)
 		(at 177.8 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4146,7 +4206,6 @@
 	(hierarchical_label "12V_To_Fets"
 		(shape output)
 		(at 123.19 21.59 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4158,7 +4217,6 @@
 	(hierarchical_label "PWM_A_9"
 		(shape output)
 		(at 177.8 104.14 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4170,7 +4228,6 @@
 	(hierarchical_label "A_TEMP"
 		(shape input)
 		(at 196.85 127 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4182,7 +4239,6 @@
 	(hierarchical_label "Cur_A_10"
 		(shape input)
 		(at 177.8 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4194,7 +4250,6 @@
 	(hierarchical_label "Cur_A_2"
 		(shape input)
 		(at 177.8 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4206,7 +4261,6 @@
 	(hierarchical_label "Cur_A_4"
 		(shape input)
 		(at 177.8 76.2 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4218,7 +4272,6 @@
 	(hierarchical_label "Vcore"
 		(shape input)
 		(at 44.45 78.74 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4230,7 +4283,6 @@
 	(hierarchical_label "Cur_A_3"
 		(shape input)
 		(at 177.8 71.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4242,7 +4294,6 @@
 	(hierarchical_label "PWM_A_5"
 		(shape output)
 		(at 177.8 83.82 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4254,7 +4305,6 @@
 	(hierarchical_label "PWM_A_1"
 		(shape output)
 		(at 177.8 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4266,7 +4316,6 @@
 	(hierarchical_label "Cur_A_1"
 		(shape input)
 		(at 177.8 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4278,7 +4327,6 @@
 	(hierarchical_label "PWM_A_3"
 		(shape output)
 		(at 177.8 73.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4290,7 +4338,6 @@
 	(hierarchical_label "PWM_A_6"
 		(shape output)
 		(at 177.8 88.9 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4302,7 +4349,6 @@
 	(hierarchical_label "1.5V_VREF_Out"
 		(shape output)
 		(at 50.8 17.78 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4314,7 +4360,6 @@
 	(hierarchical_label "PWM_B_2"
 		(shape output)
 		(at 177.8 121.92 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4326,7 +4371,6 @@
 	(hierarchical_label "Cur_A_8"
 		(shape input)
 		(at 177.8 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4338,7 +4382,6 @@
 	(hierarchical_label "PWM_A_4"
 		(shape output)
 		(at 177.8 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4350,7 +4393,6 @@
 	(hierarchical_label "PWM_B_1"
 		(shape output)
 		(at 177.8 116.84 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4362,7 +4404,6 @@
 	(hierarchical_label "PWM_A_10"
 		(shape output)
 		(at 177.8 109.22 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4390,7 +4431,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1nF"
+		(property "Value" "1000pF"
 			(at 19.05 147.3199 0)
 			(effects
 				(font
@@ -4857,6 +4898,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 91.44 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19af93f0-a9a9-425a-ac8f-eed0c597387e")
+		(property "Reference" "#PWR02010"
+			(at 91.44 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 91.44 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 91.44 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b531e02-efe6-421e-9a8a-58620b6de3b9")
+		)
+		(instances
+			(project ""
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/e6dc7bfe-1f99-4466-9581-badeb70bd091"
+					(reference "#PWR02010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 105.41 125.73 0)
 		(unit 1)
@@ -5230,7 +5337,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Right"
 			(at 53.34 81.28 0)
 			(effects
 				(font
@@ -5369,7 +5476,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Right"
 			(at 44.45 88.9 0)
 			(effects
 				(font
@@ -5845,7 +5952,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Right"
 			(at 35.56 93.98 0)
 			(effects
 				(font
@@ -6195,7 +6302,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Right"
 			(at 30.48 110.49 0)
 			(effects
 				(font
@@ -6255,7 +6362,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1nF"
+		(property "Value" "1000pF"
 			(at 45.466 147.32 0)
 			(effects
 				(font
