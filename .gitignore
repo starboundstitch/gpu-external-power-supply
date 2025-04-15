@@ -18,6 +18,7 @@ gerber
 
 temp
 fp-info-cache
+\#auto_saved_files#
 
 # Rust Ignore
 **/target/
