@@ -2256,7 +2256,6 @@
 	(hierarchical_label "VBUS"
 		(shape input)
 		(at 166.37 62.23 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2268,7 +2267,6 @@
 	(hierarchical_label "12V"
 		(shape input)
 		(at 20.32 66.04 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2280,7 +2278,6 @@
 	(hierarchical_label "+3.3V"
 		(shape output)
 		(at 266.7 71.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2292,7 +2289,6 @@
 	(hierarchical_label "5V"
 		(shape output)
 		(at 121.92 62.23 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2336,7 +2332,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/partdetail/TexasInstruments-TPS62143RGTR/C2070702"
 			(at 76.2 83.82 0)
 			(effects
 				(font
@@ -2571,7 +2567,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 228.6 105.41 0)
 			(effects
 				(font
@@ -2580,7 +2576,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Hubei_KentoElec-KT0603R/C2286"
 			(at 228.6 105.41 0)
 			(effects
 				(font
@@ -2919,7 +2915,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "80 Ohms"
+		(property "Value" "82"
 			(at 124.46 95.2499 0)
 			(effects
 				(font
@@ -2937,7 +2933,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/18529-0805W8F820JT5E/C17841"
 			(at 121.92 93.98 0)
 			(effects
 				(font
@@ -2997,7 +2993,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 50.4952 88.9 0)
 			(effects
 				(font
@@ -3006,7 +3002,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/1888-0402B332K500NT/C1536"
 			(at 49.53 85.09 0)
 			(effects
 				(font
@@ -3074,7 +3070,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "TPS73633DBVR"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/TexasInstruments-TPS73633DBVR/C28038"
 			(at 160.02 71.12 0)
 			(effects
 				(font
@@ -3144,7 +3140,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 167.3352 86.36 0)
 			(effects
 				(font
@@ -3153,7 +3149,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/15107-CL05A105KP5NNNC/C14445"
 			(at 166.37 82.55 0)
 			(effects
 				(font
@@ -3211,7 +3207,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 116.078 74.93 90)
 			(effects
 				(font
@@ -3220,7 +3216,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/26484-0402WGF1003TCE/C25741"
 			(at 114.3 74.93 0)
 			(effects
 				(font
@@ -3272,7 +3268,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "45+-5"
+		(property "Value" "82"
 			(at 231.14 95.2499 0)
 			(effects
 				(font
@@ -3290,7 +3286,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/18529-0805W8F820JT5E/C17841"
 			(at 228.6 93.98 0)
 			(effects
 				(font
@@ -3350,7 +3346,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 37.7952 88.9 0)
 			(effects
 				(font
@@ -3359,7 +3355,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/71320-0603X106K160NT/C70225"
 			(at 36.83 85.09 0)
 			(effects
 				(font
@@ -3485,7 +3481,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 121.92 105.41 0)
 			(effects
 				(font
@@ -3494,7 +3490,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Hubei_KentoElec-KT0603R/C2286"
 			(at 121.92 105.41 0)
 			(effects
 				(font
@@ -3619,7 +3615,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "work:IND-SMD_L7.2-W6.6_GPSR07X0"
 			(at 100.33 71.12 0)
 			(effects
 				(font
@@ -3628,7 +3624,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/ShouHan-CYA0630_22UH/C5189746"
 			(at 100.33 71.12 0)
 			(effects
 				(font
@@ -3688,7 +3684,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 215.5952 83.82 0)
 			(effects
 				(font
@@ -3697,7 +3693,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/15107-CL05A105KP5NNNC/C14445"
 			(at 214.63 80.01 0)
 			(effects
 				(font

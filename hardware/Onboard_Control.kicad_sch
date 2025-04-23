@@ -1531,7 +1531,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "work:SW_TS02-66-70-BK-160-LCR-D"
+		(property "Footprint" "work:KEY-SMD_4P-L6.0-W6.0-P3.90-LS9.0"
 			(at 36.83 102.87 0)
 			(effects
 				(font
@@ -1541,7 +1541,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ckswitches.com/media/1482/kms.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Korean_HropartsElec-K2_6639SP_C4SC04/C83206"
 			(at 36.83 102.87 0)
 			(effects
 				(font
@@ -1702,7 +1702,7 @@
 				)
 			)
 		)
-		(property "Footprint" "work:SW_TS02-66-70-BK-160-LCR-D"
+		(property "Footprint" "work:KEY-SMD_4P-L6.0-W6.0-P3.90-LS9.0"
 			(at 64.77 133.35 0)
 			(effects
 				(font
@@ -1712,7 +1712,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ckswitches.com/media/1482/kms.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Korean_HropartsElec-K2_6639SP_C4SC04/C83206"
 			(at 64.77 133.35 0)
 			(effects
 				(font
@@ -1808,7 +1808,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "work:SW_TS02-66-70-BK-160-LCR-D"
+		(property "Footprint" "work:KEY-SMD_4P-L6.0-W6.0-P3.90-LS9.0"
 			(at 91.44 102.87 0)
 			(effects
 				(font
@@ -1818,7 +1818,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ckswitches.com/media/1482/kms.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Korean_HropartsElec-K2_6639SP_C4SC04/C83206"
 			(at 91.44 102.87 0)
 			(effects
 				(font
@@ -1915,7 +1915,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "work:SW_TS02-66-70-BK-160-LCR-D"
+		(property "Footprint" "work:KEY-SMD_4P-L6.0-W6.0-P3.90-LS9.0"
 			(at 64.77 77.47 0)
 			(effects
 				(font
@@ -1925,7 +1925,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ckswitches.com/media/1482/kms.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Korean_HropartsElec-K2_6639SP_C4SC04/C83206"
 			(at 64.77 77.47 0)
 			(effects
 				(font
@@ -2021,7 +2021,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "work:SW_TS02-66-70-BK-160-LCR-D"
+		(property "Footprint" "work:KEY-SMD_4P-L6.0-W6.0-P3.90-LS9.0"
 			(at 64.77 105.41 0)
 			(effects
 				(font
@@ -2031,7 +2031,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/c-k/KMS223GP-LFG/679931"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Korean_HropartsElec-K2_6639SP_C4SC04/C83206"
 			(at 64.77 105.41 0)
 			(effects
 				(font
@@ -2135,7 +2135,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/sullins-connector-solutions/PPTC041LFBN-RC/810144"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/125688-B_2200S04PA120/C124413"
 			(at 129.54 78.74 0)
 			(effects
 				(font

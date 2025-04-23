@@ -1031,12 +1031,6 @@
 		(uuid "5396f612-7b1d-460f-8eae-7dadaf305c2c")
 	)
 	(junction
-		(at 135.89 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "55ce33e4-4966-4f0d-a46c-528b3bf133b1")
-	)
-	(junction
 		(at 238.76 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1151,12 +1145,6 @@
 		(uuid "c9cbf924-3107-4be0-a375-6cff08fb7e3b")
 	)
 	(junction
-		(at 129.54 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d0be5fd5-a9f7-45d5-a717-3be4fbafc5cd")
-	)
-	(junction
 		(at 114.3 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1226,7 +1214,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 97.79) (xy 135.89 97.79)
+			(xy 124.46 97.79) (xy 140.97 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1746,26 +1734,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 113.03) (xy 129.54 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c99f424b-1036-4ac4-a9e5-5cc6a28e3923")
-	)
-	(wire
-		(pts
-			(xy 135.89 101.6) (xy 135.89 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb48b4ba-f93c-4e15-a623-ff6c6d383cf8")
-	)
-	(wire
-		(pts
 			(xy 118.11 105.41) (xy 121.92 105.41)
 		)
 		(stroke
@@ -1783,16 +1751,6 @@
 			(type default)
 		)
 		(uuid "ccce949d-e96c-436d-9c26-1f6be7b45f8c")
-	)
-	(wire
-		(pts
-			(xy 135.89 109.22) (xy 135.89 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d161f4b5-ee44-4660-9ada-69ca12a8157b")
 	)
 	(wire
 		(pts
@@ -1843,16 +1801,6 @@
 			(type default)
 		)
 		(uuid "ddfacc2e-8b77-4551-bca1-eeffc9bb8e82")
-	)
-	(wire
-		(pts
-			(xy 135.89 97.79) (xy 140.97 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0b4d178-dfa5-4054-b722-007df8b95cfc")
 	)
 	(wire
 		(pts
@@ -2110,7 +2058,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 166.0652 104.14 0)
 			(effects
 				(font
@@ -2119,7 +2067,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/1933-0402F104M500NT/C1581"
 			(at 165.1 100.33 0)
 			(effects
 				(font
@@ -2216,7 +2164,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 228.2952 80.01 0)
 			(effects
 				(font
@@ -2225,7 +2173,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/24469-CL05A475MP5NRNC/C23733"
 			(at 227.33 76.2 0)
 			(effects
 				(font
@@ -2331,7 +2279,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/46786-CL21A226MAQNNNE/C45783"
 			(at 175.26 100.33 0)
 			(effects
 				(font
@@ -2427,7 +2375,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 115.2652 72.39 0)
 			(effects
 				(font
@@ -2436,7 +2384,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/13164-CL05A225MQ5NSNC/C12530"
 			(at 114.3 68.58 0)
 			(effects
 				(font
@@ -2531,7 +2479,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 121.92 61.468 90)
 			(effects
 				(font
@@ -2540,7 +2488,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/25901-0402WGJ022JTCE/C25158"
 			(at 121.92 59.69 0)
 			(effects
 				(font
@@ -2634,7 +2582,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 127 88.138 90)
 			(effects
 				(font
@@ -2643,7 +2591,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/17853-0402WGF0000TCE/C17168"
 			(at 127 86.36 0)
 			(effects
 				(font
@@ -2749,7 +2697,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/EEF-SX0D471XE/1731681"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Panasonic-EEFGX0E471R/C139572"
 			(at 179.07 76.2 0)
 			(effects
 				(font
@@ -2855,7 +2803,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/46786-CL21A226MAQNNNE/C45783"
 			(at 196.85 100.33 0)
 			(effects
 				(font
@@ -2943,7 +2891,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF"
+		(property "Value" "47uF"
 			(at 189.23 101.5999 0)
 			(effects
 				(font
@@ -2952,7 +2900,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 186.3852 104.14 0)
 			(effects
 				(font
@@ -2961,7 +2909,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/MurataElectronics-GRM32ER61C476KE15L/C77101"
 			(at 185.42 100.33 0)
 			(effects
 				(font
@@ -3032,111 +2980,6 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 135.89 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3c4641f4-57da-4392-8b7e-2b17ff8ed6c1")
-		(property "Reference" "C16022"
-			(at 129.794 101.346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47pF"
-			(at 129.794 103.886 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 136.8552 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 135.89 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "906e27ee-446e-4acb-9588-e0f55765ac4b")
-		)
-		(pin "1"
-			(uuid "705878a3-3204-466a-bdf7-0afa17b40aff")
-		)
-		(instances
-			(project "gpu-external-power-supply"
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/49a17099-106d-4abb-ae14-dd757ef91d45"
-					(reference "C16022")
-					(unit 1)
-				)
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/61a0cb7a-9d01-4760-8ce8-789a6ab49ba4"
-					(reference "C12005")
-					(unit 1)
-				)
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/655b25ca-de6c-4e3a-af15-4fcc6e2bd037"
-					(reference "C15005")
-					(unit 1)
-				)
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/69405101-d09e-4d45-aab1-12aa0a1b3acb"
-					(reference "C19005")
-					(unit 1)
-				)
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/6b7e5349-9b9f-40b8-b2bb-5c34bbc51f14"
-					(reference "C18005")
-					(unit 1)
-				)
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/95d79d2d-f5ad-46ce-832a-3e27966061c2"
-					(reference "C13005")
-					(unit 1)
-				)
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c5652880-1b75-42d4-a1cb-09cfb95d4a18"
-					(reference "C14005")
-					(unit 1)
-				)
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d8c0ae4b-1079-42a5-9412-f5c12c8efe93"
-					(reference "C11005")
-					(unit 1)
-				)
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/d9fa39fa-1ff5-40d0-a988-b7fa258daa9e"
-					(reference "C17005")
-					(unit 1)
-				)
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/f474b2ec-e107-43c1-9cef-22ba90148aa8"
-					(reference "C6005")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
 		(at 101.6 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3163,7 +3006,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 102.5652 110.49 0)
 			(effects
 				(font
@@ -3172,7 +3015,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/1919-0402CG470J500NT/C1567"
 			(at 101.6 106.68 0)
 			(effects
 				(font
@@ -3269,7 +3112,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
 			(at 191.4652 80.01 0)
 			(effects
 				(font
@@ -3278,7 +3121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/kyocera-avx/RPA0608221M016B/17634426"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/HonorElec-RVT1C221M0607/C3342"
 			(at 190.5 76.2 0)
 			(effects
 				(font
@@ -3372,7 +3215,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 140.97 85.3948 0)
 			(effects
 				(font
@@ -3381,7 +3224,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/1933-0402F104M500NT/C1581"
 			(at 137.16 86.36 0)
 			(effects
 				(font
@@ -3487,7 +3330,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/17464-CL21A476MQYNNNE/C16780"
 			(at 201.93 76.2 0)
 			(effects
 				(font
@@ -3584,7 +3427,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 126.6952 113.03 0)
 			(effects
 				(font
@@ -3593,7 +3436,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/1933-0402F104M500NT/C1581"
 			(at 125.73 109.22 0)
 			(effects
 				(font
@@ -3894,7 +3737,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 131.7752 73.66 0)
 			(effects
 				(font
@@ -3903,7 +3746,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/13164-CL05A225MQ5NSNC/C12530"
 			(at 130.81 69.85 0)
 			(effects
 				(font
@@ -4000,7 +3843,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 216.8652 80.01 0)
 			(effects
 				(font
@@ -4009,7 +3852,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Chinocera-HGC0402R5226M6R3NTEJ/C7432764"
 			(at 215.9 76.2 0)
 			(effects
 				(font
@@ -4106,7 +3949,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
 			(at 209.2452 104.14 0)
 			(effects
 				(font
@@ -4115,7 +3958,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/kyocera-avx/RPA0608221M016B/17634426"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/HonorElec-RVT1C221M0607/C3342"
 			(at 208.28 100.33 0)
 			(effects
 				(font
@@ -4373,7 +4216,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 239.7252 80.01 0)
 			(effects
 				(font
@@ -4382,7 +4225,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/1933-0402F104M500NT/C1581"
 			(at 238.76 76.2 0)
 			(effects
 				(font

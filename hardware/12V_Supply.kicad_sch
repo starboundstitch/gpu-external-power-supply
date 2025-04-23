@@ -1152,28 +1152,10 @@
 		(uuid "0e54d7d6-9014-43d8-894d-2e831bbec87f")
 	)
 	(junction
-		(at 86.36 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "107df191-edb4-439a-a1eb-06300af49fa9")
-	)
-	(junction
-		(at 86.36 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1cee794a-cd6f-4989-a9e1-f2acd0fbb644")
-	)
-	(junction
 		(at 54.61 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1cf51f81-8942-4b43-8565-b4e6e5f4c090")
-	)
-	(junction
-		(at 86.36 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1d010434-77d7-4aa6-8591-53d14c52dca7")
 	)
 	(junction
 		(at 167.64 46.99)
@@ -1222,30 +1204,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "468116c9-fc86-4a85-bc72-085e3b3e905c")
-	)
-	(junction
-		(at 151.13 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "470fb4be-4072-4b1b-a9e5-53d72e470649")
-	)
-	(junction
-		(at 151.13 152.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "492f3a36-8593-4141-9ecf-85a612e6b027")
-	)
-	(junction
-		(at 86.36 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "505b5dd4-b477-4a76-8d59-80f09c04ae14")
-	)
-	(junction
-		(at 151.13 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "530a10be-14ef-4d2a-b794-cdc4ca2637d6")
 	)
 	(junction
 		(at 54.61 50.8)
@@ -1356,40 +1314,16 @@
 		(uuid "d6ed509f-6ecd-45d5-9205-959c376096af")
 	)
 	(junction
-		(at 151.13 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d87537bf-0748-4149-80d7-799bfb4f86df")
-	)
-	(junction
 		(at 100.33 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "da5c162c-67f1-45ad-98ea-b25616cfef28")
 	)
 	(junction
-		(at 86.36 152.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ddb1f237-19e7-4050-9e49-1d209897e3f3")
-	)
-	(junction
-		(at 86.36 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "df90936d-3151-43f5-ab9c-39949cf1d1c0")
-	)
-	(junction
 		(at 77.47 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dfa276ac-c3ed-4492-9a96-edc7a20bff32")
-	)
-	(junction
-		(at 151.13 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e40f13e4-2824-456b-916b-98a177c4e8c3")
 	)
 	(junction
 		(at 127 93.98)
@@ -1495,7 +1429,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 46.99) (xy 86.36 46.99)
+			(xy 54.61 46.99) (xy 100.33 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1565,16 +1499,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 140.97) (xy 151.13 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f507b66-82a6-4b36-bb52-9069b2d26571")
-	)
-	(wire
-		(pts
 			(xy 111.76 57.15) (xy 111.76 58.42)
 		)
 		(stroke
@@ -1582,16 +1506,6 @@
 			(type default)
 		)
 		(uuid "20802d06-9b0c-4b00-8c8e-75ab02436479")
-	)
-	(wire
-		(pts
-			(xy 86.36 96.52) (xy 86.36 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21827fab-ce4e-4754-be90-f4f4780c1f44")
 	)
 	(wire
 		(pts
@@ -1605,7 +1519,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 140.97) (xy 86.36 140.97)
+			(xy 55.88 140.97) (xy 100.33 140.97)
 		)
 		(stroke
 			(width 0)
@@ -1655,7 +1569,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 152.4) (xy 86.36 152.4)
+			(xy 77.47 152.4) (xy 100.33 152.4)
 		)
 		(stroke
 			(width 0)
@@ -1685,16 +1599,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 93.98) (xy 151.13 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "38fcac6c-1011-4e33-ad46-8596e79b6b31")
-	)
-	(wire
-		(pts
 			(xy 38.1 97.79) (xy 38.1 100.33)
 		)
 		(stroke
@@ -1702,16 +1606,6 @@
 			(type default)
 		)
 		(uuid "39a6cbb8-c8bc-4d0c-a1b5-3759cfd43627")
-	)
-	(wire
-		(pts
-			(xy 151.13 151.13) (xy 151.13 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a3301a1-b785-45da-8453-3fbe1f08ee79")
 	)
 	(wire
 		(pts
@@ -1742,16 +1636,6 @@
 			(type default)
 		)
 		(uuid "447c9c5b-b926-4605-a4d3-4b3359474c6b")
-	)
-	(wire
-		(pts
-			(xy 77.47 105.41) (xy 86.36 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "452bbfb7-92e4-4c69-a0c3-6bfc103eca5e")
 	)
 	(wire
 		(pts
@@ -1822,16 +1706,6 @@
 			(type default)
 		)
 		(uuid "58bba41a-7291-4c67-b8bb-dda7b2c01fd1")
-	)
-	(wire
-		(pts
-			(xy 86.36 46.99) (xy 100.33 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58c78b41-ef0b-4996-b2aa-4c1e81620be8")
 	)
 	(wire
 		(pts
@@ -2025,16 +1899,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 104.14) (xy 86.36 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8516e998-3702-47e9-b9c2-88ab9a9e5329")
-	)
-	(wire
-		(pts
 			(xy 43.18 87.63) (xy 43.18 86.36)
 		)
 		(stroke
@@ -2045,17 +1909,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 49.53) (xy 86.36 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85aa83b3-674a-468c-b6ed-19ef0182d9aa")
-	)
-	(wire
-		(pts
-			(xy 86.36 105.41) (xy 100.33 105.41)
+			(xy 77.47 105.41) (xy 100.33 105.41)
 		)
 		(stroke
 			(width 0)
@@ -2155,16 +2009,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 152.4) (xy 100.33 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "930530ae-f26e-4ddd-a9c4-a726a61d95b8")
-	)
-	(wire
-		(pts
 			(xy 55.88 140.97) (xy 55.88 143.51)
 		)
 		(stroke
@@ -2225,33 +2069,13 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 57.15) (xy 86.36 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c7568b3-0832-4ed8-8023-c90adf97c6b9")
-	)
-	(wire
-		(pts
-			(xy 77.47 58.42) (xy 86.36 58.42)
+			(xy 77.47 58.42) (xy 100.33 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9fd516c0-7341-4293-a2d8-cb74e8cbfd11")
-	)
-	(wire
-		(pts
-			(xy 86.36 151.13) (xy 86.36 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0865910-e6c8-4adf-8c94-d16336fd628a")
 	)
 	(wire
 		(pts
@@ -2315,16 +2139,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 104.14) (xy 151.13 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad740ab4-2eb1-4a61-b373-729f7638cd84")
-	)
-	(wire
-		(pts
 			(xy 111.76 93.98) (xy 127 93.98)
 		)
 		(stroke
@@ -2332,16 +2146,6 @@
 			(type default)
 		)
 		(uuid "ae8e718f-97d3-46bc-8232-d8781a4e3c83")
-	)
-	(wire
-		(pts
-			(xy 151.13 152.4) (xy 167.64 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b00adaa7-e5db-4bbf-a903-f9d2a6ae2414")
 	)
 	(wire
 		(pts
@@ -2362,16 +2166,6 @@
 			(type default)
 		)
 		(uuid "b40f7d4b-d35c-4f99-acf0-3901ddf91864")
-	)
-	(wire
-		(pts
-			(xy 86.36 93.98) (xy 100.33 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b49e6cf0-f3c6-4592-b0fd-b647cc5405af")
 	)
 	(wire
 		(pts
@@ -2415,16 +2209,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 58.42) (xy 100.33 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd2cfb61-f952-495a-a2b9-d7cb2673ed93")
-	)
-	(wire
-		(pts
 			(xy 43.18 39.37) (xy 77.47 39.37)
 		)
 		(stroke
@@ -2455,23 +2239,13 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 93.98) (xy 167.64 93.98)
+			(xy 142.24 93.98) (xy 167.64 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c2d1d2ec-f6a2-4edb-bdbb-f638f249ad8a")
-	)
-	(wire
-		(pts
-			(xy 151.13 46.99) (xy 151.13 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c65d41f3-67c3-4536-8495-9029d2c67ae7")
 	)
 	(wire
 		(pts
@@ -2502,16 +2276,6 @@
 			(type default)
 		)
 		(uuid "cce8c179-a696-4587-ab99-601f8e63dba6")
-	)
-	(wire
-		(pts
-			(xy 151.13 57.15) (xy 151.13 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2631d24-1bd7-4da6-ad24-eda22cafb4fc")
 	)
 	(wire
 		(pts
@@ -2555,23 +2319,13 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 140.97) (xy 151.13 140.97)
+			(xy 142.24 140.97) (xy 167.64 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "da4e8210-f6cc-4bd3-b824-7c4e1e2da94e")
-	)
-	(wire
-		(pts
-			(xy 151.13 93.98) (xy 151.13 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db93b915-22ae-4816-8253-f5aa191fb85d")
 	)
 	(wire
 		(pts
@@ -2582,16 +2336,6 @@
 			(type default)
 		)
 		(uuid "de34ab37-8350-43c0-939c-633f71bed7f7")
-	)
-	(wire
-		(pts
-			(xy 151.13 58.42) (xy 167.64 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1656325-9128-4dc4-bdf1-a2c4b86692d4")
 	)
 	(wire
 		(pts
@@ -2625,26 +2369,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 46.99) (xy 167.64 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e63b4c94-9039-4e80-8f3f-473bd2359f9a")
-	)
-	(wire
-		(pts
-			(xy 151.13 140.97) (xy 167.64 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6aceb3e-b141-438b-a184-b3c2e3a8ee86")
-	)
-	(wire
-		(pts
 			(xy 111.76 46.99) (xy 127 46.99)
 		)
 		(stroke
@@ -2665,16 +2389,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 140.97) (xy 100.33 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eca34016-bb83-4000-a84a-9d7e371f69a7")
-	)
-	(wire
-		(pts
 			(xy 40.64 38.1) (xy 40.64 39.37)
 		)
 		(stroke
@@ -2685,23 +2399,13 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 93.98) (xy 86.36 93.98)
+			(xy 55.88 93.98) (xy 100.33 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ef2c7d5e-f90a-4133-95e1-a1e51138ecca")
-	)
-	(wire
-		(pts
-			(xy 151.13 105.41) (xy 167.64 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5656bec-5d58-4046-a848-30c673b024b0")
 	)
 	(wire
 		(pts
@@ -2715,17 +2419,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 143.51) (xy 86.36 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9ea0d1e-85fd-4f39-a740-4d558f4e80e5")
-	)
-	(wire
-		(pts
-			(xy 142.24 46.99) (xy 151.13 46.99)
+			(xy 142.24 46.99) (xy 167.64 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2766,7 +2460,6 @@
 	(hierarchical_label "+12V"
 		(shape output)
 		(at 224.79 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2774,82 +2467,6 @@
 			(justify left)
 		)
 		(uuid "f62f2e58-dc0e-41d0-b15b-279bae1b6312")
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 151.13 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0027de06-d4ef-485c-b2d1-61290794dc0c")
-		(property "Reference" "C1"
-			(at 154.94 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "330uF"
-			(at 154.94 54.6099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 152.0952 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 151.13 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 151.13 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0db7d1e6-3dba-4ca0-82a4-715a5443a99c")
-		)
-		(pin "2"
-			(uuid "0cffd2e6-450c-4b68-8d31-d2a10e123ace")
-		)
-		(instances
-			(project "12V_Supply"
-				(path "/ab551f9e-20d7-4e69-86c6-9fa5a413d0c4"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-			(project "gpu-external-power-supply"
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
-					(reference "C4013")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -2945,7 +2562,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 127.9652 151.13 0)
 			(effects
 				(font
@@ -2954,7 +2571,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/1933-0402F104M500NT/C1581"
 			(at 127 147.32 0)
 			(effects
 				(font
@@ -3090,7 +2707,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/parts/componentSearch?searchTxt=1724480006"
 			(at 40.64 44.45 0)
 			(effects
 				(font
@@ -3163,7 +2780,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 101.2952 104.14 0)
 			(effects
 				(font
@@ -3172,7 +2789,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/MurataElectronics-GRM32ER61C476KE15L/C77101"
 			(at 100.33 100.33 0)
 			(effects
 				(font
@@ -3200,76 +2817,6 @@
 			(project "gpu-external-power-supply"
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
 					(reference "C4005")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 86.36 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1899ac77-6e03-4ae4-a3fd-9abf9c2b6f80")
-		(property "Reference" "C4001"
-			(at 90.17 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF"
-			(at 90.17 54.6099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 87.3252 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.36 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 86.36 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eba8e773-b52a-4ed0-966c-c857aeed6f54")
-		)
-		(pin "2"
-			(uuid "1c842c46-8cba-450a-8d6d-2333e2baa860")
-		)
-		(instances
-			(project "gpu-external-power-supply"
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
-					(reference "C4001")
 					(unit 1)
 				)
 			)
@@ -3378,7 +2925,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/parts/componentSearch?searchTxt=1724480006"
 			(at 43.18 138.43 0)
 			(effects
 				(font
@@ -3451,7 +2998,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10.5"
 			(at 168.6052 104.14 0)
 			(effects
 				(font
@@ -3460,7 +3007,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/66294-DV471M016F105ETR/C65223"
 			(at 167.64 100.33 0)
 			(effects
 				(font
@@ -3495,76 +3042,6 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 151.13 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "354c77d6-9cc8-4801-ac55-f94b9a8b7f11")
-		(property "Reference" "C4015"
-			(at 154.94 146.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "330uF"
-			(at 154.94 148.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 152.0952 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 151.13 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 151.13 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7f051b4a-6e07-4f5a-b506-5c38fb9d3a0f")
-		)
-		(pin "2"
-			(uuid "bdccc820-d544-4716-815b-880c6ad2da01")
-		)
-		(instances
-			(project "gpu-external-power-supply"
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
-					(reference "C4015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
 		(at 111.76 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3591,7 +3068,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 112.7252 151.13 0)
 			(effects
 				(font
@@ -3600,7 +3077,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/71320-0603X106K160NT/C70225"
 			(at 111.76 147.32 0)
 			(effects
 				(font
@@ -3634,76 +3111,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 86.36 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4f30b056-902b-47dd-8661-dd336aa38bae")
-		(property "Reference" "C4003"
-			(at 90.17 146.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF"
-			(at 90.17 148.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 87.3252 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.36 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 86.36 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1c4c7c74-c999-476c-be85-b21a156d01f8")
-		)
-		(pin "2"
-			(uuid "2125826f-9697-4666-985a-93d3fe8e846e")
-		)
-		(instances
-			(project "gpu-external-power-supply"
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
-					(reference "C4003")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 203.2 115.57 90)
 		(unit 1)
@@ -3731,7 +3138,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 203.2 115.57 0)
 			(effects
 				(font
@@ -3740,7 +3147,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Hubei_KentoElec-KT0603R/C2286"
 			(at 203.2 115.57 0)
 			(effects
 				(font
@@ -3810,7 +3217,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/parts/componentSearch?searchTxt=1724480006"
 			(at 40.64 92.71 0)
 			(effects
 				(font
@@ -3955,7 +3362,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 127.9652 57.15 0)
 			(effects
 				(font
@@ -3964,7 +3371,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/1933-0402F104M500NT/C1581"
 			(at 127 53.34 0)
 			(effects
 				(font
@@ -4025,7 +3432,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 127.9652 104.14 0)
 			(effects
 				(font
@@ -4034,7 +3441,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/1933-0402F104M500NT/C1581"
 			(at 127 100.33 0)
 			(effects
 				(font
@@ -4069,7 +3476,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 151.13 58.42 0)
+		(at 167.64 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4078,7 +3485,7 @@
 		(fields_autoplaced yes)
 		(uuid "75bc743e-62e6-4f0d-aa54-fdce086877e5")
 		(property "Reference" "#PWR02"
-			(at 151.13 64.77 0)
+			(at 167.64 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4087,7 +3494,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 151.13 63.5 0)
+			(at 167.64 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4095,7 +3502,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 58.42 0)
+			(at 167.64 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4104,7 +3511,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 58.42 0)
+			(at 167.64 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4113,7 +3520,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 151.13 58.42 0)
+			(at 167.64 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4167,7 +3574,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10.5"
 			(at 168.6052 57.15 0)
 			(effects
 				(font
@@ -4176,7 +3583,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/66294-DV471M016F105ETR/C65223"
 			(at 167.64 53.34 0)
 			(effects
 				(font
@@ -4244,7 +3651,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/vishay-dale/IFLR4031GCERR17M01/6181821"
 			(at 138.43 140.97 0)
 			(effects
 				(font
@@ -4305,7 +3712,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10.5"
 			(at 168.6052 151.13 0)
 			(effects
 				(font
@@ -4314,7 +3721,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/66294-DV471M016F105ETR/C65223"
 			(at 167.64 147.32 0)
 			(effects
 				(font
@@ -4349,7 +3756,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 151.13 152.4 0)
+		(at 167.64 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4358,7 +3765,7 @@
 		(fields_autoplaced yes)
 		(uuid "8a25076f-34b6-4a13-b68f-45f35f1b423c")
 		(property "Reference" "#PWR04006"
-			(at 151.13 158.75 0)
+			(at 167.64 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4367,7 +3774,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 151.13 157.48 0)
+			(at 167.64 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4375,7 +3782,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 152.4 0)
+			(at 167.64 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4384,7 +3791,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 152.4 0)
+			(at 167.64 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4393,7 +3800,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 151.13 152.4 0)
+			(at 167.64 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4484,76 +3891,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 151.13 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a5e01e27-2071-4041-954b-f7c64cb6290d")
-		(property "Reference" "C4014"
-			(at 154.94 99.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "330uF"
-			(at 154.94 101.5999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 152.0952 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 151.13 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 151.13 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "255cc1e9-e9b1-4a7a-976e-8b1bc2a06d04")
-		)
-		(pin "2"
-			(uuid "1cfcbd9a-fc5c-4b7c-a11a-b78046ae6cf6")
-		)
-		(instances
-			(project "gpu-external-power-supply"
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
-					(reference "C4014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
 		(at 138.43 46.99 90)
 		(unit 1)
@@ -4588,7 +3925,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/vishay-dale/IFLR4031GCERR17M01/6181821"
 			(at 138.43 46.99 0)
 			(effects
 				(font
@@ -4649,7 +3986,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 112.7252 57.15 0)
 			(effects
 				(font
@@ -4658,7 +3995,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/71320-0603X106K160NT/C70225"
 			(at 111.76 53.34 0)
 			(effects
 				(font
@@ -4719,7 +4056,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 112.7252 104.14 0)
 			(effects
 				(font
@@ -4728,7 +4065,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/71320-0603X106K160NT/C70225"
 			(at 111.76 100.33 0)
 			(effects
 				(font
@@ -4789,7 +4126,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 101.2952 151.13 0)
 			(effects
 				(font
@@ -4798,7 +4135,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/MurataElectronics-GRM32ER61C476KE15L/C77101"
 			(at 100.33 147.32 0)
 			(effects
 				(font
@@ -4859,7 +4196,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 101.2952 57.15 0)
 			(effects
 				(font
@@ -4868,7 +4205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/MurataElectronics-GRM32ER61C476KE15L/C77101"
 			(at 100.33 53.34 0)
 			(effects
 				(font
@@ -5002,7 +4339,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/vishay-dale/IFLR4031GCERR17M01/6181821"
 			(at 138.43 93.98 0)
 			(effects
 				(font
@@ -5036,78 +4373,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 86.36 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e5ad9d0a-81ff-4018-a0d9-43ac44f8ef94")
-		(property "Reference" "C4002"
-			(at 90.17 99.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF"
-			(at 90.17 101.5999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 87.3252 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.36 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 86.36 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2147af03-d413-4a92-b2bb-f6cb25e39c4d")
-		)
-		(pin "2"
-			(uuid "a5ecfb02-cd64-4436-83bc-1df8e4bf4529")
-		)
-		(instances
-			(project "gpu-external-power-supply"
-				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/c9569ad4-2b3d-43a2-87fb-13a0af7c9546"
-					(reference "C4002")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 151.13 105.41 0)
+		(at 167.64 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5116,7 +4383,7 @@
 		(fields_autoplaced yes)
 		(uuid "edce462c-0af3-426a-8c96-8451d220822f")
 		(property "Reference" "#PWR03"
-			(at 151.13 111.76 0)
+			(at 167.64 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5125,7 +4392,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 151.13 110.49 0)
+			(at 167.64 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5133,7 +4400,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 105.41 0)
+			(at 167.64 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5142,7 +4409,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 105.41 0)
+			(at 167.64 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5151,7 +4418,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 151.13 105.41 0)
+			(at 167.64 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
