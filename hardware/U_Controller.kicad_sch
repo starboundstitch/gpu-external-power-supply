@@ -366,8 +366,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J7003"
-				(at 0 22.86 0)
+			(property "Reference" "J"
+				(at 0 22.225 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -375,22 +375,23 @@
 				)
 			)
 			(property "Value" "USB_C_Receptacle_USB2.0_16P"
-				(at 0 20.32 0)
+				(at 0 19.685 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "work:CUI_UJ20-C-H-C-4-SMT-TR"
+			(property "Footprint" ""
 				(at 3.81 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.digikey.com/en/products/detail/amphenol-cs-commercial-products/12402012E212A/13683192"
+			(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
 				(at 3.81 0 0)
 				(effects
 					(font
@@ -759,6 +760,24 @@
 					)
 				)
 				(pin passive line
+					(at 0 -22.86 90)
+					(length 5.08) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at 15.24 15.24 180)
 					(length 5.08)
 					(name "VBUS"
@@ -849,6 +868,24 @@
 					)
 				)
 				(pin passive line
+					(at 15.24 15.24 180)
+					(length 5.08) hide
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at 0 -22.86 90)
 					(length 5.08) hide
 					(name "GND"
@@ -859,6 +896,24 @@
 						)
 					)
 					(number "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -22.86 90)
+					(length 5.08) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -957,6 +1012,24 @@
 					)
 				)
 				(pin passive line
+					(at 15.24 15.24 180)
+					(length 5.08) hide
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at -7.62 -22.86 90)
 					(length 5.08)
 					(name "SHIELD"
@@ -966,61 +1039,7 @@
 							)
 						)
 					)
-					(number "SH1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 -22.86 90)
-					(length 5.08) hide
-					(name "SHIELD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "SH2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 -22.86 90)
-					(length 5.08) hide
-					(name "SHIELD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "SH3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 -22.86 90)
-					(length 5.08) hide
-					(name "SHIELD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "SH4"
+					(number "S1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1441,6 +1460,175 @@
 				)
 			)
 			(symbol "D_Zener_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -3449,9 +3637,9 @@
 				)
 			)
 		)
-		(symbol "Switch:SW_Wuerth_450301014042"
+		(symbol "Switch:SW_DPDT_x2"
 			(pin_names
-				(offset 1) hide)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3463,7 +3651,7 @@
 					)
 				)
 			)
-			(property "Value" "SW_Wuerth_450301014042"
+			(property "Value" "SW_DPDT_x2"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -3471,25 +3659,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.we-online.com/components/products/datasheet/450301014042.pdf"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Switch slide, single pole double throw"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -3498,7 +3668,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "changeover single-pole opposite-side-connection double-throw spdt ON-ON"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3507,7 +3677,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SW*Wuerth*WS*SLTV*10x2.5x6.4*P2.54mm*"
+			(property "Description" "Switch, dual pole double throw, separate symbols"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3516,22 +3686,28 @@
 					(hide yes)
 				)
 			)
-			(symbol "SW_Wuerth_450301014042_0_1"
+			(property "ki_keywords" "switch dual-pole double-throw DPDT spdt ON-ON"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SW*DPDT*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_DPDT_x2_0_0"
 				(circle
 					(center -2.032 0)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.651 0.254) (xy 1.651 2.286)
-					)
+					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -3542,7 +3718,32 @@
 				)
 				(circle
 					(center 2.032 -2.54)
-					(radius 0.4572)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_DPDT_x2_0_1"
+				(rectangle
+					(start -3.175 3.81)
+					(end 3.175 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.5748 2.286)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -3553,7 +3754,7 @@
 				)
 				(circle
 					(center 2.032 2.54)
-					(radius 0.4572)
+					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -3563,16 +3764,23 @@
 					)
 				)
 			)
-			(symbol "SW_Wuerth_450301014042_1_1"
-				(rectangle
-					(start -3.175 3.81)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0)
-						(type default)
+			(symbol "SW_DPDT_x2_1_1"
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
-					(fill
-						(type background)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 				(pin passive line
@@ -3585,7 +3793,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3603,7 +3811,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3611,6 +3819,8 @@
 						)
 					)
 				)
+			)
+			(symbol "SW_DPDT_x2_2_1"
 				(pin passive line
 					(at 5.08 2.54 180)
 					(length 2.54)
@@ -3621,7 +3831,43 @@
 							)
 						)
 					)
-					(number "3"
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5455,6 +5701,18 @@
 		(uuid 57e19b84-5de0-48dd-a26c-cbd36e503a0c)
 	)
 	(rectangle
+		(start 49.53 86.36)
+		(end 72.39 115.57)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 73459b48-2411-4ccb-a79b-f55c76f242bf)
+	)
+	(rectangle
 		(start 13.97 119.38)
 		(end 71.12 161.29)
 		(stroke
@@ -5512,6 +5770,16 @@
 		)
 		(uuid "0267ff79-afb6-44e3-8792-6cc41eb03bae")
 	)
+	(text "SMBAlert LED"
+		(exclude_from_sim no)
+		(at 56.642 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1afd59f0-4a37-40c6-a26c-23e092c70558")
+	)
 	(text "Power"
 		(exclude_from_sim no)
 		(at 40.64 15.748 0)
@@ -5521,6 +5789,16 @@
 			)
 		)
 		(uuid "2f48a1a1-f327-4afa-8073-fa4864619bfc")
+	)
+	(text "I ~= 5mA"
+		(exclude_from_sim no)
+		(at 64.008 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6c118e4d-eda5-43e4-a3f2-10b4512f14ad")
 	)
 	(text "VRM Controller Pins"
 		(exclude_from_sim no)
@@ -5582,7 +5860,7 @@
 		)
 		(uuid "fb1e921f-4555-4e1b-86ec-8af4a435eba3")
 	)
-	(label "PC6"
+	(label "PB2"
 		(at 243.84 40.64 0)
 		(effects
 			(font
@@ -5592,7 +5870,7 @@
 		)
 		(uuid "0c03fde8-ca47-4a17-b9e1-cb83880e412b")
 	)
-	(label "PB11"
+	(label "PC6"
 		(at 219.71 40.64 0)
 		(effects
 			(font
@@ -5712,7 +5990,7 @@
 		)
 		(uuid "4d7ea097-f12f-46e3-820c-b7c6b4d09048")
 	)
-	(label "PC9"
+	(label "PB1"
 		(at 243.84 48.26 0)
 		(effects
 			(font
@@ -5822,7 +6100,7 @@
 		)
 		(uuid "6b056a46-b005-4966-bdbc-880e30bf08f2")
 	)
-	(label "PB15"
+	(label "PB14"
 		(at 219.71 50.8 0)
 		(effects
 			(font
@@ -5842,7 +6120,7 @@
 		)
 		(uuid "7041f6e0-9e3f-47cd-98ef-6ab1852b199c")
 	)
-	(label "PA9"
+	(label "SMBA"
 		(at 179.07 53.34 180)
 		(effects
 			(font
@@ -5992,7 +6270,7 @@
 		)
 		(uuid "b45e816d-1c22-45b3-a4ef-14aeea9bee59")
 	)
-	(label "PB13"
+	(label "PB15"
 		(at 219.71 45.72 0)
 		(effects
 			(font
@@ -6052,6 +6330,16 @@
 		)
 		(uuid "cf124335-229c-40fa-bbad-778223043f78")
 	)
+	(label "SMBA"
+		(at 53.34 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d37afb37-2255-423c-aac6-1f418b4a6f88")
+	)
 	(label "PB13"
 		(at 179.07 104.14 180)
 		(effects
@@ -6082,7 +6370,7 @@
 		)
 		(uuid "e24797d1-aafc-4092-8dd8-d3ae55bd8c94")
 	)
-	(label "PC7"
+	(label "PB10"
 		(at 243.84 43.18 0)
 		(effects
 			(font
@@ -6122,7 +6410,7 @@
 		)
 		(uuid "ecfd8aed-2d69-43c3-81ae-cbea1f0f5b9f")
 	)
-	(label "PB14"
+	(label "PB13"
 		(at 219.71 48.26 0)
 		(effects
 			(font
@@ -6172,7 +6460,7 @@
 		)
 		(uuid "f8fc6d65-2dd3-43ee-aba6-72faf873a066")
 	)
-	(label "PC10"
+	(label "PB0"
 		(at 243.84 50.8 0)
 		(effects
 			(font
@@ -6891,6 +7179,76 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 53.34 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b7751eb-8fcf-4e37-bfd5-4d946f7b336a")
+		(property "Reference" "R7010"
+			(at 55.88 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "680"
+			(at 55.88 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 51.562 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 53.34 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3ea648f8-b300-425c-b252-1ba689895e67")
+		)
+		(pin "1"
+			(uuid "5d08e84a-403e-4270-b8f6-8a5e9e6acbbd")
+		)
+		(instances
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/027ff087-ab1d-45e5-9d8f-c94102656fe5"
+					(reference "R7010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 54.61 142.24 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7368,7 +7726,73 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Wuerth_450301014042")
+		(lib_id "power:+3.3V")
+		(at 53.34 107.95 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "610b4495-0918-4b93-bf24-12cda48f0fec")
+		(property "Reference" "#PWR07017"
+			(at 53.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 53.34 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 53.34 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f64b413a-771d-4f33-bd54-7a839a492cb1")
+		)
+		(instances
+			(project ""
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/027ff087-ab1d-45e5-9d8f-c94102656fe5"
+					(reference "#PWR07017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPDT_x2")
 		(at 256.54 21.59 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7393,7 +7817,7 @@
 			)
 		)
 		(property "Footprint" "work:SW-SMD_K3-1280S-K1"
-			(at 256.54 31.75 0)
+			(at 256.54 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7401,8 +7825,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/Korean_HropartsElec-K3_1280SF1/C92658"
-			(at 256.54 29.21 0)
+		(property "Datasheet" "~"
+			(at 256.54 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7410,7 +7834,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Switch slide, single pole double throw"
+		(property "Description" "Switch, dual pole double throw, separate symbols"
 			(at 256.54 21.59 0)
 			(effects
 				(font
@@ -7427,6 +7851,15 @@
 		)
 		(pin "3"
 			(uuid "7f593653-d9fd-4332-923e-852ae6e5de24")
+		)
+		(pin "5"
+			(uuid "3c58031c-adcf-4c59-a633-835b8fb1dfdd")
+		)
+		(pin "6"
+			(uuid "49fbd090-0484-4c46-8f15-89124747981b")
+		)
+		(pin "4"
+			(uuid "290e34e6-26b3-442b-8c6c-d56fcb4205d5")
 		)
 		(instances
 			(project ""
@@ -8171,6 +8604,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 53.34 104.14 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91a27cef-66a0-418a-918d-bd5afc42b5e3")
+		(property "Reference" "D7002"
+			(at 55.88 101.2824 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "150080SS75000"
+			(at 55.88 103.8224 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 53.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Hubei_KentoElec-KT0603R/C2286"
+			(at 53.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 53.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "45098ece-1154-4504-96e5-42293e95cfd6")
+		)
+		(pin "1"
+			(uuid "5091538c-9ce3-4231-8aec-f07c3b757980")
+		)
+		(instances
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/027ff087-ab1d-45e5-9d8f-c94102656fe5"
+					(reference "D7002")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 154.94 116.84 0)
 		(unit 1)
@@ -8758,7 +9261,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/amphenol-cs-commercial-products/12402012E212A/13683192"
+		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
 			(at 34.29 57.15 0)
 			(effects
 				(font
@@ -8791,7 +9294,7 @@
 		(pin "B1"
 			(uuid "68f49048-8eb9-40f8-9af2-1cbae274d98a")
 		)
-		(pin "SH3"
+		(pin "B9"
 			(uuid "924c8098-2e70-43b3-9e0e-efe91f2f5b94")
 		)
 		(pin "A4"
@@ -8815,14 +9318,17 @@
 		(pin "B4"
 			(uuid "fa4ce84a-1fc0-4498-a2d7-f500aaea2f66")
 		)
-		(pin "SH4"
+		(pin "S1"
 			(uuid "4a4de67d-1ce4-430b-9565-37a6efe1d2a4")
 		)
-		(pin "SH1"
+		(pin "A9"
 			(uuid "44ab72d2-fde7-4ca5-bc08-0d0d7418e8be")
 		)
-		(pin "SH2"
+		(pin "B12"
 			(uuid "d264e06e-98bf-4558-bfc6-890c6c6c37b7")
+		)
+		(pin "A12"
+			(uuid "f9ba188a-a54f-4e00-83ce-b9b3ee9b4dc3")
 		)
 		(instances
 			(project ""

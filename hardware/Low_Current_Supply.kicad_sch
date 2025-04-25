@@ -929,7 +929,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://jlcpcb.com/partdetail/TexasInstruments-TPS62143RGTR/C2070702"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1240,6 +1240,116 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TPS62143RGTR_1_0"
+				(pin power_in line
+					(at 17.78 -17.78 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -17.78 180)
+					(length 5.08) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -17.78 180)
+					(length 5.08) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -17.78 180)
+					(length 5.08) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -17.78 180)
+					(length 5.08) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -17.78 180)
+					(length 5.08) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "22"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1626,6 +1736,12 @@
 		(uuid "a2413fb1-d666-4d31-aa59-19b059282bcf")
 	)
 	(junction
+		(at 93.98 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a3ff7aa4-6e57-4bb2-b5ed-3f5f9c18d5ce")
+	)
+	(junction
 		(at 58.42 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2005,7 +2121,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 99.06) (xy 93.98 111.76)
+			(xy 93.98 99.06) (xy 93.98 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2162,6 +2278,16 @@
 			(type default)
 		)
 		(uuid "dad1fc60-49c7-4934-a781-5a6da687b13c")
+	)
+	(wire
+		(pts
+			(xy 93.98 101.6) (xy 93.98 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db9c1742-7248-47b0-83b8-52451bbfb3b5")
 	)
 	(wire
 		(pts
@@ -2397,6 +2523,24 @@
 		)
 		(pin "6"
 			(uuid "372d170f-f192-4b23-bacb-c21ba1da0646")
+		)
+		(pin "18"
+			(uuid "7de813ea-a277-42d4-8486-985c7d144a55")
+		)
+		(pin "17"
+			(uuid "0f88dc1c-bc4a-417e-8adc-80371b1da67e")
+		)
+		(pin "22"
+			(uuid "5c9dff68-5d12-4ac0-9f79-16b1058970df")
+		)
+		(pin "21"
+			(uuid "f998e000-43a7-4080-810d-44058cafe600")
+		)
+		(pin "20"
+			(uuid "c1c8217b-6e57-4e69-b776-b640d8c5f81d")
+		)
+		(pin "19"
+			(uuid "11ca43be-a253-4b3b-bb75-8eb7d51dbc2c")
 		)
 		(instances
 			(project ""
