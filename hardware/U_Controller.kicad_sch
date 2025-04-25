@@ -366,8 +366,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 0 22.225 0)
+			(property "Reference" "J7003"
+				(at 0 22.86 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -375,20 +375,19 @@
 				)
 			)
 			(property "Value" "USB_C_Receptacle_USB2.0_16P"
-				(at 0 19.685 0)
+				(at 0 20.32 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "work:USB-C_SMD-TYPE-C-31-M-12"
 				(at 3.81 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
@@ -429,8 +428,8 @@
 			)
 			(symbol "USB_C_Receptacle_USB2.0_16P_0_0"
 				(rectangle
-					(start -0.254 -17.78)
-					(end 0.254 -16.764)
+					(start 3.5475 -16.8134)
+					(end 4.0555 -17.8294)
 					(stroke
 						(width 0)
 						(type default)
@@ -742,7 +741,79 @@
 			)
 			(symbol "USB_C_Receptacle_USB2.0_16P_1_1"
 				(pin passive line
-					(at 0 -22.86 90)
+					(at -5.564 -22.8877 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.4267 -22.8127 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -1.5144 -22.8127 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0.5103 -22.7377 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 -22.86 90)
 					(length 5.08)
 					(name "GND"
 						(effects
@@ -760,7 +831,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -22.86 90)
+					(at 3.81 -22.86 90)
 					(length 5.08) hide
 					(name "GND"
 						(effects
@@ -886,7 +957,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -22.86 90)
+					(at 3.81 -22.86 90)
 					(length 5.08) hide
 					(name "GND"
 						(effects
@@ -904,7 +975,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -22.86 90)
+					(at 3.81 -22.86 90)
 					(length 5.08) hide
 					(name "GND"
 						(effects
@@ -4317,6 +4388,12 @@
 		(uuid "0623309e-44b7-4f37-a347-5254a8d3032d")
 	)
 	(junction
+		(at 34.29 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0bf1eea9-6974-46b9-91e4-aff524fbc5e8")
+	)
+	(junction
 		(at 48.26 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4365,6 +4442,12 @@
 		(uuid "7f13d365-4c02-411c-af07-893027a59d47")
 	)
 	(junction
+		(at 34.29 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "817b79ee-9c35-4442-8247-23b247b6dc22")
+	)
+	(junction
 		(at 157.48 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4377,12 +4460,6 @@
 		(uuid "8add9b31-7619-40c5-92da-3a46fd4ac4ea")
 	)
 	(junction
-		(at 26.67 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b0102ba-43a9-42da-a12d-745fd7c4ae40")
-	)
-	(junction
 		(at 154.94 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4393,6 +4470,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "99b341ec-9296-49d3-b06f-f6338b91c19f")
+	)
+	(junction
+		(at 30.9903 79.9627)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99eff9c9-0c88-4526-9aa6-707e150b9ed9")
+	)
+	(junction
+		(at 27.0533 79.9627)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b97c1a13-1eba-432f-9d05-5ebc4fb6320d")
 	)
 	(junction
 		(at 46.99 137.16)
@@ -4417,6 +4506,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c1032880-265f-47a3-9a69-1aa2c626b5b4")
+	)
+	(junction
+		(at 28.9656 79.9627)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c253fa45-b5a6-4068-98e0-a741198c58f4")
 	)
 	(junction
 		(at 156.21 22.86)
@@ -4754,6 +4849,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.9903 79.8877) (xy 30.9903 79.9627)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32351e87-a858-4740-8cac-c1932715a2d5")
+	)
+	(wire
+		(pts
 			(xy 127 48.26) (xy 137.16 48.26)
 		)
 		(stroke
@@ -4791,6 +4896,16 @@
 			(type default)
 		)
 		(uuid "35d823fa-e806-44c0-9074-9652d69964eb")
+	)
+	(wire
+		(pts
+			(xy 27.0533 80.0377) (xy 27.0533 79.9627)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ddec9c0-32fe-4c4c-8eaa-53af906545e1")
 	)
 	(wire
 		(pts
@@ -4944,6 +5059,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.9903 80.01) (xy 34.29 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "563886ce-23c8-4bda-a50c-0a0e51b72575")
+	)
+	(wire
+		(pts
 			(xy 154.94 22.86) (xy 156.21 22.86)
 		)
 		(stroke
@@ -4961,6 +5086,16 @@
 			(type default)
 		)
 		(uuid "5e59085b-71de-4cd3-90fe-cceaa202149e")
+	)
+	(wire
+		(pts
+			(xy 30.9903 79.9627) (xy 30.9903 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "653135b5-1253-43e1-b6b1-692d1c146abf")
 	)
 	(wire
 		(pts
@@ -5114,6 +5249,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.0533 79.9627) (xy 28.9656 79.9627)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89e11a9f-8957-46ce-b885-96146f207f5d")
+	)
+	(wire
+		(pts
 			(xy 48.26 50.8) (xy 46.99 50.8)
 		)
 		(stroke
@@ -5194,7 +5339,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 80.01) (xy 30.48 80.01)
+			(xy 22.86 81.28) (xy 34.29 81.28)
 		)
 		(stroke
 			(width 0)
@@ -5221,6 +5366,16 @@
 			(type default)
 		)
 		(uuid "a9b61fd7-8d3a-4dd8-ae11-4abb8f0febad")
+	)
+	(wire
+		(pts
+			(xy 24.916 80.0377) (xy 27.0533 80.0377)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9fc0865-8e42-4d4f-a06b-843907e7a97f")
 	)
 	(wire
 		(pts
@@ -5264,6 +5419,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 81.28) (xy 34.29 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4417549-1916-42a6-b182-038e0e389b4b")
+	)
+	(wire
+		(pts
 			(xy 58.42 142.24) (xy 68.58 142.24)
 		)
 		(stroke
@@ -5301,16 +5466,6 @@
 			(type default)
 		)
 		(uuid "be1aa8e8-66d4-475d-8153-87ed20bea2a6")
-	)
-	(wire
-		(pts
-			(xy 22.86 80.01) (xy 26.67 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c01742f9-211a-484a-8ffd-073884671ff6")
 	)
 	(wire
 		(pts
@@ -5544,6 +5699,16 @@
 	)
 	(wire
 		(pts
+			(xy 22.86 80.01) (xy 22.86 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebad157d-6753-4040-9064-c452a9b9e617")
+	)
+	(wire
+		(pts
 			(xy 172.72 83.82) (xy 179.07 83.82)
 		)
 		(stroke
@@ -5581,6 +5746,16 @@
 			(type default)
 		)
 		(uuid "f1f486f1-e930-4dc7-a17b-cfa461552eae")
+	)
+	(wire
+		(pts
+			(xy 28.9656 79.9627) (xy 30.9903 79.9627)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2797fff-8443-4ce2-b691-893e6131abde")
 	)
 	(wire
 		(pts
@@ -8078,16 +8253,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 26.67 80.01 0)
+		(at 34.29 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6b295de2-5296-4093-abb3-ab41d3fce757")
 		(property "Reference" "#PWR07002"
-			(at 26.67 86.36 0)
+			(at 34.29 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8096,7 +8270,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 26.67 85.09 0)
+			(at 34.29 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8105,7 +8279,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.67 80.01 0)
+			(at 34.29 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8114,7 +8288,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 26.67 80.01 0)
+			(at 34.29 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8123,7 +8297,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 26.67 80.01 0)
+			(at 34.29 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9329,6 +9503,18 @@
 		)
 		(pin "A12"
 			(uuid "f9ba188a-a54f-4e00-83ce-b9b3ee9b4dc3")
+		)
+		(pin "0"
+			(uuid "2e4771db-adb7-4876-9cba-513a7c130b41")
+		)
+		(pin "1"
+			(uuid "ff3bab42-a504-46da-aa99-fff8655f3a11")
+		)
+		(pin "3"
+			(uuid "a2d647f4-975e-415f-a331-31fc1ec97430")
+		)
+		(pin "2"
+			(uuid "e6dc40c1-ec09-4ec1-91b7-b61921cb175a")
 		)
 		(instances
 			(project ""
