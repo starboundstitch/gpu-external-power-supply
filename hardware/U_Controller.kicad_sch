@@ -4400,16 +4400,22 @@
 		(uuid "1c8465a3-c0ab-4d0b-b09b-9f65fcb8f8d5")
 	)
 	(junction
+		(at 44.45 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37134950-abf4-4549-83bf-223a58dd8cd8")
+	)
+	(junction
 		(at 25.4 19.05)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "37cc6d30-026c-40bc-8d55-cf7b7af16b3b")
 	)
 	(junction
-		(at 49.53 132.08)
+		(at 44.45 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "42cce9e8-2c09-4ce1-8411-1ba8b137e3da")
+		(uuid "5d27154e-58c0-44a2-bd28-7a8c429a91e0")
 	)
 	(junction
 		(at 233.68 21.59)
@@ -5069,6 +5075,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 124.46) (xy 49.53 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56d26eb1-ffd2-4d40-9717-0fdef5970392")
+	)
+	(wire
+		(pts
 			(xy 154.94 22.86) (xy 156.21 22.86)
 		)
 		(stroke
@@ -5256,6 +5272,16 @@
 			(type default)
 		)
 		(uuid "89e11a9f-8957-46ce-b885-96146f207f5d")
+	)
+	(wire
+		(pts
+			(xy 44.45 132.08) (xy 50.8 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d7d7f3e-c562-4993-b7a9-411e59b1b8e4")
 	)
 	(wire
 		(pts
@@ -5479,7 +5505,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 124.46) (xy 49.53 124.46)
+			(xy 27.94 124.46) (xy 44.45 124.46)
 		)
 		(stroke
 			(width 0)
@@ -5659,16 +5685,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 132.08) (xy 50.8 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd7f3a87-4646-40c9-9d47-492e6255d7e2")
-	)
-	(wire
-		(pts
 			(xy 130.81 73.66) (xy 137.16 73.66)
 		)
 		(stroke
@@ -5779,7 +5795,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 132.08) (xy 49.53 132.08)
+			(xy 40.64 132.08) (xy 44.45 132.08)
 		)
 		(stroke
 			(width 0)
@@ -6295,13 +6311,13 @@
 		)
 		(uuid "7041f6e0-9e3f-47cd-98ef-6ab1852b199c")
 	)
-	(label "SMBA"
-		(at 179.07 53.34 180)
+	(label "I2C_SMBA"
+		(at 179.07 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "75f516fc-346c-4170-bacf-88a33e9987d8")
 	)
@@ -6504,16 +6520,6 @@
 			(justify right bottom)
 		)
 		(uuid "cf124335-229c-40fa-bbad-778223043f78")
-	)
-	(label "SMBA"
-		(at 53.34 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d37afb37-2255-423c-aac6-1f418b4a6f88")
 	)
 	(label "PB13"
 		(at 179.07 104.14 180)
@@ -6932,6 +6938,28 @@
 		(uuid "c5d8a4a1-7c5a-4ba5-8efd-01e1316bccaf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 193.1223 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PMBUS_SMBA"
+		(shape input)
+		(at 53.34 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cf901f06-a2ea-453d-bb9e-10d4cf855851")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.8437 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9587,6 +9615,75 @@
 			(project ""
 				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/027ff087-ab1d-45e5-9d8f-c94102656fe5"
 					(reference "#PWR07011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 44.45 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "badac152-bedb-4c8f-910a-7438c331b6dd")
+		(property "Reference" "R7011"
+			(at 46.99 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 44.45 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 42.672 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/26484-0402WGF1003TCE/C25741"
+			(at 44.45 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 44.45 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c49863d-0cd4-4910-9145-04338baefe99")
+		)
+		(pin "2"
+			(uuid "a3c9a8ec-63de-4a93-a545-e7d366809f9f")
+		)
+		(instances
+			(project "gpu-external-power-supply"
+				(path "/d5303413-7068-41ba-88e3-39dfa38d31b7/027ff087-ab1d-45e5-9d8f-c94102656fe5"
+					(reference "R7011")
 					(unit 1)
 				)
 			)
