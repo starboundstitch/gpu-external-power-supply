@@ -28,6 +28,8 @@ mod vrm_controller;
 
 #[entry]
 fn main() -> ! {
+    defmt::info!("System Starting");
+
     //** Microcontroller Configuration **//
     let dp = pac::Peripherals::take().expect("Cannot Take Peripherals");
     let mut rcc = dp.RCC.constrain();
@@ -140,6 +142,8 @@ fn main() -> ! {
 
     // Get Initial Values
     update_vrm_read(&mut dev, &mut controller);
+    // Enable the device
+    controller.ch_b().on_off_config(0x00);
 
     loop {
         let mut update_display = true;
@@ -211,8 +215,8 @@ fn main() -> ! {
                             (_, _) => (),
                         };
                         match nav.get_position() {
-                            (_, 0) => controller.vout(updated_val),
-                            (_, 1) => controller.set_iout_limit(updated_val),
+                            (_, 0) => controller.vout_command().write(updated_val),
+                            (_, 1) => controller.iout_oc_fault_limit().write(updated_val),
                             (_, _) => (), // Default condition that sound never match
                         };
                     } else {
@@ -346,12 +350,12 @@ fn update_vrm_read<I: embedded_hal::i2c::I2c>(
     controller: &mut TPSC536C7<I>,
 ) {
     // Get Values for Display
-    dev.core().set_voltage(controller.ch_a().read_vout_cmd());
-    dev.mem().set_voltage(controller.ch_b().read_vout_cmd());
+    dev.core().set_voltage(controller.ch_a().read_vout());
+    dev.mem().set_voltage(controller.ch_b().read_vout());
     dev.core()
-        .set_temperature(controller.ch_a().read_temperature());
+        .set_temperature(controller.ch_a().read_temperature_1());
     dev.mem()
-        .set_temperature(controller.ch_b().read_temperature());
-    dev.core().set_current(controller.ch_a().read_iout_limit());
-    dev.mem().set_current(controller.ch_b().read_iout_limit());
+        .set_temperature(controller.ch_b().read_temperature_1());
+    dev.core().set_current(controller.ch_a().read_iout());
+    dev.mem().set_current(controller.ch_b().read_iout());
 }
