@@ -1589,6 +1589,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" "C8326"
+			(at 36.83 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "90c30d22-018b-4e67-8ce7-47d7dcacd0d9")
 		)
@@ -1760,6 +1769,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" "C8326"
+			(at 64.77 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "f30d752b-3665-4eab-932a-204ad3d5f149")
 		)
@@ -1863,6 +1881,15 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C8326"
+			(at 91.44 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -1973,6 +2000,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" "C8326"
+			(at 64.77 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "939de8eb-5d86-4d5e-8852-d16caf5d860a")
 		)
@@ -2079,6 +2115,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" "C8326"
+			(at 64.77 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "a4e5cc3c-bcdb-4400-b45d-c4e82608624c")
 		)
@@ -2145,6 +2190,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 129.54 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C124413"
 			(at 129.54 78.74 0)
 			(effects
 				(font

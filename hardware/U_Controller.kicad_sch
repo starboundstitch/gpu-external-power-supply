@@ -7231,6 +7231,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" "C7045397"
+			(at 27.94 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c32e8896-7eeb-4d17-b7dd-685fd5639079")
 		)
@@ -7290,6 +7299,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 21.59 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C1554"
 			(at 21.59 96.52 0)
 			(effects
 				(font
@@ -7435,6 +7453,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" "C17798"
+			(at 53.34 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3ea648f8-b300-425c-b252-1ba689895e67")
 		)
@@ -7496,6 +7523,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 54.61 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C25076"
 			(at 54.61 142.24 0)
 			(effects
 				(font
@@ -7573,6 +7609,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" ""
+			(at 245.11 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e5a69be5-0a1b-471a-b348-0debc6c07726")
 		)
@@ -7642,6 +7687,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" "C25076"
+			(at 54.61 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2d56ab07-1ad5-49fa-96b3-0dbe6c280508")
 		)
@@ -7703,6 +7757,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 25.4 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C23733"
 			(at 25.4 22.86 0)
 			(effects
 				(font
@@ -7846,6 +7909,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" "C25076"
+			(at 54.61 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3170d079-2cf7-4090-9245-5922052fa536")
 		)
@@ -7905,6 +7977,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 21.59 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C1554"
 			(at 21.59 110.49 0)
 			(effects
 				(font
@@ -8046,6 +8127,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" "C92658"
+			(at 256.54 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "89f5546e-693e-4391-87d7-92d7806b3abe")
 		)
@@ -8120,6 +8210,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 233.68 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C100126"
 			(at 233.68 25.4 0)
 			(effects
 				(font
@@ -8264,6 +8363,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" "C25741"
+			(at 46.99 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "819463dc-654f-47f4-b2ff-197237896261")
 		)
@@ -8399,6 +8507,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" "C1581"
+			(at 33.02 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7dd2e098-f6d4-404a-a4b0-952959ae18b9")
 		)
@@ -8458,6 +8575,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 52.07 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C25905"
 			(at 52.07 50.8 0)
 			(effects
 				(font
@@ -8596,6 +8722,15 @@
 			)
 		)
 		(property "Description" "STMicroelectronics Arm Cortex-M4 MCU, 128KB flash, 64KB RAM, 84 MHz, 1.7-3.6V, 50 GPIO, LQFP64"
+			(at 154.94 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C75278"
 			(at 154.94 71.12 0)
 			(effects
 				(font
@@ -8852,6 +8987,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 53.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C2286"
 			(at 53.34 104.14 0)
 			(effects
 				(font
@@ -9194,6 +9338,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" "C25905"
+			(at 52.07 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "68c31655-4483-4858-a050-dfc8fae2dbfb")
 		)
@@ -9258,6 +9411,15 @@
 			)
 		)
 		(property "Description" "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"
+			(at 57.15 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C2687116"
 			(at 57.15 57.15 0)
 			(effects
 				(font
@@ -9414,6 +9576,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" "C25076"
+			(at 54.61 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1c312d4b-17c8-4bf8-afa2-a43c38ba188a")
 		)
@@ -9473,6 +9644,15 @@
 			)
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+			(at 30.48 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C2927038"
 			(at 30.48 57.15 0)
 			(effects
 				(font
@@ -9674,6 +9854,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" "C25741"
+			(at 44.45 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6c49863d-0cd4-4910-9145-04338baefe99")
 		)
@@ -9810,6 +9999,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" "C42372555"
+			(at 27.94 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "ca2252f0-1346-4164-afc4-0e854baf475e")
 		)
@@ -9895,6 +10093,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 49.53 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C25741"
 			(at 49.53 128.27 0)
 			(effects
 				(font

@@ -3479,6 +3479,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" ""
+			(at 57.15 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "29cef338-5984-4464-9844-407b9b1eec40")
 		)
@@ -3537,6 +3546,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 171.45 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C2883760"
 			(at 171.45 185.42 0)
 			(effects
 				(font
@@ -3751,6 +3769,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" ""
+			(at 57.15 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1ad2a6fd-9021-4d92-bf77-3bf161aab975")
 		)
@@ -3949,6 +3976,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" "C157947"
+			(at 39.37 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "77820f65-59ad-4723-9e42-335e442152ae")
 		)
@@ -4043,6 +4079,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part Number" ""
+			(at 57.15 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "46c0c697-819c-4bbd-b782-7be1639f11f8")
 		)
@@ -4102,6 +4147,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
+			(at 57.15 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" ""
 			(at 57.15 173.99 0)
 			(effects
 				(font
