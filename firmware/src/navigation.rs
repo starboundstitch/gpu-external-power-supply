@@ -67,7 +67,7 @@ impl Default for Mode {
     }
 }
 
-#[derive(Default)]
+#[derive(Default, bincode::Decode, bincode::Encode)]
 pub struct Device {
     core: Channel,
     mem: Channel,
@@ -94,7 +94,7 @@ impl Device {
     }
 }
 
-#[derive(Default)]
+#[derive(Default, bincode::Decode, bincode::Encode)]
 pub struct Channel {
     voltage: f32,
     voltage_setpoint: f32,

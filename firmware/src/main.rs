@@ -2,9 +2,11 @@
 #![no_std]
 
 use cortex_m_rt::entry;
-use nb::block;
 
 use stm32f4xx_hal::{self as hal, gpio::PinState, i2c::I2c, pac, prelude::*};
+
+use stm32f4xx_hal::otg_fs::{UsbBus, USB};
+use usb_device::prelude::*;
 
 use embedded_graphics::{
     mono_font::{ascii::FONT_9X18, MonoTextStyle, MonoTextStyleBuilder},
@@ -23,8 +25,12 @@ use defmt_rtt as _;
 use panic_semihosting as _; // Sends Backtraces through Probe-rs
 
 use navigation::Navigation;
+use usbd_serial::embedded_io::WriteReady;
+use vrm_controller::TPSC536C7;
 mod navigation;
 mod vrm_controller;
+
+static mut EP_MEMORY: [u32; 1024] = [0; 1024];
 
 #[entry]
 fn main() -> ! {
@@ -32,8 +38,13 @@ fn main() -> ! {
 
     //** Microcontroller Configuration **//
     let dp = pac::Peripherals::take().expect("Cannot Take Peripherals");
-    let mut rcc = dp.RCC.constrain();
-    let clocks = rcc.cfgr.sysclk(48.MHz()).freeze();
+    let rcc = dp.RCC.constrain();
+    let clocks = rcc
+        .cfgr
+        .use_hse(8.MHz())
+        .sysclk(48.MHz())
+        .require_pll48clk()
+        .freeze();
 
     //** Declare GPIOs **//
     let gpioa = dp.GPIOA.split();
@@ -43,16 +54,16 @@ fn main() -> ! {
     let mut led = gpioa.pa5.into_push_pull_output();
 
     //** Enable VRM Controller Pins **//
-    let _avr_ready = gpioc.pc6.into_floating_input();
-    let _bvr_ready = gpioc.pc7.into_floating_input();
+    let _avr_ready = gpioc.pc1.into_floating_input();
+    let _bvr_ready = gpioc.pc2.into_floating_input();
     let _b_enable = gpioc.pc10.into_push_pull_output_in_state(PinState::High);
 
     //** Enable Onboard Control Pins **//
     let up = gpioc.pc8.into_pull_up_input();
-    let down = gpioc.pc5.into_pull_up_input();
-    let left = gpiod.pd8.into_pull_up_input();
-    let right = gpioa.pa12.into_pull_up_input();
-    let enter = gpioa.pa11.into_pull_up_input();
+    let down = gpioc.pc6.into_pull_up_input();
+    let enter = gpioc.pc5.into_pull_up_input();
+    let right = gpioa.pa6.into_pull_up_input();
+    let left = gpiob.pb9.into_pull_up_input();
 
     // Read Boot Pins
 
@@ -80,6 +91,7 @@ fn main() -> ! {
 
     //** VRM Controller Initialization **//
     let i2c_addr = 0x5F;
+
     // Create Controller
     let mut controller = vrm_controller::TPSC536C7::new(i2c1, i2c_addr);
     defmt::info!("Past VRM Controller Init");
@@ -129,6 +141,28 @@ fn main() -> ! {
 
     defmt::info!("First Display Flush");
 
+    let usb = USB::new(
+        (dp.OTG_FS_GLOBAL, dp.OTG_FS_DEVICE, dp.OTG_FS_PWRCLK),
+        (gpioa.pa11, gpioa.pa12),
+        &clocks,
+    );
+
+    #[allow(static_mut_refs)] // Not My implementation
+    let usb_bus = UsbBus::new(usb, unsafe { &mut EP_MEMORY });
+
+    let mut serial = usbd_serial::SerialPort::new(&usb_bus);
+
+    let mut usb_dev = UsbDeviceBuilder::new(&usb_bus, UsbVidPid(0x16c0, 0x27dd))
+        .device_class(usbd_serial::USB_CLASS_CDC)
+        .strings(&[StringDescriptors::default()
+            .manufacturer("Overclocking Club")
+            .product("gpu-external-power-supply")
+            .serial_number("Prototype-1")])
+        .unwrap()
+        .build();
+
+    defmt::info!("USB Initialized");
+
     // Timer Configuration
     let mut led_time = dp.TIM1.counter_ms(&clocks);
     let mut ui_time = dp.TIM3.counter_ms(&clocks);
@@ -158,14 +192,19 @@ fn main() -> ! {
             match nav.get_mode() {
                 navigation::Mode::Navigation => {
                     if up.is_low() {
+                        defmt::info!("Up");
                         nav.move_up();
                     } else if down.is_low() {
+                        defmt::info!("Down");
                         nav.move_down();
                     } else if right.is_low() {
+                        defmt::info!("Right");
                         nav.move_right();
                     } else if left.is_low() {
+                        defmt::info!("Left");
                         nav.move_left();
                     } else if enter.is_low() {
+                        defmt::info!("Enter");
                         if nav.get_position().1 == 2 {
                             continue;
                         }
@@ -298,6 +337,23 @@ fn main() -> ! {
             // Read new I2C Values (at end so that it has the whole UI time for the values to
             // collect)
             update_vrm_read(&mut dev, &mut controller);
+
+            // USB to send values to computer
+            if serial.write_ready().unwrap() {
+                let mut slice = [0u8; 128];
+                let length =
+                    bincode::encode_into_slice(&dev, &mut slice, bincode::config::standard())
+                        .unwrap();
+
+                let slice = &slice[..length];
+
+                let _ = serial.write(slice);
+            }
+        }
+
+        // USB Handling - TODO
+        if !usb_dev.poll(&mut [&mut serial]) {
+            continue;
         }
     }
 }
@@ -350,12 +406,25 @@ fn update_vrm_read<I: embedded_hal::i2c::I2c>(
     controller: &mut TPSC536C7<I>,
 ) {
     // Get Values for Display
+    // Voltage
     dev.core().set_voltage(controller.ch_a().read_vout());
     dev.mem().set_voltage(controller.ch_b().read_vout());
+    // Temperature
     dev.core()
         .set_temperature(controller.ch_a().read_temperature_1());
     dev.mem()
         .set_temperature(controller.ch_b().read_temperature_1());
+    // Current
     dev.core().set_current(controller.ch_a().read_iout());
     dev.mem().set_current(controller.ch_b().read_iout());
+    // Voltage Setpoint
+    dev.core()
+        .set_voltage_setpoint(controller.ch_a().vout_command().read());
+    dev.mem()
+        .set_voltage_setpoint(controller.ch_b().vout_command().read());
+    // Current Limit
+    dev.core()
+        .set_current_limit(controller.ch_a().iout_oc_fault_limit().read());
+    dev.mem()
+        .set_current_limit(controller.ch_a().iout_oc_fault_limit().read());
 }

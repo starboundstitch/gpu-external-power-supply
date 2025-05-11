@@ -12,6 +12,13 @@ nb = "1.1.0"
 panic-halt = "1.0.0"
 panic-semihosting = "0.6.0"
 ssd1306 = "0.9.0"
+usb-device = "0.3.2"
+usbd-serial = "0.2.2"
+
+[dependencies.bincode]
+version = "2.0.1"
+default-features = false
+features = [ "derive" ]
 
 [dependencies.embedded-hal]
 version = "1.0.0"
@@ -27,4 +34,4 @@ git = "https://github.com/starboundstitch/pmbus-types-rs"
 
 [dependencies.stm32f4xx-hal]
 version = "0.22.1"
-features = [ "stm32f401" ]
+features = [ "stm32f401", "otg-fs", "usb_fs" ]
