@@ -27,9 +27,9 @@ macro_rules! send_write {
     ($self:ident, $name:literal, $cmd:expr, $length:expr,  $format:ident, $data:expr) => {{
         let con = $format::from($data).to_be_bytes();
 
-        let buf: &mut [u8] = &mut [0u8, $length + 1];
-        buf[0] = $cmd;
-        buf[1..$length].copy_from_slice(&con);
+        let buf: &mut [u8] = &mut [0u8; $length + 1];
+        buf[0..$length].copy_from_slice(&con[0..($length)]);
+        buf[$length] = $cmd;
         match $self.i2c.write($self.address, buf) {
             Ok(_val) => defmt::trace!("{}_Write: {}", $name, buf),
             Err(val) => defmt::error!("{}_Write_Error: {}", $name, val.kind()),
