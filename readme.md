@@ -13,3 +13,9 @@ This section contains all micro-controller code.
 ## Production
 
 This section contains manufacturing outputs (eg Gerber Files).
+
+## License
+
+All the code and hardware files in this repository are licensed according to the GPLv3 in the [LICENSE](https://github.com/starboundstitch/gpu-external-power-supply/blob/master/LICENSE) file.
+
+In addition, many of the symbols and footprints are provided by the manufacturers for use and are thus liable under the manufactures' licenses.
