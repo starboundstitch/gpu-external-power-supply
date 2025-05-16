@@ -2808,7 +2808,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/vishay-general-semiconductor-diodes-division/MMSZ4682-E3-08/4832238?s=N4IgTCBcDaIIxzAWgLIoMoC0AsA2AHMgKIDMSADPgMIAqSAcgCIgC6AvkA"
 			(at 121.92 81.28 0)
 			(effects
 				(font
@@ -2884,7 +2884,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/diodes-incorporated/1N4148WQ-13-F/16548119?s=N4IgTCBcDaIMwEYC0CByAWB6AcB1AiinEgGIDCAKkqgCIgC6AvkA"
 			(at 143.51 71.12 0)
 			(effects
 				(font
@@ -4033,7 +4033,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/diotec-semiconductor/Z1SMA1/22190012?s=N4IgTCBcDaICwA4DsCC0AtAjAZQLIEFMBhAFVQDkAREAXQF8g"
 			(at 228.6 83.82 0)
 			(effects
 				(font

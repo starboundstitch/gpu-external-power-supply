@@ -4065,7 +4065,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/diodes-incorporated/BZT52C10-7-F/717726?s=N4IgTCBcDaIEIC0AqBWMBhAjABgLQDEARASXSVwDlCQBdAXyA"
 			(at 203.2 97.79 0)
 			(effects
 				(font

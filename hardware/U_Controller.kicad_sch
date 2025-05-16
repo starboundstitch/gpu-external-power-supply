@@ -7591,7 +7591,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/kyocera-avx/GG060303100N2P/22245452?s=N4IgjCBcpgbFoDGUBmBDANgZwKYBoQB7KAbRAGYBOAJgBZ4BdAgBwBcoQBlVgJwEsAdgHMQAXwIB2WBGghkkdNnxFS4CbTBgArCCYg2Hbv2FjRooA"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/kyocera-avx/GG060303100N2P/22245452?s=https://www.digikey.com/en/products/detail/comchip-technology/CPDUR5V0-HF/3308693?s=N4IgTCBcDaIGwBYCMBaMAGA7HFqByAIiALoC%2BQA"
 			(at 245.11 25.4 0)
 			(effects
 				(font
