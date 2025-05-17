@@ -30,6 +30,7 @@ macro_rules! send_write {
         let buf: &mut [u8] = &mut [0u8; $length + 1];
         buf[0..$length].copy_from_slice(&con[0..($length)]);
         buf[$length] = $cmd;
+        buf.reverse();
         match $self.i2c.write($self.address, buf) {
             Ok(_val) => defmt::trace!("{}_Write: {}", $name, buf),
             Err(val) => defmt::error!("{}_Write_Error: {}", $name, val.kind()),
