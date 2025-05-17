@@ -59,11 +59,11 @@ fn main() -> ! {
     let _b_enable = gpioc.pc10.into_push_pull_output_in_state(PinState::High);
 
     //** Enable Onboard Control Pins **//
-    let up = gpioc.pc8.into_pull_up_input();
-    let down = gpioc.pc6.into_pull_up_input();
-    let enter = gpioc.pc5.into_pull_up_input();
-    let right = gpioa.pa6.into_pull_up_input();
-    let left = gpiob.pb9.into_pull_up_input();
+    let up = gpioc.pc6.into_pull_up_input();
+    let down = gpiob.pb12.into_pull_up_input();
+    let enter = gpiob.pb14.into_pull_up_input();
+    let right = gpiob.pb13.into_pull_up_input();
+    let left = gpiob.pb15.into_pull_up_input();
 
     // Read Boot Pins
 
