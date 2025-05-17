@@ -1,5 +1,5 @@
  [target.thumbv7em-none-eabihf]
- runner = "probe-rs run --chip STM32F401RETx --always-print-stacktrace"
+ runner = "probe-rs run --chip STM32F401RBTx --always-print-stacktrace"
 
 rustflags = [
   "-C", "link-arg=-Tlink.x",
