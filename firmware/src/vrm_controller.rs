@@ -67,6 +67,20 @@ build_command!(
     ulinear16
 );
 build_command!(
+    VOUTMax,
+    "VOutMax",
+    Command::VOUTMax.to_address(),
+    2,
+    ulinear16
+);
+build_command!(
+    VOUTMin,
+    "VOutMin",
+    Command::VOUTMin.to_address(),
+    2,
+    ulinear16
+);
+build_command!(
     IOUTOCFaultLimit,
     "IOutOCFaultLimit",
     Command::IoutOCFaultLimit.to_address(),
@@ -80,7 +94,9 @@ pub enum Command {
     OnOffConfig,
     ClearFaults,
     VOUTCommand,
+    VOUTMax,
     VOUTDroop,
+    VOUTMin,
     FrequencySwitch,
     IoutOCFaultLimit,
     StatusByte,
@@ -99,7 +115,9 @@ impl Command {
             Command::OnOffConfig => 0x02,
             Command::ClearFaults => 0x03,
             Command::VOUTCommand => 0x21,
+            Command::VOUTMax => 0x24,
             Command::VOUTDroop => 0x28,
+            Command::VOUTMin => 0x2B,
             Command::FrequencySwitch => 0x33,
             Command::IoutOCFaultLimit => 0x46,
             Command::StatusByte => 0x78,
@@ -199,6 +217,17 @@ impl<I: embedded_hal::i2c::I2c> TPSC536C7<I> {
     pub fn vout_command(&mut self) -> VOUTCommand<I> {
         VOUTCommand { dev: self }
     }
+
+    /// Reads / Writes to the voltage max for the paged channel
+    pub fn vout_max(&mut self) -> VOUTMax<I> {
+        VOUTMax { dev: self }
+    }
+
+    /// Reads / Writes to the voltage min for the paged channel
+    pub fn vout_min(&mut self) -> VOUTMin<I> {
+        VOUTMin { dev: self }
+    }
+
     /// Reads / Writes to the current output setpoint for the paged channel
     ///
     /// Is phased (can read the individual phases and set individual phase)

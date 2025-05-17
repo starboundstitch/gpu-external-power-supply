@@ -178,6 +178,9 @@ fn main() -> ! {
     update_vrm_read(&mut dev, &mut controller);
     // Enable the device
     controller.ch_b().on_off_config(0x00);
+    controller.vout_max().write(1.5);
+    controller.ch_a().on_off_config(0x00);
+    controller.vout_max().write(1.5);
 
     loop {
         let mut update_display = true;
