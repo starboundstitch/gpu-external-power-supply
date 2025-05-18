@@ -341,6 +341,11 @@ fn main() -> ! {
             // collect)
             update_vrm_read(&mut dev, &mut controller);
 
+            // USB Handling
+            if !usb_dev.poll(&mut [&mut serial]) {
+                continue; // This means that the port cannot read or write currently
+            }
+
             // USB to send values to computer
             if serial.write_ready().unwrap() {
                 let mut slice = [0u8; 128];
@@ -354,8 +359,8 @@ fn main() -> ! {
             }
         }
 
-        // USB Handling - TODO
-        if !usb_dev.poll(&mut [&mut serial]) {
+        // If no data to read, don't try read
+        if !serial.read_ready().unwrap() {
             continue;
         }
     }
