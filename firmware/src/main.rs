@@ -25,7 +25,7 @@ use defmt_rtt as _;
 use panic_semihosting as _; // Sends Backtraces through Probe-rs
 
 use navigation::Navigation;
-use usbd_serial::embedded_io::WriteReady;
+use usbd_serial::embedded_io::{ReadReady, WriteReady};
 use vrm_controller::TPSC536C7;
 mod navigation;
 mod vrm_controller;
