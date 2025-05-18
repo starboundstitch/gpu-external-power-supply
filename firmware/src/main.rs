@@ -363,6 +363,54 @@ fn main() -> ! {
         if !serial.read_ready().unwrap() {
             continue;
         }
+
+        let mut buf = [0u8; 128];
+        let count = match serial.read(&mut buf) {
+            Ok(count) if count > 0 => {
+                defmt::debug!("USB: Read {} Bytes", count);
+                Some(count)
+            }
+            Err(UsbError::WouldBlock) => {
+                defmt::error!("USB: Read Buffer Full");
+                None
+            }
+            Err(err) => {
+                defmt::error!("USB: Other Error");
+                None
+            }
+            _ => None,
+        };
+
+        if count.is_some() {
+            defmt::println!("USB_Data: {}", buf[0..count.unwrap()]);
+        }
+
+        // Valid Read
+        if count.is_some() {
+            // Set Channel
+            match buf[0] & 1u8 {
+                0 => {
+                    // Channel A
+                    controller.ch_a();
+                }
+                1 => {
+                    // Channel B
+                    controller.ch_b();
+                }
+                _ => {}
+            }
+            // Send Command to I2C Device
+            match buf[0] & 0x02 {
+                0x0 => {
+                    // Write
+                    controller.command(&buf[1..count.unwrap()]);
+                }
+                0x2 => {
+                    // Read
+                }
+                _ => {}
+            }
+        }
     }
 }
 
