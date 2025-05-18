@@ -482,5 +482,5 @@ fn update_vrm_read<I: embedded_hal::i2c::I2c>(
     dev.core()
         .set_current_limit(controller.ch_a().iout_oc_fault_limit().read());
     dev.mem()
-        .set_current_limit(controller.ch_a().iout_oc_fault_limit().read());
+        .set_current_limit(controller.ch_b().iout_oc_fault_limit().read());
 }
