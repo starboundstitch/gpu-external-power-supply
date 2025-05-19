@@ -215,11 +215,11 @@ fn main() -> ! {
 
                         // temporary value that is being updated
                         updated_val = match nav.get_position() {
-                            (0, 0) => dev.core().get_voltage(),
-                            (0, 1) => dev.core().get_current(),
+                            (0, 0) => dev.core().get_voltage_setpoint(),
+                            (0, 1) => dev.core().get_current_limit(),
                             (0, 2) => dev.core().get_temperature(),
-                            (1, 0) => dev.mem().get_voltage(),
-                            (1, 1) => dev.mem().get_current(),
+                            (1, 0) => dev.mem().get_voltage_setpoint(),
+                            (1, 1) => dev.mem().get_current_limit(),
                             (1, 2) => dev.mem().get_temperature(),
                             (_, _) => 0., // Default condition that sound never match
                         };
