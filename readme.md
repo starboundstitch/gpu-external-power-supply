@@ -28,13 +28,36 @@ The power supply also allows full control of its voltage characteristics to prov
 
 This section contains the KICAD project and all the associated files.
 
+We make extensive use of hierarchy in this project and have the following schematics:
+* Vcore_stage
+  * Single MOSFET that connects to the VRM Controller Vcore Channel
+* Vmem_stage
+  * Single MOSFET that connects to the VRM Controller Vmem Channel
+* VRM_Controller
+  * VRM Controller with required pinouts and filtering
+* 12V_Supply
+  * Input filtering and connectors
+* Low_Current_Supply
+  * 3.3V & 5V buck converters and LED status
+* Onboard_Control
+  * Buttons and Display
+* U_Controller
+  * Microcontroller and required connectors (including USB-C)
+
 ## Firmware
 
-This section contains all micro-controller code.
+This section contains all micro-controller code and is using the rust language with the [stmf4XX-hal](https://github.com/stm32-rs/stm32f4xx-hal) library.
 
-## Production
+> [!CAUTION]
+> The stm32f401RE that is used does NOT have enough SRAM to run in debug mode and it will NOT flash.
 
-This section contains manufacturing outputs (eg Gerber Files).
+The controller should automatically build and flash with:
+
+```
+cargo run --release
+```
+
+Additionally, in the future we will support flashing via USB DFU mode (instructions TBD).
 
 ## License
 
