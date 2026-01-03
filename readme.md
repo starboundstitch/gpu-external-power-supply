@@ -9,6 +9,15 @@ The sister repository [geps-app](https://github.com/starboundstitch/geps-app) co
 The External GPU Power Card is a designed to seamlessly integrate with existing GPUs. It works by replacing the Vcore and Vmem rails with new power stages that have reduced noise, an increased voltage range, and an increased maximum current which should provide additional stability and performance benefits.
 
 The power supply also allows full control of its voltage characteristics to provide unlimited overclocking potential. The device integrates with our companion application to provide real time monitoring and adjustment using a GUI interface, allowing more informed decisions in the overclocking process to extract as much performance as possible.
+![Image of the device](/images/Stand_Alone.png)
+<div align="center""> 
+Prototype 2
+</div>
+
+![Image of the device attached to a 580](/images/With_580.png)
+<div align="center""> 
+Prototype 2 is attached to a gtx 580
+</div>
 
 ## Specs
 
